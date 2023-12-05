@@ -30,8 +30,8 @@ body {
 }
 
 hr {
-  width: 100%;
-  border: 10px solid black;
+ 
+  border: 1px solid black;
 }
 
 .link-1 {
@@ -134,12 +134,13 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: em;
 }
 
 .image-card {
   width: calc(25% - 20px); /* Adjust the width of each image card */
-  margin-bottom: 20px;
+  padding-bottom: 2em;
+  margin-bottom: 4em;
   perspective: 1000px;
 }
 
@@ -163,6 +164,7 @@ hr {
   transform-style: preserve-3d;
 }
 .flip-card-back{
+  top: 0;
   width: 100%;
   height: 100%;
   position: absolute;
