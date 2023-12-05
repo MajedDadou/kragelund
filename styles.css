@@ -3,6 +3,133 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
+
+/**************** nav *************/
+.color-frontpage #sidebar {
+  background-color: #697c44;
+}
+
+.color-frontpage span {
+  background-color: #ffffff;
+}
+
+
+
+.color-frontpage {
+
+}
+
+#sidebar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  right: -300px;
+  transition: .4s;
+  z-index: 1;
+  /* Add a higher z-index to make the text overlay above the menu */
+
+}
+
+#sidebar ul li {
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 26px 24px;
+  margin-bottom: 1.2rem;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  top: 30px;
+  right: 330px;
+}
+
+.toggle-btn span {
+  width: 45px;
+  height: 4px;
+  background: #90CA5F;
+  display: block;
+  margin-top: 4px;
+}
+
+#sidebar.active {
+  right: 0;
+}
+
+
+
+/* --------Links style------ */
+.link-style {
+  background-image: linear-gradient(to right,
+          #ffffff,
+          #ffffff 50%,
+          #000000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: x-large
+}
+
+.link-style:before {
+  content: '';
+  background: #FF9058;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-style:hover {
+  background-position: 0;
+}
+
+.link-style:hover::before {
+  width: 100%;
+}
+
+
+/* nav content */
+#nav-content {
+  display: flex;
+
+
+}
+
+
+
+/* nav logo image */
+#logo-image {
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+
+}
+
+#logo-image img {
+  display: block;
+  width: 13rem;
+  height: 100%;
+
+}
+
+
+
+
 .container-menu {
 
   background-color: white;
@@ -200,9 +327,62 @@ hr {
   text-align: center;
   margin-bottom: 10px;
 }
+/* Initially hide elements with the "fade-in" class */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px); /* Initially move the elements down by a smaller distance */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* class to fly in the elements when they come into view */
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0); /* Move elements to their original position */
+}
 
 
 
+
+/* contact section in front page */
+.contact-section {
+  max-width: 100%; /* Adjust max-width as needed */
+  margin: 0 auto;
+  padding: 2%;
+  background-color: #ffffff; /* Example background color */
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  /* text-align: center; */
+}
+
+.contact-left h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.contact-left img {
+  max-width: 20%; /* Adjust the size of the icon */
+  display: block;
+  margin-bottom: 5%;
+}
+
+.contact-right {
+  /* flex: 2; */
+}
+
+.contact-details p {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
 
 
 
@@ -290,7 +470,7 @@ hr {
   color: rgb(0, 0, 0);
   display: block;
   padding: 0 10px;
-  font-family: poller one;
+  font-family: 'Inter', sans-serif;
   line-height: 9.5vh;
   font-weight: 900;
   text-align: center;

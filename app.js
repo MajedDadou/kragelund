@@ -1,3 +1,7 @@
+// navigation menu toggle
+function show() {
+    document.getElementById('sidebar').classList.toggle('active');
+}
 
 
 
@@ -41,3 +45,36 @@
 //         nav.style.display = 'none';
 //     }
 // });
+
+
+// Function to check if element is in the viewport
+const isElementInViewport = (el) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+  
+  // Function to handle fade-in effect for image cards
+  const handleFadeIn = () => {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach((element) => {
+      if (isElementInViewport(element)) {
+        element.classList.add('active');
+      }
+    });
+  };
+  
+  // Event listener for scroll event
+  window.addEventListener('scroll', () => {
+    handleFadeIn();
+  });
+  
+  // Initially trigger fade-in for elements in view on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    handleFadeIn();
+  });
+  
