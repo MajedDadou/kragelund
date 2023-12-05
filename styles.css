@@ -3,9 +3,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
-  height: 100vh;
+.container-menu {
 
+  background-color: white;
+  height: 100vh;
   position: relative;
   width: 100%;
 }
@@ -86,11 +87,112 @@ hr {
 
 
 
+.intro-container {
+  margin-top: 20%;
+}
+
+.welcome-text {
+  font-family: 'Arvo', serif;
+  font-size: 4em;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bold-title {
+  text-align: center;
+  font-family: 'Arvo', serif;
+  font-size: 6em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 2em;
+  line-height: 2.5em;
+  text-align: center;
+  margin: 0 10em;
+  margin-bottom: 30px;
+}
+
+
+/* card flipping section */
 
 
 
 
 
+.image-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.image-card {
+  width: calc(25% - 20px); /* Adjust the width of each image card */
+  margin-bottom: 20px;
+  perspective: 1000px;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front img,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.flip-card-back h3,
+.flip-card-back p {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 
 
