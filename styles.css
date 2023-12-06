@@ -523,10 +523,9 @@ hr {
   /* justify-content: space-between; */
   align-items: center;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   position: relative;
   width: 100%;
-  background-color: #f0f0f0; /* Adjust the background color of the shapes */
 }
 
 /* Define shape styles */
@@ -536,7 +535,6 @@ hr {
   height: 100vh; /* Adjust the height of the shapes */
   overflow: hidden;
   z-index: 0;
-  background-color: #463535; /* Adjust the background color of the shapes */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -549,7 +547,6 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Background color of the overlay */
   z-index: 1;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
@@ -561,7 +558,7 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #000000;
   font-size: 18px;
   z-index: 2;
   opacity: 0;
@@ -596,26 +593,27 @@ hr {
 
 
 /* Define styles for the shapes' background images */
-.shape-1::before {
+.shape-1::after {
   content: url('images/IMG_2089.avif'); /* Specify the image URL */
   position: absolute;
-  width: 100;
-  height: 100%;
+
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
+}
+.shape-1::before{
+  opacity: 0;
 }
 .shape-2::before {
   content: url('images/IMG_2172.avif'); /* Specify the image URL */
   position: absolute;
-  width: 100%;
-  height: 100%;
+
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 .shape-3::before {
