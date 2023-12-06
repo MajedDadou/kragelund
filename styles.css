@@ -494,3 +494,193 @@ hr {
   border-bottom: 2px solid #ffffff;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------Test for shapes in front page -----------*/
+
+/* Apply styles to the container of the background shapes */
+.background-shapes {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: #f0f0f0; /* Adjust the background color of the shapes */
+}
+
+/* Define shape styles */
+.shape {
+  position: relative;
+  width: 100vw; /* Adjust the width of the shapes */
+  height: 100vh; /* Adjust the height of the shapes */
+  overflow: hidden;
+  z-index: 0;
+  background-color: #463535; /* Adjust the background color of the shapes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Define hover effect for the shapes */
+.shape:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Background color of the overlay */
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+/* Style for tooltip text */
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.shape:hover .tooltip {
+  opacity: 1;
+}
+
+/* Display logo in the center */
+.circle-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* Style for the logo */
+.circle-logo img {
+  max-width: 100px; /* Adjust the size of the logo */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Define styles for the shapes' background images */
+
+
+
+
+/* Define styles for the shapes' background images */
+.shape-1::before {
+  content: url('images/IMG_2089.avif'); /* Specify the image URL */
+  position: absolute;
+  width: 100;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.shape-2::before {
+  content: url('images/IMG_2172.avif'); /* Specify the image URL */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.shape-3::before {
+  content: url('images/IMG_2178.avif'); /* Specify the image URL */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.shape-4::before {
+  content: url('images/IMG_2187.avif'); /* Specify the image URL */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.shape-5::before {
+  content: url('images/IMG_2189.avif'); /* Specify the image URL */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.shape-6::before {
+  content: url('images/IMG_2213.avif'); /* Specify the image URL */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show background image on hover */
+.shape-1:hover::before {
+  opacity: 0;
+}
+.shape-2:hover::before {
+  opacity: 0;
+}
+.shape-3:hover::before {
+  opacity: 0;
+}
+.shape-4:hover::before {
+  opacity: 0;
+}
+.shape-5:hover::before {
+  opacity: 0;
+}
+.shape-6:hover::before {
+  opacity: 0;
+}
+/* Define similar styles for other shapes (.shape-2, .shape-3, etc.) */
+/* ... */
