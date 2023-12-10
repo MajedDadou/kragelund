@@ -682,3 +682,62 @@ hr {
 }
 /* Define similar styles for other shapes (.shape-2, .shape-3, etc.) */
 /* ... */
+
+
+
+/* ---------Footer-------- */
+.footer-holder{
+  background-color: #8EA95D;
+  display: flex;
+  width: 100%;
+}
+.footer-1{
+  width: 33%;
+  flex-wrap: wrap; 
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+.footer-menu{
+  display: flex;
+
+  flex-wrap: wrap; 
+  width: 5%;
+  margin: 1em;
+}
+.footer-social{
+  width: 100%;
+ margin: 1em; 
+}
+.footer-social a{
+  margin: 1em;
+  
+}
+
+.footer-2{
+  width: 33%;
+  text-align: center;
+}
+
+.footer-info{
+margin-right: 10em;
+margin-left: 10em;
+  
+}
+.footer-info h1{
+text-align: center;
+}
+.footer-info h3{
+  justify-content: center;
+  /* display: flex; */
+/* width: 20%; */
+  text-align: center;
+
+  word-wrap: break-word;
+
+}
+
+
+.footer-3{
+  width: 33%;
+}
