@@ -32,6 +32,8 @@ a{
   text-transform: none;
 }
 
+button
+
 
 
 
@@ -516,13 +518,10 @@ hr {
 
 }
 .overlay{
-  /* content: ""; */
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by changing the last value (0.5 in this case) */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 .model-name {
@@ -546,6 +545,7 @@ hr {
 
 
 .describtion {
+  margin-top: 20%;
   color: aliceblue;
   font-family: inter;
   font-size: 1.2em;
@@ -565,6 +565,7 @@ hr {
   font-size: 1em !important;
 
 }
+
 
 .navigation a {
   text-decoration: none;
