@@ -8,13 +8,21 @@ h1{
   font-family: Arvo;
   font-size: 60px;
   text-align: center;
-  padding-bottom: 5%;
+}
+h4{
+  font-family: Arvo;
+  font-size: 36px;
+  text-align: center;
 }
 p{
   font-family: Inter;
   font-size:18px;
   text-align: left;
-  
+  line-height: 40px;
+}
+
+a{
+  text-transform: none;
 }
 
 
@@ -403,10 +411,69 @@ hr {
   font-size: 1.5em;
 }
 
+/*Informations sectioner*/
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.billede{
+  width: 50%;
+  margin-left: 7%;
+}
+.tekst{
+  width: 50%;
+  margin-right: 7%;
+}
 
+/*Lokal menu*/
+.lokalmenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(234, 211, 149, 1);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.lokalmenu a{
+  text-decoration: none;
+  color: black;
+}
+.ikontekst{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ikon{
+  margin-top: 10%;
+  margin-bottom: -20%;
+}
 
-
-
+/*Tidslinje*/
+.cirkel{
+  background-color: rgba(142, 169, 93, 1);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color:  rgba(142, 169, 93, 1);
+  border-width: 3px;
+  position: relative;
+  top: 2%;
+  left:20%;
+  z-index: 1;
+}
+.streg{
+  background-color: rgba(142, 169, 93, 1);
+  width: 30px;
+  height: 1000px;
+  border-style: solid;
+  border-color: rgba(142, 169, 93, 1);
+  border-width: 3px;
+  position: relative;
+  left:62%;
+}
 
 
 .slide {
@@ -481,9 +548,6 @@ hr {
   text-align: center;
   font-size: 1.2em;
 }
-
-
-
 .navigation li {
 
   color: rgb(0, 0, 0);
@@ -513,25 +577,6 @@ hr {
   border-bottom: 2px solid #ffffff;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ----------Test for shapes in front page -----------*/
 
