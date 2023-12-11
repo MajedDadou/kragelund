@@ -1,4 +1,5 @@
 body {
+
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -25,6 +26,15 @@ a{
   text-transform: none;
 }
 
+header{
+background-color: #333;
+}
+main{
+background-color: #FF9058;
+}
+footer{
+background-color: aqua;
+}
 
 /**************** nav *************/
 .color-frontpage #sidebar {
@@ -34,6 +44,7 @@ a{
 .color-frontpage span {
   background-color: #ffffff;
 }
+
 
 
 
@@ -175,6 +186,9 @@ a{
   transition: all 0.3s ease;
 }
 
+
+
+
 hr {
 
   border: 1px solid black;
@@ -238,8 +252,9 @@ hr {
 }
 
 .welcome-text {
+  overflow-wrap: break-word;
   font-family: 'Arvo', serif;
-  font-size: 4em;
+  /* font-size: 4em; */
   font-weight: normal;
   text-align: center;
   margin-bottom: 10px;
@@ -248,7 +263,6 @@ hr {
 .bold-title {
   text-align: center;
   font-family: 'Arvo', serif;
-  font-size: 6em;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1.2em;
@@ -256,7 +270,6 @@ hr {
 
 .description {
   font-family: 'Inter', sans-serif;
-  font-size: 2em;
   line-height: 2.5em;
   text-align: center;
   margin: 0 10%;
@@ -271,9 +284,9 @@ hr {
 
 
 .image-section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .row {
@@ -339,7 +352,7 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
   box-sizing: border-box;
 }
 
@@ -369,16 +382,16 @@ hr {
 
 /* contact section in front page */
 .contact-section {
-  max-width: 100%;
+  
+  width: 100%;
   /* Adjust max-width as needed */
   margin: 0 auto;
-  padding: 2%;
-  background-color: #ffffff;
+  /* padding: 2%; */
+  background-color: #30b88a;
   /* Example background color */
 }
 
 .contact-info {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -391,8 +404,9 @@ hr {
 }
 
 .contact-left h3 {
+  overflow-wrap: break-word;
   margin-bottom: 1em;
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 .contact-left img {
@@ -403,12 +417,14 @@ hr {
 }
 
 .contact-right {
-  /* flex: 2; */
+  margin: 0;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
 .contact-details p {
+  overflow-wrap: break-word;
   margin-bottom: 1em;
-  font-size: 1.5em;
 }
 
 /*Informations sectioner*/
@@ -498,24 +514,24 @@ hr {
 }
 
 #section1 {
-  background-image: url('images/IMG_2089.avif');
+  background-image: url('images/tinasbilledehest.avif');
 
 }
 
 #section2 {
-  background-image: url('images/IMG_2172.avif');
+  background-image: url('images/billedetinageder.avif');
 }
 
 #section3 {
-  background-image: url('images/IMG_2178.avif');
+  background-image: url('images/IMG_2491.avif');
 }
 
 #section4 {
-  background-image: url('images/IMG_2187.avif');
+  background-image: url('images/IMG_2352.avif');
 }
 
 #section5 {
-  background-image: url('images/IMG_2189.avif');
+  background-image: url('images/IMG_2309.avif');
 }
 
 
@@ -775,6 +791,7 @@ hr {
   background-color: #8EA95D;
   display: flex;
   width: 100%;
+  color: #ffffff;
 }
 
 .footer-1 {
@@ -803,13 +820,15 @@ hr {
 }
 
 .footer-2 {
+  height: 100%;
   width: 33%;
   text-align: center;
   flex-direction: column;
 
 }
 
-.footer-info {}
+.footer-info {
+}
 
 .footer-info h1 {
   text-align: center;
@@ -824,13 +843,25 @@ hr {
   word-wrap: break-word;
 
 }
-
+.footer-sponsor{
+/* margin-top: 5em; */
+/* margin: 2em; */
+/* width: 100%; */
+/* height: 100%; */
+}
+.footer-sponsor img{
+margin: 1em;
+width: 100px;
+}
 
 .footer-3 {
   width: 33%;
 }
 
 .footer-kontakt {
+  word-wrap: break-word;
+  font-size: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
