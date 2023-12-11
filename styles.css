@@ -33,6 +33,8 @@ a {
   text-transform: none;
 }
 
+button
+
 
 
 
@@ -442,7 +444,7 @@ hr {
 .streg {
   background-color: rgba(142, 169, 93, 1);
   width: 2vw;
-  height: 100vw;
+  height: 1000vw;
   border-style: solid;
   border-color: rgba(142, 169, 93, 1);
   border-width: 3px;
@@ -451,31 +453,194 @@ hr {
   left: 48.3vw;
   z-index: 2;
 }
+/*  */
+#et{
+  background-color: rgba(142, 169, 93, 1);
+  border: solid rgba(142, 169, 93, 1);
+  border-radius:30px;
+  color:white;
+  border-radius:30px;
+  margin-bottom: 3%;
+  transition-duration: 350ms;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 3%;
+  font-family: Arvo;
+  font-size: 3vw;
+  text-align: center;
+  width: 7%;
+  text-transform: uppercase;
+  line-height: 30px;
 
+  position:relative;
+  top:-1040vw;
+  left:43.5vw;
+  z-index: 3;
+}
+#to{
+  background-color: rgba(142, 169, 93, 1);
+  border: solid rgba(142, 169, 93, 1);
+  border-radius:30px;
+  color:white;
+  border-radius:30px;
+  margin-bottom: 3%;
+  transition-duration: 350ms;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 3%;
+  font-family: Arvo;
+  font-size: 3vw;
+  text-align: center;
+  width: 7%;
+  text-transform: uppercase;
+  line-height: 30px;
+
+  position:relative;
+  top:-1035vw;
+  left:43.5vw;
+  z-index: 3;
+}
+#tre{
+  background-color: rgba(142, 169, 93, 1);
+  border: solid rgba(142, 169, 93, 1);
+  border-radius:30px;
+  color:white;
+  border-radius:30px;
+  margin-bottom: 3%;
+  transition-duration: 350ms;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 3%;
+  font-family: Arvo;
+  font-size: 3vw;
+  text-align: center;
+  width: 7%;
+  text-transform: uppercase;
+  line-height: 30px;
+
+  position:relative;
+  top:-1110vw;
+  left:43.5vw;
+  z-index: 3;
+}
 /* sectioner i tidslinje */
-#første {
+#forste{
   display: block;
   justify-content: center;
   align-items: center;
   width: 40vw;
-  height: fit-content;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:15vw;
+  left:3vw;
+  z-index: 1;
+}
+#anden{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
   text-align: center;
   line-height: 25px;
   position: relative;
-  top: 15vw;
+  top:-1035vw;
+  left: 56vw;
   z-index: 1;
 }
+#tredje{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
 
-#anden {}
+  position: relative;
+  top:-1070vw;
+  left:3vw;
+  z-index: 1;
+}
+#fjerde{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
 
-#første p {
+  position: relative;
+  top:-1090vw;
+  left: 56vw;
+  z-index: 1;
+}
+#femte{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1145vw;
+  left:3vw;
+  z-index: 1;
+}
+#sjette{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1165vw;
+  left: 56vw;
+  z-index: 1;
+}
+#syvende{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1120vw;
+  left:3vw;
+  z-index: 1;
+}
+#historie p{
   text-align: center;
   width: 30vw;
   margin-left: auto;
   margin-right: auto;
 }
-
-.hisfoto {
+.læsom{
+  background-color: rgba(212, 152, 36, 1);
+  border: solid rgba(212, 152, 36, 1);
+  border-radius:30px;
+  line-height: 30px;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 3%;
+  text-transform: uppercase;
+  color: black;
+  font-family: Arvo;
+  font-size: 1vw;
+  margin-bottom: 3%;
+  width: 50%;
+  transition-duration: 350ms;
+}
+.hisfoto{
   width: 35vw;
   border-radius: 10px;
 }
@@ -527,16 +692,11 @@ hr {
 
 
 }
-
-.overlay {
-  /* content: ""; */
+.overlay{
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Adjust the opacity by changing the last value (0.5 in this case) */
   z-index: 10;
 }
 
@@ -561,6 +721,7 @@ hr {
 
 
 .describtion {
+  margin-top: 20%;
   color: aliceblue;
   font-family: inter;
   font-size: 1.2em;
@@ -581,6 +742,7 @@ hr {
   font-size: 1em !important;
 
 }
+
 
 .navigation a {
   text-decoration: none;
