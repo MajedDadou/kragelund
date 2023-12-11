@@ -467,30 +467,67 @@ hr {
 }
 
 /*Tidslinje*/
+#historie{
+  width: 100%;
+  height:1100px;
+}
+  /* div rundt om cirkel og streg */
+/*#figur{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}*/
 .cirkel{
   background-color: rgba(142, 169, 93, 1);
-  width: 200px;
-  height: 200px;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   border-style: solid;
   border-color:  rgba(142, 169, 93, 1);
   border-width: 3px;
   position: relative;
-  top: 2%;
-  left:20%;
-  z-index: 1;
+  top: -47vw;
+  left:44.3vw;
+  z-index: 2;
 }
 .streg{
   background-color: rgba(142, 169, 93, 1);
-  width: 30px;
-  height: 1000px;
+  width: 2vw;
+  height: 100vw;
   border-style: solid;
   border-color: rgba(142, 169, 93, 1);
   border-width: 3px;
   position: relative;
-  left:62%;
+  top:-50vw;
+  left:48.3vw;
+  z-index: 2;
 }
-
+/* sectioner i tidslinje */
+#første{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: fit-content;
+  text-align: center;
+  line-height: 25px;
+  position: relative;
+  top:15vw;
+  z-index: 1;
+}
+#anden{
+  
+}
+#første p{
+  text-align: center;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hisfoto{
+  width: 35vw;
+  border-radius: 10px;
+}
 
 .slide {
 
