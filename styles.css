@@ -625,15 +625,12 @@ hr {
 
 .shape-3 {
   border-right: 2px solid #7ECC4D;
-  width: 120%;
-}
-
-.shape-4 {
-  width: 120%;
 
 }
 
-.shape-6 {
+
+
+.shape-7 {
   border-right: none;
 }
 
@@ -646,6 +643,9 @@ hr {
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
 }
+.shape-4{
+width: 120%;
+}
 
 .tooltip {
   position: absolute;
@@ -653,7 +653,8 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000000;
-  font-size: 18px;
+  font-size: 3vh;
+  font-family: 'Arvo', serif;
   z-index: 2;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
