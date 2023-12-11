@@ -7,10 +7,16 @@ body {
 /*Tekst på sitet*/
 h1 {
   font-family: Arvo;
-  /* font-size: 60px; */
+  font-size: 60px; 
   text-align: center;
 }
-h4{
+h2 {
+  font-family: Arvo;
+  font-size: 40px; 
+  text-align: center;
+}
+
+h4 {
   font-family: Arvo;
   font-size: 36px;
   text-align: center;
@@ -23,15 +29,12 @@ p {
   line-height: 40px;
 }
 
-a{
+a {
   text-transform: none;
 }
 
 
 
-header {
-  background-color: #333;
-}
 
 main {
   background-color: #FF9058;
@@ -57,7 +60,9 @@ footer {
 
 
 
-.color-frontpage {}
+.color-frontpage {
+  z-index: 2000;
+}
 
 #sidebar {
   position: fixed;
@@ -169,95 +174,11 @@ footer {
 
 
 
-.container-menu {
-
-  background-color: white;
-  height: 100vh;
-  position: relative;
-  width: 100%;
-}
-
-.spider-web {
-  background-color: rgb(148, 148, 252);
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-}
-
-
-.link {
-  /* padding: 5em; */
-  background-color: #30b88a;
-  border: black 1px solid;
-  position: absolute;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: #333;
-  transition: all 0.3s ease;
-}
-
-
 
 
 hr {
 
-  border: 1px solid black;
-}
-
-.link-1 {
-  box-sizing: border-box;
-  border-radius: 30% 70% 50% 30% / 30% 40% 60% 20%;
-  padding-left: 20px;
-  /* top: 0; */
-  /* left: 50%; */
-}
-
-.link-2 {
-
-  top: 25%;
-  left: 85%;
-}
-
-.link-3 {
-  bottom: 0;
-  left: 50%;
-}
-
-.link-4 {
-  top: 25%;
-  left: 15%;
-}
-
-.link-5 {
-  top: 75%;
-  left: 85%;
-}
-
-.link-6 {
-  top: 75%;
-  left: 15%;
-}
-
-
-.logo-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  /* Place the logo above the links */
-}
-
-.logo-center img {
-  /* background-color: #f0f0f0; */
-  max-width: 200px;
-  /* Adjust the size of your logo */
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  border: px solid black;
 }
 
 
@@ -271,6 +192,7 @@ hr {
 .welcome-text {
   overflow-wrap: break-word;
   font-family: 'Arvo', serif;
+  font-size: 3vw;
   /* font-size: 4rem; */
   font-weight: normal;
   text-align: center;
@@ -280,17 +202,20 @@ hr {
 .bold-title {
   text-align: center;
   font-family: 'Arvo', serif;
-  font-weight: 700;
+  font-weight: bold;
+  /* font-size: 96px; */
   text-align: center;
   margin-bottom: 1.2em;
 }
 
 .description {
   font-family: 'Inter', sans-serif;
+  /* font-size: 32px; */
   line-height: 2.5em;
   text-align: center;
   margin: 0 10%;
   margin-bottom: 30px;
+
 }
 
 
@@ -445,22 +370,24 @@ hr {
 }
 
 /*Informations sectioner*/
-.info{
+.info {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.billede{
+
+.billede {
   width: 50%;
   margin-left: 7%;
 }
-.tekst{
+
+.tekst {
   width: 50%;
   margin-right: 7%;
 }
 
 /*Lokal menu*/
-.lokalmenu{
+.lokalmenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -468,46 +395,51 @@ hr {
   padding-left: 10%;
   padding-right: 10%;
 }
-.lokalmenu a{
+
+.lokalmenu a {
   text-decoration: none;
   color: black;
 }
-.ikontekst{
+
+.ikontekst {
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.ikon{
+
+.ikon {
   margin-top: 10%;
   margin-bottom: -20%;
 }
 
 /*Tidslinje*/
-#historie{
+#historie {
   width: 100%;
-  height:1100px;
+  height: 1100px;
 }
-  /* div rundt om cirkel og streg */
+
+/* div rundt om cirkel og streg */
 /*#figur{
   display: block;
   justify-content: center;
   align-items: center;
 }*/
-.cirkel{
+.cirkel {
   background-color: rgba(142, 169, 93, 1);
   width: 10vw;
   height: 10vw;
   border-radius: 50%;
   border-style: solid;
-  border-color:  rgba(142, 169, 93, 1);
+  border-color: rgba(142, 169, 93, 1);
   border-width: 3px;
   position: relative;
   top: -47vw;
-  left:44.3vw;
+  left: 44.3vw;
   z-index: 2;
 }
-.streg{
+
+.streg {
   background-color: rgba(142, 169, 93, 1);
   width: 2vw;
   height: 1000vw;
@@ -515,8 +447,8 @@ hr {
   border-color: rgba(142, 169, 93, 1);
   border-width: 3px;
   position: relative;
-  top:-50vw;
-  left:48.3vw;
+  top: -50vw;
+  left: 48.3vw;
   z-index: 2;
 }
 /*  */
@@ -718,22 +650,12 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  /* background-color: rgb(0, 0, 0); */
 }
 
-#section1,
-#section2,
-#section3,
-#section4,
-#section5 {
-  /* background-size: 65vh; */
-  /* background-position: 50% 80%; */
-
-
-}
 
 #section1 {
   background-image: url('images/tinasbilledehest.avif');
+  z-index: 0;
 
 }
 
@@ -754,6 +676,7 @@ hr {
 }
 
 
+
 #upper-nav {
   display: none;
 }
@@ -763,9 +686,21 @@ hr {
   top: 50%;
   margin-top: -315px;
   text-align: center;
-  z-index: 2;
+  z-index: 20;
 
 
+}
+
+.overlay {
+  /* content: ""; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity by changing the last value (0.5 in this case) */
+  z-index: 10;
 }
 
 .model-name {
@@ -777,16 +712,27 @@ hr {
 
 }
 
+.year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+
+
 .describtion {
   color: aliceblue;
   font-family: inter;
-  text-align: center;
   font-size: 1.2em;
-  width: 30%;
+
 }
+
 .navigation li {
 
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   display: block;
   padding: 0 10px;
   font-family: 'Inter', sans-serif;
@@ -805,7 +751,7 @@ hr {
 
 /*Hover*/
 .navigation li.light-menu {
-  border-bottom: 0.1em solid #252525;
+  border-bottom: 0.1em solid #ffffff;
 
 }
 
@@ -819,22 +765,19 @@ hr {
 /* Apply styles to the container of the background shapes */
 .background-shapes {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
   align-items: center;
   overflow: hidden;
-  height: 100%;
+  height: 100vh;
   position: relative;
   width: 100%;
 }
 
-/* Define shape styles */
 .shape {
+  border-right: 2px solid #7ECC4D;
+
   position: relative;
-  width: 100vw;
-  /* Adjust the width of the shapes */
+  width: 100%;
   height: 100vh;
-  /* Adjust the height of the shapes */
   overflow: hidden;
   z-index: 0;
   display: flex;
@@ -843,7 +786,20 @@ hr {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Define hover effect for the shapes */
+.shape-3 {
+  border-right: 2px solid #7ECC4D;
+  width: 120%;
+}
+
+.shape-4 {
+  width: 120%;
+
+}
+
+.shape-6 {
+  border-right: none;
+}
+
 .shape:hover::before {
   content: '';
   position: absolute;
@@ -854,7 +810,6 @@ hr {
   opacity: 1;
 }
 
-/* Style for tooltip text */
 .tooltip {
   position: absolute;
   top: 50%;
@@ -863,41 +818,82 @@ hr {
   color: #000000;
   font-size: 18px;
   z-index: 2;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Show tooltip on hover */
-.shape:hover .tooltip {
-  opacity: 1;
-}
-
-/* Display logo in the center */
 .circle-logo {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
+  z-index: 0;
 }
 
-/* Style for the logo */
 .circle-logo img {
-  max-width: 100px;
-  /* Adjust the size of the logo */
+  max-width: 50vw;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* Define styles for the shapes' background images */
+/* Hide images by default */
+.image {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Display images on hover */
+.shape:hover .image {
+  opacity: 1;
+}
+
+.image-1 {
+
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('images/IMG_2089.avif');
+
+}
+
+.image-2 {
+  background-image: url('images/IMG_2118.avif');
+}
+
+.image-3 {
+  background-image: url('images/IMG_2491.avif');
+
+}
+
+.image-4 {
+  background-image: url('images/IMG_2205.avif');
+
+}
+
+.image-5 {
+  background-image: url('images/IMG_2187.avif');
+
+}
+
+.image-6 {
+  background-image: url('images/IMG_2172.avif');
+
+}
+
 
 
 
 
 /* Define styles for the shapes' background images */
 .shape-1::after {
-  content: url('images/IMG_2089.avif');
   /* Specify the image URL */
   position: absolute;
 
@@ -910,96 +906,11 @@ hr {
 
 .shape-1::before {
   opacity: 0;
+  content: url('images/IMG_2089.avif');
+
 }
 
-.shape-2::before {
-  content: url('images/IMG_2172.avif');
-  /* Specify the image URL */
-  position: absolute;
 
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.shape-3::before {
-  content: url('images/IMG_2178.avif');
-  /* Specify the image URL */
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.5;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.shape-4::before {
-  content: url('images/IMG_2187.avif');
-  /* Specify the image URL */
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.5;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.shape-5::before {
-  content: url('images/IMG_2189.avif');
-  /* Specify the image URL */
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.5;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.shape-6::before {
-  content: url('images/IMG_2213.avif');
-  /* Specify the image URL */
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.5;
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Show background image on hover */
-.shape-1:hover::before {
-  opacity: 0;
-}
-
-.shape-2:hover::before {
-  opacity: 0;
-}
-
-.shape-3:hover::before {
-  opacity: 0;
-}
-
-.shape-4:hover::before {
-  opacity: 0;
-}
-
-.shape-5:hover::before {
-  opacity: 0;
-}
-
-.shape-6:hover::before {
-  opacity: 0;
-}
 
 /* Define similar styles for other shapes (.shape-2, .shape-3, etc.) */
 /* ... */
