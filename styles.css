@@ -524,6 +524,55 @@ hr {
   left:43.5vw;
   z-index: 3;
 }
+#fire{
+  background-color: rgba(142, 169, 93, 1);
+  border: solid rgba(142, 169, 93, 1);
+  border-radius:30px;
+  color:white;
+  border-radius:30px;
+  margin-bottom: 3%;
+  transition-duration: 350ms;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 3%;
+  font-family: Arvo;
+  font-size: 3vw;
+  text-align: center;
+  width: 7%;
+  text-transform: uppercase;
+  line-height: 30px;
+
+  position:relative;
+  top:-1250vw;
+  left:43.5vw;
+  z-index: 3;
+}
+#fem{
+  background-color: rgba(142, 169, 93, 1);
+  border: solid rgba(142, 169, 93, 1);
+  border-radius:30px;
+  color:white;
+  border-radius:30px;
+  margin-bottom: 3%;
+  transition-duration: 350ms;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 3%;
+  font-family: Arvo;
+  font-size: 3vw;
+  text-align: center;
+  width: 7%;
+  text-transform: uppercase;
+  line-height: 30px;
+
+  position:relative;
+  top:-1320vw;
+  left:43.5vw;
+  z-index: 3;
+}
+
 /* sectioner i tidslinje */
 #forste{
   display: block;
@@ -611,7 +660,72 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1120vw;
+  top:-1190vw;
+  left:3vw;
+  z-index: 1;
+}
+#ottende{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1225vw;
+  left: 56vw;
+  z-index: 1;
+}
+#niende{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1260vw;
+  left:3vw;
+  z-index: 1;
+}
+#tiende{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1295vw;
+  left: 56vw;
+  z-index: 1;
+}
+#elte{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1300vw;
+  left: 56vw;
+  z-index: 1;
+}
+#tolvte{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1320vw;
   left:3vw;
   z-index: 1;
 }
