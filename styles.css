@@ -3,6 +3,19 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/*Tekst på sitet*/
+h1{
+  font-family: Arvo;
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+p{
+  font-family: Inter;
+  font-size:18px;
+  text-align: left;
+  
+}
 
 
 /**************** nav *************/
