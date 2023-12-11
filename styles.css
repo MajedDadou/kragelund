@@ -937,6 +937,8 @@ hr {
   height: 100vh;
   position: relative;
   width: 100%;
+  justify-content: space-between; /* Ensures the shapes are evenly distributed */
+
 }
 
 .shape {
@@ -951,7 +953,24 @@ hr {
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out; /* Added transition for width */
+
+  
 }
+.shape:hover {
+  width: calc(200% + 8px); /* Expand the width of the hovered shape */
+  border-right: 2px solid transparent; /* Hide the border on the expanded shape */
+  z-index: 1; /* Ensure the hovered shape is on top */
+}
+
+.shape:not(:hover) {
+  width: calc(60% - 8px); /* Collapse the width of other shapes */
+  border-right: 2px solid #7ECC4D; /* Restore border color for other shapes */
+}
+.shape:hover .tooltip{
+color: white;
+}
+
 
 .shape-3 {
   border-right: 2px solid #7ECC4D;
@@ -1054,6 +1073,9 @@ width: 120%;
 .image-6 {
   background-image: url('images/IMG_2172.avif');
 
+}
+.image-7 {
+  background-image: url('images/IMG_2124.avif');
 }
 
 
