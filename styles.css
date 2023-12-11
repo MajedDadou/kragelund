@@ -515,11 +515,20 @@ hr {
   top: 50%;
   margin-top: -315px;
   text-align: center;
-  z-index: 2;
+  z-index: 20;
 
 
 }
-
+.overlay{
+  /* content: ""; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by changing the last value (0.5 in this case) */
+  z-index: 10;
+}
 .model-name {
   padding-top: 0.3em;
   color: rgb(255, 255, 255);
