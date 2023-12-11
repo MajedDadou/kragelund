@@ -5,28 +5,37 @@ body {
 }
 
 /*Tekst på sitet*/
-h1{
+h1 {
   font-family: Arvo;
-  font-size: 60px;
+  /* font-size: 60px; */
   text-align: center;
   padding-bottom: 5%;
 }
-p{
+
+p {
   font-family: Inter;
-  font-size:18px;
+  font-size: 18px;
   text-align: left;
-  
+
 }
 
-header{
-background-color: #333;
+
+
+header {
+  background-color: #333;
 }
-main{
-background-color: #FF9058;
+
+main {
+  background-color: #FF9058;
 }
-footer{
-background-color: aqua;
+
+footer {
+  background-color: aqua;
 }
+
+
+
+
 
 /**************** nav *************/
 .color-frontpage #sidebar {
@@ -161,6 +170,7 @@ background-color: aqua;
 }
 
 .spider-web {
+  background-color: rgb(148, 148, 252);
   position: relative;
   width: 100%;
   height: 100%;
@@ -169,12 +179,15 @@ background-color: aqua;
   justify-content: center;
 }
 
+
 .link {
+  /* padding: 5em; */
+  background-color: #30b88a;
   border: black 1px solid;
   position: absolute;
+  box-sizing: border-box;
   text-decoration: none;
   color: #333;
-  /* border-radius: 50%; */
   transition: all 0.3s ease;
 }
 
@@ -187,11 +200,15 @@ hr {
 }
 
 .link-1 {
-  top: 0;
-  left: 50%;
+  box-sizing: border-box;
+  border-radius: 30% 70% 50% 30% / 30% 40% 60% 20%;
+  padding-left: 20px;
+  /* top: 0; */
+  /* left: 50%; */
 }
 
 .link-2 {
+
   top: 25%;
   left: 85%;
 }
@@ -246,7 +263,7 @@ hr {
 .welcome-text {
   overflow-wrap: break-word;
   font-family: 'Arvo', serif;
-  /* font-size: 4em; */
+  /* font-size: 4rem; */
   font-weight: normal;
   text-align: center;
   margin-bottom: 10px;
@@ -374,7 +391,7 @@ hr {
 
 /* contact section in front page */
 .contact-section {
-  
+
   width: 100%;
   /* Adjust max-width as needed */
   margin: 0 auto;
@@ -782,8 +799,7 @@ hr {
 
 }
 
-.footer-info {
-}
+.footer-info {}
 
 .footer-info h1 {
   text-align: center;
@@ -798,15 +814,17 @@ hr {
   word-wrap: break-word;
 
 }
-.footer-sponsor{
-/* margin-top: 5em; */
-/* margin: 2em; */
-/* width: 100%; */
-/* height: 100%; */
+
+.footer-sponsor {
+  /* margin-top: 5em; */
+  /* margin: 2em; */
+  /* width: 100%; */
+  /* height: 100%; */
 }
-.footer-sponsor img{
-margin: 1em;
-width: 100px;
+
+.footer-sponsor img {
+  margin: 1em;
+  width: 100px;
 }
 
 .footer-3 {
