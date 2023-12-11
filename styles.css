@@ -16,9 +16,7 @@ body {
 
 
 
-.color-frontpage {
-
-}
+.color-frontpage {}
 
 #sidebar {
   position: fixed;
@@ -62,9 +60,9 @@ body {
 /* --------Links style------ */
 .link-style {
   background-image: linear-gradient(to right,
-          #ffffff,
-          #ffffff 50%,
-          #000000 50%);
+      #ffffff,
+      #ffffff 50%,
+      #000000 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -157,7 +155,7 @@ body {
 }
 
 hr {
- 
+
   border: 1px solid black;
 }
 
@@ -265,7 +263,8 @@ hr {
 }
 
 .image-card {
-  width: calc(25% - 20px); /* Adjust the width of each image card */
+  width: calc(25% - 20px);
+  /* Adjust the width of each image card */
   padding-bottom: 2em;
   margin-bottom: 4em;
   perspective: 1000px;
@@ -290,7 +289,8 @@ hr {
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
-.flip-card-back{
+
+.flip-card-back {
   top: 0;
   width: 100%;
   height: 100%;
@@ -298,8 +298,8 @@ hr {
   backface-visibility: hidden;
 
 }
-.flip-card-front
-{
+
+.flip-card-front {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -327,17 +327,20 @@ hr {
   text-align: center;
   margin-bottom: 10px;
 }
+
 /* Initially hide elements with the "fade-in" class */
 .fade-in {
   opacity: 0;
-  transform: translateY(50px); /* Initially move the elements down by a smaller distance */
+  transform: translateY(50px);
+  /* Initially move the elements down by a smaller distance */
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 /* class to fly in the elements when they come into view */
 .fade-in.active {
   opacity: 1;
-  transform: translateY(0); /* Move elements to their original position */
+  transform: translateY(0);
+  /* Move elements to their original position */
 }
 
 
@@ -345,10 +348,12 @@ hr {
 
 /* contact section in front page */
 .contact-section {
-  max-width: 100%; /* Adjust max-width as needed */
+  max-width: 100%;
+  /* Adjust max-width as needed */
   margin: 0 auto;
   padding: 2%;
-  background-color: #ffffff; /* Example background color */
+  background-color: #ffffff;
+  /* Example background color */
 }
 
 .contact-info {
@@ -370,7 +375,8 @@ hr {
 }
 
 .contact-left img {
-  max-width: 20%; /* Adjust the size of the icon */
+  max-width: 20%;
+  /* Adjust the size of the icon */
   display: block;
   margin-bottom: 5%;
 }
@@ -531,8 +537,10 @@ hr {
 /* Define shape styles */
 .shape {
   position: relative;
-  width: 100vw; /* Adjust the width of the shapes */
-  height: 100vh; /* Adjust the height of the shapes */
+  width: 100vw;
+  /* Adjust the width of the shapes */
+  height: 100vh;
+  /* Adjust the height of the shapes */
   overflow: hidden;
   z-index: 0;
   display: flex;
@@ -581,7 +589,8 @@ hr {
 
 /* Style for the logo */
 .circle-logo img {
-  max-width: 100px; /* Adjust the size of the logo */
+  max-width: 100px;
+  /* Adjust the size of the logo */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -594,7 +603,8 @@ hr {
 
 /* Define styles for the shapes' background images */
 .shape-1::after {
-  content: url('images/IMG_2089.avif'); /* Specify the image URL */
+  content: url('images/IMG_2089.avif');
+  /* Specify the image URL */
   position: absolute;
 
   top: 0;
@@ -603,11 +613,14 @@ hr {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
-.shape-1::before{
+
+.shape-1::before {
   opacity: 0;
 }
+
 .shape-2::before {
-  content: url('images/IMG_2172.avif'); /* Specify the image URL */
+  content: url('images/IMG_2172.avif');
+  /* Specify the image URL */
   position: absolute;
 
   top: 0;
@@ -616,8 +629,10 @@ hr {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
+
 .shape-3::before {
-  content: url('images/IMG_2178.avif'); /* Specify the image URL */
+  content: url('images/IMG_2178.avif');
+  /* Specify the image URL */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -627,8 +642,10 @@ hr {
   opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
 }
+
 .shape-4::before {
-  content: url('images/IMG_2187.avif'); /* Specify the image URL */
+  content: url('images/IMG_2187.avif');
+  /* Specify the image URL */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -638,8 +655,10 @@ hr {
   opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
 }
+
 .shape-5::before {
-  content: url('images/IMG_2189.avif'); /* Specify the image URL */
+  content: url('images/IMG_2189.avif');
+  /* Specify the image URL */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -649,8 +668,10 @@ hr {
   opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
 }
+
 .shape-6::before {
-  content: url('images/IMG_2213.avif'); /* Specify the image URL */
+  content: url('images/IMG_2213.avif');
+  /* Specify the image URL */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -665,72 +686,81 @@ hr {
 .shape-1:hover::before {
   opacity: 0;
 }
+
 .shape-2:hover::before {
   opacity: 0;
 }
+
 .shape-3:hover::before {
   opacity: 0;
 }
+
 .shape-4:hover::before {
   opacity: 0;
 }
+
 .shape-5:hover::before {
   opacity: 0;
 }
+
 .shape-6:hover::before {
   opacity: 0;
 }
+
 /* Define similar styles for other shapes (.shape-2, .shape-3, etc.) */
 /* ... */
 
 
 
 /* ---------Footer-------- */
-.footer-holder{
+.footer-holder {
   background-color: #8EA95D;
   display: flex;
   width: 100%;
 }
-.footer-1{
+
+.footer-1 {
   width: 33%;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   display: flex;
   /* align-items: center;
   justify-content: center; */
 }
-.footer-menu{
+
+.footer-menu {
   display: flex;
 
-  flex-wrap: wrap; 
-  width: 5%;
+  flex-direction: column;
   margin: 1em;
-}
-.footer-social{
-  width: 100%;
- margin: 1em; 
-}
-.footer-social a{
-  margin: 1em;
-  
 }
 
-.footer-2{
+.footer-social {
+  width: 100%;
+  margin: 1em;
+}
+
+.footer-social a {
+  margin: 1em;
+
+}
+
+.footer-2 {
   width: 33%;
+  text-align: center;
+  flex-direction: column;
+
+}
+
+.footer-info {}
+
+.footer-info h1 {
   text-align: center;
 }
 
-.footer-info{
-margin-right: 10em;
-margin-left: 10em;
-  
-}
-.footer-info h1{
-text-align: center;
-}
-.footer-info h3{
+.footer-info h3 {
   justify-content: center;
   /* display: flex; */
-/* width: 20%; */
+  /* width: 20%; */
   text-align: center;
 
   word-wrap: break-word;
@@ -738,6 +768,11 @@ text-align: center;
 }
 
 
-.footer-3{
+.footer-3 {
   width: 33%;
+}
+
+.footer-kontakt {
+  display: flex;
+  flex-direction: column;
 }
