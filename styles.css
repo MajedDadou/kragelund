@@ -579,6 +579,7 @@ hr {
   color: aliceblue;
   font-family: inter;
   text-align: center;
+  justify-content: center;
   font-size: 1.2em;
   width: 30%;
 }
