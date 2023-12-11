@@ -420,13 +420,6 @@ hr {
   width: 100%;
   height: 1100px;
 }
-
-/* div rundt om cirkel og streg */
-/*#figur{
-  display: block;
-  justify-content: center;
-  align-items: center;
-}*/
 .cirkel {
   background-color: rgba(142, 169, 93, 1);
   width: 10vw;
@@ -440,11 +433,10 @@ hr {
   left: 44.3vw;
   z-index: 2;
 }
-
 .streg {
   background-color: rgba(142, 169, 93, 1);
   width: 2vw;
-  height: 1000vw;
+  height: 600vw;
   border-style: solid;
   border-color: rgba(142, 169, 93, 1);
   border-width: 3px;
@@ -453,7 +445,8 @@ hr {
   left: 48.3vw;
   z-index: 2;
 }
-/*  */
+
+  /* Aarti tekst bokse */
 #et{
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
@@ -574,8 +567,56 @@ hr {
   left:43.5vw;
   z-index: 3;
 }
+#seks{
+  background-color: rgba(142, 169, 93, 1);
+  border: solid rgba(142, 169, 93, 1);
+  border-radius:30px;
+  color:white;
+  border-radius:30px;
+  margin-bottom: 3%;
+  transition-duration: 350ms;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 3%;
+  font-family: Arvo;
+  font-size: 3vw;
+  text-align: center;
+  width: 7%;
+  text-transform: uppercase;
+  line-height: 30px;
 
-/* sectioner i tidslinje */
+  position:relative;
+  top:-1390vw;
+  left:43.5vw;
+  z-index: 3;
+}
+#syv{
+  background-color: rgba(142, 169, 93, 1);
+  border: solid rgba(142, 169, 93, 1);
+  border-radius:30px;
+  color:white;
+  border-radius:30px;
+  margin-bottom: 3%;
+  transition-duration: 350ms;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 3%;
+  font-family: Arvo;
+  font-size: 3vw;
+  text-align: center;
+  width: 7%;
+  text-transform: uppercase;
+  line-height: 30px;
+
+  position:relative;
+  top:-1405vw;
+  left:43.5vw;
+  z-index: 3;
+}
+
+  /* sectioner i tidslinje */
 #forste{
   display: block;
   justify-content: center;
@@ -597,7 +638,7 @@ hr {
   text-align: center;
   line-height: 25px;
   position: relative;
-  top:-1035vw;
+  top:-640vw;
   left: 56vw;
   z-index: 1;
 }
@@ -610,7 +651,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1070vw;
+  top:-675vw;
   left:3vw;
   z-index: 1;
 }
@@ -623,7 +664,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1090vw;
+  top:-700vw;
   left: 56vw;
   z-index: 1;
 }
@@ -636,7 +677,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1145vw;
+  top:-750vw;
   left:3vw;
   z-index: 1;
 }
@@ -649,7 +690,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1165vw;
+  top:-780vw;
   left: 56vw;
   z-index: 1;
 }
@@ -662,7 +703,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1190vw;
+  top:-800vw;
   left:3vw;
   z-index: 1;
 }
@@ -675,7 +716,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1225vw;
+  top:-840vw;
   left: 56vw;
   z-index: 1;
 }
@@ -688,7 +729,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1260vw;
+  top:-870vw;
   left:3vw;
   z-index: 1;
 }
@@ -701,7 +742,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1295vw;
+  top:-910vw;
   left: 56vw;
   z-index: 1;
 }
@@ -714,7 +755,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1300vw;
+  top:-915vw;
   left: 56vw;
   z-index: 1;
 }
@@ -727,16 +768,83 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1320vw;
+  top:-980vw;
   left:3vw;
   z-index: 1;
 }
+#trettende{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-955vw;
+  left: 56vw;
+  z-index: 1;
+}
+#fjordende{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1045vw;
+  left:3vw;
+  z-index: 1;
+}
+#femtende{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1020vw;
+  left: 56vw;
+  z-index: 1;
+}
+#sekstende{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1115vw;
+  left:3vw;
+  z-index: 1;
+}
+#syttende{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  text-align: center;
+  line-height: 25px;
+
+  position: relative;
+  top:-1100vw;
+  left:3vw;
+  z-index: 1;
+}
+  /* tekst til kort */
 #historie p{
   text-align: center;
   width: 30vw;
   margin-left: auto;
   margin-right: auto;
 }
+  /* læs mere om knapper (CTA) til kort */
 .læsom{
   background-color: rgba(212, 152, 36, 1);
   border: solid rgba(212, 152, 36, 1);
@@ -754,6 +862,7 @@ hr {
   width: 50%;
   transition-duration: 350ms;
 }
+  /* billeder til kort */
 .hisfoto{
   width: 35vw;
   border-radius: 10px;
