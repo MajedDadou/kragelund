@@ -291,6 +291,7 @@ hr {
   text-align: center;
   margin: 0 10%;
   margin-bottom: 30px;
+
 }
 
 
@@ -575,13 +576,22 @@ hr {
 
 }
 
+.year{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+
+
 .describtion {
   color: aliceblue;
   font-family: inter;
-  text-align: center;
-  justify-content: center;
   font-size: 1.2em;
-  width: 30%;
+  
 }
 .navigation li {
 
