@@ -28,11 +28,11 @@ document.addEventListener('scroll', function () {
           });
         }
 
-        // Set the color of current section's watch elements
-        var picElements = document.querySelectorAll('#pic' + i);
-        picElements.forEach(function (picElement) {
-          picElement.style.color = 'red';
-        });
+                // Set the color of current section's watch elements
+                var picElements = document.querySelectorAll('#pic' + i);
+                picElements.forEach(function (picElement) {
+                    picElement.style.color = '#D49824';
+                });
 
         break; // Exit the loop if a visible section is found
       }
