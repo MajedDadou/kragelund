@@ -7,7 +7,12 @@ body {
 /*Tekst på sitet*/
 h1 {
   font-family: Arvo;
-  /* font-size: 60px; */
+  font-size: 60px; 
+  text-align: center;
+}
+h2 {
+  font-family: Arvo;
+  font-size: 40px; 
   text-align: center;
 }
 h4{
@@ -548,7 +553,7 @@ hr {
 }
 .navigation li {
 
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   display: block;
   padding: 0 10px;
   font-family: 'Inter', sans-serif;
@@ -567,7 +572,7 @@ hr {
 
 /*Hover*/
 .navigation li.light-menu {
-  border-bottom: 0.1em solid #252525;
+  border-bottom: 0.1em solid #ffffff;
 
 }
 
