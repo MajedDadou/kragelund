@@ -4,6 +4,19 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/*Tekst på sitet*/
+h1{
+  font-family: Arvo;
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+p{
+  font-family: Inter;
+  font-size:18px;
+  text-align: left;
+  
+}
 
 header{
 background-color: #333;
@@ -434,24 +447,24 @@ hr {
 }
 
 #section1 {
-  background-image: url('images/IMG_2089.avif');
+  background-image: url('images/tinasbilledehest.avif');
 
 }
 
 #section2 {
-  background-image: url('images/IMG_2172.avif');
+  background-image: url('images/billedetinageder.avif');
 }
 
 #section3 {
-  background-image: url('images/IMG_2178.avif');
+  background-image: url('images/IMG_2491.avif');
 }
 
 #section4 {
-  background-image: url('images/IMG_2187.avif');
+  background-image: url('images/IMG_2352.avif');
 }
 
 #section5 {
-  background-image: url('images/IMG_2189.avif');
+  background-image: url('images/IMG_2309.avif');
 }
 
 
