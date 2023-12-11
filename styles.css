@@ -1,5 +1,4 @@
 body {
-
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -15,57 +14,38 @@ h2 {
   font-size: 40px; 
   text-align: center;
 }
-
 h4 {
   font-family: Arvo;
   font-size: 36px;
   text-align: center;
 }
-
 p {
   font-family: Inter;
   font-size: 18px;
   text-align: left;
   line-height: 40px;
 }
-
 a {
   text-transform: none;
 }
 
-button
-
-
-
-
 main {
   background-color: #FF9058;
 }
-
 footer {
   background-color: aqua;
 }
-
-
-
-
 
 /**************** nav *************/
 .color-frontpage #sidebar {
   background-color: #697c44;
 }
-
 .color-frontpage span {
   background-color: #ffffff;
 }
-
-
-
-
 .color-frontpage {
   z-index: 2000;
 }
-
 #sidebar {
   position: fixed;
   width: 300px;
@@ -76,7 +56,6 @@ footer {
   /* Add a higher z-index to make the text overlay above the menu */
 
 }
-
 #sidebar ul li {
   list-style: none;
   color: #fff;
@@ -84,13 +63,11 @@ footer {
   padding: 26px 24px;
   margin-bottom: 1.2rem;
 }
-
 #sidebar .toggle-btn {
   position: absolute;
   top: 30px;
   right: 330px;
 }
-
 .toggle-btn span {
   width: 45px;
   height: 4px;
@@ -98,7 +75,6 @@ footer {
   display: block;
   margin-top: 4px;
 }
-
 #sidebar.active {
   right: 0;
 }
@@ -123,7 +99,6 @@ footer {
   font-weight: 400;
   font-size: x-large
 }
-
 .link-style:before {
   content: '';
   background: #FF9058;
@@ -135,15 +110,12 @@ footer {
   height: 3px;
   transition: all 0.3s ease-in-out;
 }
-
 .link-style:hover {
   background-position: 0;
 }
-
 .link-style:hover::before {
   width: 100%;
 }
-
 
 /* nav content */
 #nav-content {
@@ -151,8 +123,6 @@ footer {
 
 
 }
-
-
 
 /* nav logo image */
 #logo-image {
@@ -173,19 +143,10 @@ footer {
 
 }
 
-
-
-
-
-
 hr {
 
   border: px solid black;
 }
-
-
-
-
 
 .intro-container {
   margin-top: 20%;
@@ -222,11 +183,6 @@ hr {
 
 
 /* card flipping section */
-
-
-
-
-
 .image-section {
   max-width: 100%;
   margin: 0 auto;
@@ -334,38 +290,32 @@ hr {
   background-color: #30b88a;
   /* Example background color */
 }
-
 .contact-info {
   align-items: center;
   justify-content: center;
 }
-
 .contact-left {
   display: flex;
   flex-direction: column;
   /* flex: 1; */
   /* text-align: center; */
 }
-
 .contact-left h3 {
   overflow-wrap: break-word;
   margin-bottom: 1em;
   /* font-size: 2em; */
 }
-
 .contact-left img {
   max-width: 20%;
   /* Adjust the size of the icon */
   display: block;
   margin-bottom: 5%;
 }
-
 .contact-right {
   margin: 0;
   width: 100%;
   overflow-wrap: break-word;
 }
-
 .contact-details p {
   overflow-wrap: break-word;
   margin-bottom: 1em;
@@ -377,12 +327,12 @@ hr {
   justify-content: center;
   align-items: center;
 }
-
+  /* Billede del */
 .billede {
   width: 50%;
   margin-left: 7%;
 }
-
+  /* Tekst del */
 .tekst {
   width: 50%;
   margin-right: 7%;
@@ -397,19 +347,16 @@ hr {
   padding-left: 10%;
   padding-right: 10%;
 }
-
 .lokalmenu a {
   text-decoration: none;
   color: black;
 }
-
 .ikontekst {
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
 .ikon {
   margin-top: 10%;
   margin-bottom: -20%;
@@ -445,7 +392,6 @@ hr {
   left: 48.3vw;
   z-index: 2;
 }
-
   /* Aarti tekst bokse */
 #et{
   background-color: rgba(142, 169, 93, 1);
@@ -615,7 +561,6 @@ hr {
   left:43.5vw;
   z-index: 3;
 }
-
   /* sectioner i tidslinje */
 #forste{
   display: block;
