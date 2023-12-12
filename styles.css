@@ -367,11 +367,16 @@ hr {
   display: block;
   justify-content: center;
   align-items: center;
-  text-align: center;
+}
+.holdertilp{
+  width:100%;
 }
 .infotop p{
- width:70vw;
- text-align: center;
+  width:70vw;
+  margin:auto;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  text-align: center;
 }
 .ikonmidt{
   margin-top: 5vw;
