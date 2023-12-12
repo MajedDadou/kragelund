@@ -1375,8 +1375,15 @@ hr {
   display: flex;
 
   flex-direction: column;
-  margin: 1em;
+  margin: 2em;
+  font-family: inter;
+
 }
+.footer-menu a{
+  color: white;
+  line-height: 3vh;
+}
+
 
 .footer-social {
   width: 100%;
@@ -1384,7 +1391,10 @@ hr {
 }
 
 .footer-social a {
+  color: white;
   margin: 1em;
+  font-size: 2em;
+
 
 }
 
@@ -1413,18 +1423,21 @@ hr {
 }
 
 .footer-title{
+  text-align: center;
   font-family: arvo;
   font-size: 3vh;
 }
 .footer-3 .footer-details{
-  font-family: arvo;
-  margin: 1%;
+  text-align: left;
+  font-family: inter;
+  margin: 1% 7% 1% 0;
   font-size: 2vh;
   word-wrap: break-word;
 
 }
 .footer-2 .footer-details{
-  font-family: arvo;
+  margin: 1% 5% ;
+  font-family: inter;
 
   text-align: center;
   font-size: 2vh;
@@ -1454,4 +1467,81 @@ hr {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+.row{
+  flex-direction: column;
+}
+
+
+  .footer-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+.footer-holder hr{
+  display: none;
+}
+
+
+  .footer-1,
+  .footer-2,
+  .footer-3 {
+   
+    text-align: center;
+    margin-bottom: 20px; /* Add some space between footer sections */
+  }
+
+  .footer-menu {
+    margin: 1em;
+  }
+
+  .footer-social {
+    margin: 1em;
+  }
+
+  .footer-info {
+    margin-bottom: 1em;
+  }
+
+  .footer-info,
+  .footer-sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-sponsor img {
+    margin: 10px;
+    max-width: 80%;
+  }
+
+  .footer-kontakt,
+  .footer-oplysninger {
+    margin-bottom: 1em;
+  }
+
+  .footer-details {
+    margin: 0.5em 0;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-card {
+    width: calc(100% );
+    /* Adjust the width of each image card for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens or mobile devices */
+@media screen and (max-width: 480px) {
+  .image-card {
+    width: calc(100%);
+    /* Adjust the width of each image card for mobile devices */
+  }
 }
