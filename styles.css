@@ -370,7 +370,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5%;
 }
 
 /* Billede del */
@@ -490,6 +489,7 @@ hr {
   top:0;
   z-index: 4;
 }
+
 .lokalmenu a {
   text-decoration: none;
   color: black;
@@ -504,6 +504,36 @@ hr {
   text-align: center;
 }
 .ikon {
+  margin-top: -1em;
+}
+  /* Kun på plantesiden, da den lokalemenu består af mange titler */
+#lokalmenuplanter{
+  display: flex;
+  height: 13vw;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(234, 211, 149, 1);
+  padding-left: 2em;
+  padding-right: 2em;
+  position: sticky;
+  top:0;
+  z-index: 4;
+}
+#lokalmenuplanter hr{
+  rotate: 90;
+  border: solid 0.05em black;
+  height: 5em;
+}
+#lokalmenuplanter a {
+  text-decoration: none;
+  color: black;
+}
+#lokalmenuplanter h4{
+  margin:-0.3em 0 0 0;
+  margin-bottom: -0.7em;
+  font-size: 1.2em;
+}
+#lokalmenuplanter .ikon{
   margin-top: -1em;
 }
 
