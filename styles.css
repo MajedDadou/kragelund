@@ -1409,6 +1409,26 @@ hr {
 
 }
 
+.footer-title{
+  font-family: arvo;
+  font-size: 3vh;
+}
+.footer-3 .footer-details{
+  font-family: arvo;
+  margin: 1%;
+  font-size: 2vh;
+  word-wrap: break-word;
+
+}
+.footer-2 .footer-details{
+  font-family: arvo;
+
+  text-align: center;
+  font-size: 2vh;
+
+}
+
+
 .footer-sponsor {
   /* margin-top: 5em; */
   /* margin: 2em; */
