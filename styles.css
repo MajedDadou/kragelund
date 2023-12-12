@@ -1,63 +1,71 @@
 body {
+
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
 
 /*Tekst på sitet*/
 h1 {
   font-family: Arvo;
   font-size: 60px; 
   text-align: center;
-  margin-bottom: 1vw;
 }
 h2 {
   font-family: Arvo;
   font-size: 40px; 
   text-align: center;
 }
+
 h4 {
   font-family: Arvo;
   font-size: 36px;
   text-align: center;
 }
-/* tekst med width på 1075px under eller over bredebilleder */
-h5{
-  font-family: Inter;
-  font-size: 22px;
-  text-align: center;
-  width: 1075px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 3vw;
-}
+
 p {
   font-family: Inter;
   font-size: 18px;
   text-align: left;
   line-height: 40px;
 }
+
 a {
   text-transform: none;
 }
 
+button
+
+
+
+
 main {
   background-color: #FF9058;
 }
+
 footer {
   background-color: aqua;
 }
+
+
+
+
 
 /**************** nav *************/
 .color-frontpage #sidebar {
   background-color: #697c44;
 }
+
 .color-frontpage span {
   background-color: #ffffff;
 }
+
+
+
+
 .color-frontpage {
   z-index: 2000;
 }
+
 #sidebar {
   position: fixed;
   width: 300px;
@@ -68,6 +76,7 @@ footer {
   /* Add a higher z-index to make the text overlay above the menu */
 
 }
+
 #sidebar ul li {
   list-style: none;
   color: #fff;
@@ -75,11 +84,13 @@ footer {
   padding: 26px 24px;
   margin-bottom: 1.2rem;
 }
+
 #sidebar .toggle-btn {
   position: absolute;
   top: 30px;
   right: 330px;
 }
+
 .toggle-btn span {
   width: 45px;
   height: 4px;
@@ -87,6 +98,7 @@ footer {
   display: block;
   margin-top: 4px;
 }
+
 #sidebar.active {
   right: 0;
 }
@@ -111,6 +123,7 @@ footer {
   font-weight: 400;
   font-size: x-large
 }
+
 .link-style:before {
   content: '';
   background: #FF9058;
@@ -122,12 +135,15 @@ footer {
   height: 3px;
   transition: all 0.3s ease-in-out;
 }
+
 .link-style:hover {
   background-position: 0;
 }
+
 .link-style:hover::before {
   width: 100%;
 }
+
 
 /* nav content */
 #nav-content {
@@ -135,6 +151,8 @@ footer {
 
 
 }
+
+
 
 /* nav logo image */
 #logo-image {
@@ -155,14 +173,17 @@ footer {
 
 }
 
+
+
+
+
+
 hr {
 
   border: px1 solid black;
 }
 
-.intro-container {
-  margin-top: 20%;
-}
+
 
 .welcome-text {
   overflow-wrap: break-word;
@@ -196,6 +217,11 @@ hr {
 
 
 /* card flipping section */
+
+
+
+
+
 .image-section {
   max-width: 100%;
   margin: 0 auto;
@@ -206,7 +232,6 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: em;
 }
 
 .image-card {
@@ -223,6 +248,8 @@ hr {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  font-family: 'Arvo', serif;
+  font-size: 3vh;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -295,121 +322,77 @@ hr {
 
 /* contact section in front page */
 .contact-section {
-
+  display: flex;
   width: 100%;
+ 
   /* Adjust max-width as needed */
   margin: 0 auto;
   /* padding: 2%; */
-  background-color: #30b88a;
+  
   /* Example background color */
 }
+
 .contact-info {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .contact-left {
-  display: flex;
-  flex-direction: column;
-  /* flex: 1; */
-  /* text-align: center; */
+
 }
+
 .contact-left h3 {
   overflow-wrap: break-word;
   margin-bottom: 1em;
   /* font-size: 2em; */
 }
+
 .contact-left img {
   max-width: 20%;
   /* Adjust the size of the icon */
   display: block;
   margin-bottom: 5%;
 }
+
 .contact-right {
   margin: 0;
   width: 100%;
   overflow-wrap: break-word;
 }
+
 .contact-details p {
   overflow-wrap: break-word;
   margin-bottom: 1em;
 }
 
+/* Tilbage knap på læs mere siderne */
+.tilbage{
+  display: flex;
+  justify-content: left;
+  font-size: 4vw;
+  padding-left: 5vw;
+}
+.tilbage a{
+  text-decoration: none;
+  color: black;
+}
+
 /*Informations sectioner*/
-  /* Info om os med billede til venstre og tekst til højre */
-#infoomos {
+.info {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-bottom: 5%;
 }
-    /* Billede del */
-#billedeomos {
-  width: 55%;
+
+.billede {
+  width: 50%;
   margin-left: 7%;
 }
-#infobilledeomos{
-  width: 45vw;
-  border-radius: 10px;
-}
-    /* Tekst del */
-#tekstomos {
-  width: 45%;
+
+.tekst {
+  width: 50%;
   margin-right: 7%;
-}
-  /* Info med tekst overskrift under eller over bredt billede */
-.infotop{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.ikonmidt{
-  margin-top: 5vw;
-  margin-bottom: -2vw;
-}
-.placeholder{
-  width: 100%;
-  height: 616px;
-  background-color: #30b88a;
-}
-  /* Info "et" med tekst til venstre og billede til højre */
-.infoet{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 2vw;
-}
-.tekstet{
-  width: 45%;
-  margin-left: 7%;
-}
-.billedeet{
-  width: 55%;
-  margin-right: 7%;
-}
-.infobilledeet{
-  border-radius: 10px;
-}
-  /* Info "to" med tekst til højre og billede til venstre */
-.infoto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2vw;
-}
-.tekstto{
-    width: 45%;
-    margin-right: 7%;
-}
-.billedeto{
-    width: 55%;
-    margin-left: 7%;
-}
-.infobilledeto{
-  border-radius: 10px;
 }
 
 /*Lokal menu*/
@@ -421,16 +404,19 @@ hr {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 .lokalmenu a {
   text-decoration: none;
   color: black;
 }
+
 .ikontekst {
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .ikon {
   margin-top: 10%;
   margin-bottom: -20%;
@@ -439,9 +425,16 @@ hr {
 /*Tidslinje*/
 #historie {
   width: 100%;
-  height: 625vw;
+  height: 1100px;
 }
-#startcirkel{
+
+/* div rundt om cirkel og streg */
+/*#figur{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}*/
+.cirkel {
   background-color: rgba(142, 169, 93, 1);
   width: 10vw;
   height: 10vw;
@@ -449,30 +442,16 @@ hr {
   border-style: solid;
   border-color: rgba(142, 169, 93, 1);
   border-width: 3px;
-
   position: relative;
   top: -47vw;
   left: 44.3vw;
   z-index: 2;
 }
-#slutcirkel{
-  background-color: rgba(142, 169, 93, 1);
-  width: 10vw;
-  height: 10vw;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: rgba(142, 169, 93, 1);
-  border-width: 3px;
 
-  position: relative;
-  top: -1095vw;
-  left: 44.3vw;
-  z-index: 2;
-}
-#streg {
+.streg {
   background-color: rgba(142, 169, 93, 1);
   width: 2vw;
-  height: 600vw;
+  height: 1000vw;
   border-style: solid;
   border-color: rgba(142, 169, 93, 1);
   border-width: 3px;
@@ -481,7 +460,7 @@ hr {
   left: 48.3vw;
   z-index: 2;
 }
-  /* Aarti tekst bokse */
+/*  */
 #et{
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
@@ -502,7 +481,7 @@ hr {
   line-height: 30px;
 
   position:relative;
-  top:-640vw;
+  top:-1040vw;
   left:43.5vw;
   z-index: 3;
 }
@@ -526,7 +505,7 @@ hr {
   line-height: 30px;
 
   position:relative;
-  top:-650vw;
+  top:-1035vw;
   left:43.5vw;
   z-index: 3;
 }
@@ -550,107 +529,11 @@ hr {
   line-height: 30px;
 
   position:relative;
-  top:-710vw;
+  top:-1110vw;
   left:43.5vw;
   z-index: 3;
 }
-#fire{
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position:relative;
-  top:-850vw;
-  left:43.5vw;
-  z-index: 3;
-}
-#fem{
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position:relative;
-  top:-930vw;
-  left:43.5vw;
-  z-index: 3;
-}
-#seks{
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position:relative;
-  top:-1080vw;
-  left:43.5vw;
-  z-index: 3;
-}
-#syv{
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position:relative;
-  top:-1090vw;
-  left:43.5vw;
-  z-index: 3;
-}
-  /* sectioner i tidslinje */
+/* sectioner i tidslinje */
 #forste{
   display: block;
   justify-content: center;
@@ -672,7 +555,7 @@ hr {
   text-align: center;
   line-height: 25px;
   position: relative;
-  top:-640vw;
+  top:-1035vw;
   left: 56vw;
   z-index: 1;
 }
@@ -685,7 +568,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-675vw;
+  top:-1070vw;
   left:3vw;
   z-index: 1;
 }
@@ -698,7 +581,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-700vw;
+  top:-1090vw;
   left: 56vw;
   z-index: 1;
 }
@@ -711,7 +594,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-750vw;
+  top:-1145vw;
   left:3vw;
   z-index: 1;
 }
@@ -724,7 +607,7 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-780vw;
+  top:-1165vw;
   left: 56vw;
   z-index: 1;
 }
@@ -737,148 +620,16 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-800vw;
+  top:-1120vw;
   left:3vw;
   z-index: 1;
 }
-#ottende{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-840vw;
-  left: 56vw;
-  z-index: 1;
-}
-#niende{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-870vw;
-  left:3vw;
-  z-index: 1;
-}
-#tiende{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-910vw;
-  left: 56vw;
-  z-index: 1;
-}
-#elte{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-915vw;
-  left: 56vw;
-  z-index: 1;
-}
-#tolvte{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-980vw;
-  left:3vw;
-  z-index: 1;
-}
-#trettende{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-955vw;
-  left: 56vw;
-  z-index: 1;
-}
-#fjordende{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-1045vw;
-  left:3vw;
-  z-index: 1;
-}
-#femtende{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-1020vw;
-  left: 56vw;
-  z-index: 1;
-}
-#sekstende{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-1115vw;
-  left:3vw;
-  z-index: 1;
-}
-#syttende{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
-  top:-1100vw;
-  left:3vw;
-  z-index: 1;
-}
-  /* tekst til kort */
 #historie p{
   text-align: center;
   width: 30vw;
   margin-left: auto;
   margin-right: auto;
 }
-  /* læs mere om knapper (CTA) til kort */
 .læsom{
   background-color: rgba(212, 152, 36, 1);
   border: solid rgba(212, 152, 36, 1);
@@ -896,14 +647,10 @@ hr {
   width: 50%;
   transition-duration: 350ms;
 }
-  /* billeder til kort */
 .hisfoto{
   width: 35vw;
   border-radius: 10px;
 }
-
-
-
 
 .slide {
 
@@ -1056,8 +803,6 @@ hr {
   height: 100vh;
   position: relative;
   width: 100%;
-  justify-content: space-between; /* Ensures the shapes are evenly distributed */
-
 }
 
 .shape {
@@ -1072,24 +817,7 @@ hr {
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out; /* Added transition for width */
-
-  
 }
-.shape:hover {
-  width: calc(200% + 8px); /* Expand the width of the hovered shape */
-  border-right: 2px solid transparent; /* Hide the border on the expanded shape */
-  z-index: 1; /* Ensure the hovered shape is on top */
-}
-
-.shape:not(:hover) {
-  width: calc(60% - 8px); /* Collapse the width of other shapes */
-  border-right: 2px solid #7ECC4D; /* Restore border color for other shapes */
-}
-.shape:hover .tooltip{
-color: white;
-}
-
 
 .shape-3 {
   border-right: 2px solid #7ECC4D;
@@ -1193,9 +921,6 @@ color: white;
   background-image: url('images/IMG_2172.avif');
 
 }
-.image-7 {
-  background-image: url('images/IMG_2124.avif');
-}
 
 
 
@@ -1227,12 +952,6 @@ color: white;
 
 
 /* ---------Footer-------- */
-  /* Deko */
-.footerdeko{
-  margin-bottom: -1vw;
-  width: 100%;
-}
-
 .footer-holder {
   background-color: #8EA95D;
   display: flex;
