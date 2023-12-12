@@ -180,7 +180,7 @@ footer {
 
 hr {
 
-  border: px solid black;
+  border: px1 solid black;
 }
 
 
@@ -206,13 +206,14 @@ hr {
   font-family: 'Arvo', serif;
   font-weight: bold;
   /* font-size: 96px; */
+  font-size: 12vh;
   text-align: center;
   margin-bottom: 1.2em;
 }
 
 .description {
   font-family: 'Inter', sans-serif;
-  /* font-size: 32px; */
+  font-size: 3vh;
   line-height: 2.5em;
   text-align: center;
   margin: 0 10%;
@@ -792,7 +793,7 @@ hr {
 
 
 
-.shape-7 {
+.shape-6 {
   border-right: none;
 }
 
@@ -805,18 +806,18 @@ hr {
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
 }
-.shape-4{
-width: 120%;
-}
+
 
 .tooltip {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #000000;
-  font-size: 3vh;
+  color: #90CA5F;
+  font-size: 3.5vh;
+  font-weight: bold;
   font-family: 'Arvo', serif;
+  
   z-index: 2;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
