@@ -1,0 +1,106 @@
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 7.0-c000 1.000000, 0000/00/00-00:00:00        ">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+    xmlns:aux="http://ns.adobe.com/exif/1.0/aux/"
+    xmlns:exifEX="http://cipa.jp/exif/1.0/"
+    xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+    xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+    xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+    xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:tiff="http://ns.adobe.com/tiff/1.0/"
+    xmlns:exif="http://ns.adobe.com/exif/1.0/"
+    xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
+   xmp:ModifyDate="2023-12-01T11:00:51+01:00"
+   xmp:CreateDate="2022-10-10T19:44:16.35"
+   xmp:CreatorTool="Adobe Lightroom 7.0 (Windows)"
+   xmp:MetadataDate="2023-12-11T20:23:24+01:00"
+   aux:SerialNumber="083073030292"
+   aux:LensInfo="18/1 55/1 0/0 0/0"
+   aux:Lens="EF-S18-55mm f/3.5-5.6 III"
+   aux:LensID="53"
+   aux:LensSerialNumber="00002227e2"
+   aux:ImageNumber="0"
+   aux:ApproximateFocusDistance="145/100"
+   aux:FlashCompensation="0/1"
+   aux:Firmware="1.0.0"
+   exifEX:LensModel="EF-S18-55mm f/3.5-5.6 III"
+   photoshop:DateCreated="2022-10-10T19:44:16.35"
+   photoshop:SidecarForExtension="AVIF"
+   photoshop:EmbeddedXMPDigest="FC4ECF4B71A99CDF10AF8AD1812D1D26"
+   xmpMM:DocumentID="xmp.did:97d07616-7806-9c4f-b1d3-6354cd705542"
+   xmpMM:OriginalDocumentID="979D99A02E21D458EDA317BB9B304159"
+   xmpMM:InstanceID="xmp.iid:5cd5925b-592d-4621-a464-966d8e4445fa"
+   dc:format="image/avif"
+   tiff:Make="Canon"
+   tiff:Model="Canon EOS 1200D"
+   tiff:Orientation="1"
+   exif:ExifVersion="0231"
+   exif:ExposureTime="1/60"
+   exif:ShutterSpeedValue="5906891/1000000"
+   exif:FNumber="63/10"
+   exif:ApertureValue="5310704/1000000"
+   exif:ExposureProgram="8"
+   exif:SensitivityType="2"
+   exif:RecommendedExposureIndex="100"
+   exif:ExposureBiasValue="0/1"
+   exif:MaxApertureValue="4375/1000"
+   exif:MeteringMode="5"
+   exif:FocalLength="35/1"
+   exif:CustomRendered="0"
+   exif:ExposureMode="0"
+   exif:WhiteBalance="0"
+   exif:SceneCaptureType="0"
+   exif:FocalPlaneXResolution="5184000/905"
+   exif:FocalPlaneYResolution="3456000/595"
+   exif:FocalPlaneResolutionUnit="2"
+   exif:DateTimeOriginal="2022-10-10T19:44:16.35"
+   crs:HasSettings="False"
+   crs:CropTop="0"
+   crs:CropLeft="0"
+   crs:CropBottom="1"
+   crs:CropRight="0.707983"
+   crs:CropAngle="0"
+   crs:CropConstrainToWarp="0"
+   crs:HasCrop="True"
+   crs:AlreadyApplied="False">
+   <xmpMM:History>
+    <rdf:Seq>
+     <rdf:li
+      stEvt:action="edited"
+      stEvt:when="2023-12-01T09:07:44Z"/>
+     <rdf:li
+      stEvt:action="derived"
+      stEvt:parameters="converted from image/x-canon-cr2 to image/avif, saved to new location"/>
+     <rdf:li
+      stEvt:action="saved"
+      stEvt:instanceID="xmp.iid:97d07616-7806-9c4f-b1d3-6354cd705542"
+      stEvt:when="2023-12-01T11:00:51+01:00"
+      stEvt:softwareAgent="Adobe Lightroom 7.0 (Windows)"
+      stEvt:changed="/"/>
+     <rdf:li
+      stEvt:action="saved"
+      stEvt:instanceID="xmp.iid:5cd5925b-592d-4621-a464-966d8e4445fa"
+      stEvt:when="2023-12-11T20:23:24+01:00"
+      stEvt:softwareAgent="Adobe Photoshop Camera Raw 15.5.1 (Macintosh)"
+      stEvt:changed="/metadata"/>
+    </rdf:Seq>
+   </xmpMM:History>
+   <xmpMM:DerivedFrom
+    stRef:documentID="979D99A02E21D458EDA317BB9B304159"
+    stRef:originalDocumentID="979D99A02E21D458EDA317BB9B304159"/>
+   <exif:ISOSpeedRatings>
+    <rdf:Seq>
+     <rdf:li>100</rdf:li>
+    </rdf:Seq>
+   </exif:ISOSpeedRatings>
+   <exif:Flash
+    exif:Fired="False"
+    exif:Return="0"
+    exif:Mode="2"
+    exif:Function="False"
+    exif:RedEyeMode="False"/>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
