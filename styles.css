@@ -11,18 +11,21 @@ h1 {
   text-align: center;
   margin-bottom: 1vw;
 }
+
 h2 {
   font-family: Arvo;
   font-size: 3rem; 
   text-align: center;
 }
+
 h4 {
   font-family: Arvo;
   font-size: 2rem;
   text-align: center;
 }
+
 /* tekst med width på 1075px under eller over bredebilleder */
-h5{
+h5 {
   font-family: Inter;
   font-size: 1.3rem;
   text-align: center;
@@ -31,33 +34,48 @@ h5{
   margin-right: auto;
   line-height: 3vw;
 }
+
 p {
   font-family: Inter;
   font-size: 1rem;
   text-align: left;
   line-height: 40px;
 }
+
 a {
   text-transform: none;
+  text-decoration: none;
+  color: #000;
 }
 
-main {
-  background-color: #FF9058;
-}
-footer {
-  background-color: aqua;
-}
 
 /**************** nav *************/
+/* Define initial state of the navigation (hidden) */
+#mainNav {
+  display: none;
+}
+
+/* Define the class to make the navigation visible */
+#mainNav.visible-nav {
+  display: block;
+  /* Add any other styles to make it visible */
+}
+
+
+
+
 .color-frontpage #sidebar {
   background-color: #697c44;
 }
+
 .color-frontpage span {
   background-color: #ffffff;
 }
+
 .color-frontpage {
   z-index: 2000;
 }
+
 #sidebar {
   position: fixed;
   width: 300px;
@@ -68,6 +86,7 @@ footer {
   /* Add a higher z-index to make the text overlay above the menu */
 
 }
+
 #sidebar ul li {
   list-style: none;
   color: #fff;
@@ -75,11 +94,13 @@ footer {
   padding: 26px 24px;
   margin-bottom: 1.2rem;
 }
+
 #sidebar .toggle-btn {
   position: absolute;
   top: 30px;
   right: 330px;
 }
+
 .toggle-btn span {
   width: 45px;
   height: 4px;
@@ -87,6 +108,7 @@ footer {
   display: block;
   margin-top: 4px;
 }
+
 #sidebar.active {
   right: 0;
 }
@@ -111,6 +133,7 @@ footer {
   font-weight: 400;
   font-size: x-large
 }
+
 .link-style:before {
   content: '';
   background: #FF9058;
@@ -122,9 +145,11 @@ footer {
   height: 3px;
   transition: all 0.3s ease-in-out;
 }
+
 .link-style:hover {
   background-position: 0;
 }
+
 .link-style:hover::before {
   width: 100%;
 }
@@ -165,11 +190,11 @@ hr {
 .welcome-text {
   overflow-wrap: break-word;
   font-family: 'Arvo', serif;
-  font-size: 3vw;
+  /* font-size: 3vw; */
   /* font-size: 4rem; */
   font-weight: normal;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .bold-title {
@@ -177,7 +202,7 @@ hr {
   font-family: 'Arvo', serif;
   font-weight: bold;
   /* font-size: 96px; */
-  font-size: 12vh;
+  /* font-size: 12vh; */
   text-align: center;
   margin-bottom: 1.2em;
 }
@@ -292,72 +317,80 @@ hr {
 
 /* contact section in front page */
 .contact-section {
-
+  justify-content: center;
+  display: flex;
   width: 100%;
-  /* Adjust max-width as needed */
-  margin: 0 auto;
-  /* padding: 2%; */
-  background-color: #30b88a;
-  /* Example background color */
+
+
 }
+
 .contact-info {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.contact-left {
 
-}
+.contact-left {}
+
 .contact-left h3 {
   overflow-wrap: break-word;
   margin-bottom: 1em;
   /* font-size: 2em; */
 }
+
 .contact-left img {
   max-width: 20%;
   /* Adjust the size of the icon */
   display: block;
   margin-bottom: 5%;
 }
+
 .contact-right {
   margin: 0;
-  width: 100%;
+  /* width: 100%; */
   overflow-wrap: break-word;
 }
+
 .contact-details p {
   overflow-wrap: break-word;
   margin-bottom: 1em;
 }
 
 /* Tilbage knap på læs mere siderne */
-.tilbage{
+.tilbage {
   display: flex;
   justify-content: left;
   font-size: 4vw;
   padding-left: 5vw;
 }
-.tilbage a{
+
+.tilbage a {
   text-decoration: none;
   color: black;
 }
 
 /*Informations sectioner*/
-  /* Info om os med billede til venstre og tekst til højre */
+/* Info om os med billede til venstre og tekst til højre */
 #infoomos {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 5%;
 }
-    /* Billede del */
+
+/* Billede del */
 #billedeomos {
   width: 55%;
   margin: 7%;
 }
-#infobilledeomos{
+
+#infobilledeomos {
   width: 45vw;
   border-radius: 10px;
 }
-    /* Tekst del */
+
+/* Tekst del */
 #tekstomos {
   width: 45%;
   margin-right: 7%;
@@ -369,61 +402,73 @@ hr {
   justify-content: center;
   align-items: center;
 }
-.holdertilp{
-  width:100%;
+
+.holdertilp {
+  width: 100%;
 }
-.infotop p{
-  width:70vw;
-  margin:auto;
+
+.infotop p {
+  width: 70vw;
+  margin: auto;
   margin-top: 3vw;
   margin-bottom: 3vw;
   text-align: center;
 }
-.ikonmidt{
+
+.ikonmidt {
   margin-top: 5vw;
   margin-bottom: -2vw;
 }
-.placeholder{
+
+.placeholder {
   width: 100%;
   height: 616px;
   background-color: #30b88a;
 }
-  /* Info "et" med tekst til venstre og billede til højre */
-.infoet{
+
+/* Info "et" med tekst til venstre og billede til højre */
+.infoet {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 2vw;
 }
-.tekstet{
+
+.tekstet {
   width: 45%;
   margin-left: 7%;
 }
-.billedeet{
+
+.billedeet {
   width: 55%;
   margin-right: 7%;
 }
-.infobilledeet{
+
+.infobilledeet {
   border-radius: 10px;
 }
-  /* Info "to" med tekst til højre og billede til venstre */
-.infoto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2vw;
+
+/* Info "to" med tekst til højre og billede til venstre */
+.infoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2vw;
 }
-.tekstto{
-    width: 45%;
-    margin-right: 7%;
+
+.tekstto {
+  width: 45%;
+  margin-right: 7%;
 }
-.billedeto{
-    width: 55%;
-    margin-left: 7%;
+
+.billedeto {
+  width: 55%;
+  margin-left: 7%;
 }
-.infobilledeto{
+
+.infobilledeto {
   border-radius: 10px;
 }
 
@@ -436,16 +481,19 @@ hr {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 .lokalmenu a {
   text-decoration: none;
   color: black;
 }
+
 .ikontekst {
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .ikon {
   margin-top: 10%;
   margin-bottom: -20%;
@@ -456,7 +504,8 @@ hr {
   width: 100%;
   height: 625vw;
 }
-#startcirkel{
+
+#startcirkel {
   background-color: rgba(142, 169, 93, 1);
   width: 10vw;
   height: 10vw;
@@ -470,7 +519,8 @@ hr {
   left: 44.3vw;
   z-index: 2;
 }
-#slutcirkel{
+
+#slutcirkel {
   background-color: rgba(142, 169, 93, 1);
   width: 10vw;
   height: 10vw;
@@ -484,6 +534,7 @@ hr {
   left: 44.3vw;
   z-index: 2;
 }
+
 #streg {
   background-color: rgba(142, 169, 93, 1);
   width: 2vw;
@@ -496,13 +547,14 @@ hr {
   left: 48.3vw;
   z-index: 2;
 }
-  /* Aarti tekst bokse */
-#et{
+
+/* Aarti tekst bokse */
+#et {
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
+  border-radius: 30px;
+  color: white;
+  border-radius: 30px;
   margin-bottom: 3%;
   transition-duration: 350ms;
   padding: 1.5%;
@@ -516,17 +568,18 @@ hr {
   text-transform: uppercase;
   line-height: 30px;
 
-  position:relative;
-  top:-640vw;
-  left:43.5vw;
+  position: relative;
+  top: -640vw;
+  left: 43.5vw;
   z-index: 3;
 }
-#to{
+
+#to {
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
+  border-radius: 30px;
+  color: white;
+  border-radius: 30px;
   margin-bottom: 3%;
   transition-duration: 350ms;
   padding: 1.5%;
@@ -540,17 +593,18 @@ hr {
   text-transform: uppercase;
   line-height: 30px;
 
-  position:relative;
-  top:-650vw;
-  left:43.5vw;
+  position: relative;
+  top: -650vw;
+  left: 43.5vw;
   z-index: 3;
 }
-#tre{
+
+#tre {
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
+  border-radius: 30px;
+  color: white;
+  border-radius: 30px;
   margin-bottom: 3%;
   transition-duration: 350ms;
   padding: 1.5%;
@@ -564,17 +618,18 @@ hr {
   text-transform: uppercase;
   line-height: 30px;
 
-  position:relative;
-  top:-710vw;
-  left:43.5vw;
+  position: relative;
+  top: -710vw;
+  left: 43.5vw;
   z-index: 3;
 }
-#fire{
+
+#fire {
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
+  border-radius: 30px;
+  color: white;
+  border-radius: 30px;
   margin-bottom: 3%;
   transition-duration: 350ms;
   padding: 1.5%;
@@ -588,17 +643,18 @@ hr {
   text-transform: uppercase;
   line-height: 30px;
 
-  position:relative;
-  top:-850vw;
-  left:43.5vw;
+  position: relative;
+  top: -850vw;
+  left: 43.5vw;
   z-index: 3;
 }
-#fem{
+
+#fem {
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
+  border-radius: 30px;
+  color: white;
+  border-radius: 30px;
   margin-bottom: 3%;
   transition-duration: 350ms;
   padding: 1.5%;
@@ -612,17 +668,18 @@ hr {
   text-transform: uppercase;
   line-height: 30px;
 
-  position:relative;
-  top:-930vw;
-  left:43.5vw;
+  position: relative;
+  top: -930vw;
+  left: 43.5vw;
   z-index: 3;
 }
-#seks{
+
+#seks {
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
+  border-radius: 30px;
+  color: white;
+  border-radius: 30px;
   margin-bottom: 3%;
   transition-duration: 350ms;
   padding: 1.5%;
@@ -636,17 +693,18 @@ hr {
   text-transform: uppercase;
   line-height: 30px;
 
-  position:relative;
-  top:-1080vw;
-  left:43.5vw;
+  position: relative;
+  top: -1080vw;
+  left: 43.5vw;
   z-index: 3;
 }
-#syv{
+
+#syv {
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
-  border-radius:30px;
-  color:white;
-  border-radius:30px;
+  border-radius: 30px;
+  color: white;
+  border-radius: 30px;
   margin-bottom: 3%;
   transition-duration: 350ms;
   padding: 1.5%;
@@ -660,13 +718,14 @@ hr {
   text-transform: uppercase;
   line-height: 30px;
 
-  position:relative;
-  top:-1090vw;
-  left:43.5vw;
+  position: relative;
+  top: -1090vw;
+  left: 43.5vw;
   z-index: 3;
 }
-  /* sectioner i tidslinje */
-#forste{
+
+/* sectioner i tidslinje */
+#forste {
   display: block;
   justify-content: center;
   align-items: center;
@@ -675,11 +734,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:15vw;
-  left:3vw;
+  top: 15vw;
+  left: 3vw;
   z-index: 1;
 }
-#anden{
+
+#anden {
   display: block;
   justify-content: center;
   align-items: center;
@@ -687,11 +747,12 @@ hr {
   text-align: center;
   line-height: 25px;
   position: relative;
-  top:-640vw;
+  top: -640vw;
   left: 56vw;
   z-index: 1;
 }
-#tredje{
+
+#tredje {
   display: block;
   justify-content: center;
   align-items: center;
@@ -700,11 +761,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-675vw;
-  left:3vw;
+  top: -675vw;
+  left: 3vw;
   z-index: 1;
 }
-#fjerde{
+
+#fjerde {
   display: block;
   justify-content: center;
   align-items: center;
@@ -713,11 +775,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-700vw;
+  top: -700vw;
   left: 56vw;
   z-index: 1;
 }
-#femte{
+
+#femte {
   display: block;
   justify-content: center;
   align-items: center;
@@ -726,11 +789,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-750vw;
-  left:3vw;
+  top: -750vw;
+  left: 3vw;
   z-index: 1;
 }
-#sjette{
+
+#sjette {
   display: block;
   justify-content: center;
   align-items: center;
@@ -739,11 +803,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-780vw;
+  top: -780vw;
   left: 56vw;
   z-index: 1;
 }
-#syvende{
+
+#syvende {
   display: block;
   justify-content: center;
   align-items: center;
@@ -752,11 +817,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-800vw;
-  left:3vw;
+  top: -800vw;
+  left: 3vw;
   z-index: 1;
 }
-#ottende{
+
+#ottende {
   display: block;
   justify-content: center;
   align-items: center;
@@ -765,11 +831,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-840vw;
+  top: -840vw;
   left: 56vw;
   z-index: 1;
 }
-#niende{
+
+#niende {
   display: block;
   justify-content: center;
   align-items: center;
@@ -778,11 +845,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-870vw;
-  left:3vw;
+  top: -870vw;
+  left: 3vw;
   z-index: 1;
 }
-#tiende{
+
+#tiende {
   display: block;
   justify-content: center;
   align-items: center;
@@ -791,11 +859,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-910vw;
+  top: -910vw;
   left: 56vw;
   z-index: 1;
 }
-#elte{
+
+#elte {
   display: block;
   justify-content: center;
   align-items: center;
@@ -804,11 +873,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-915vw;
+  top: -915vw;
   left: 56vw;
   z-index: 1;
 }
-#tolvte{
+
+#tolvte {
   display: block;
   justify-content: center;
   align-items: center;
@@ -817,11 +887,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-980vw;
-  left:3vw;
+  top: -980vw;
+  left: 3vw;
   z-index: 1;
 }
-#trettende{
+
+#trettende {
   display: block;
   justify-content: center;
   align-items: center;
@@ -830,11 +901,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-955vw;
+  top: -955vw;
   left: 56vw;
   z-index: 1;
 }
-#fjordende{
+
+#fjordende {
   display: block;
   justify-content: center;
   align-items: center;
@@ -843,11 +915,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1045vw;
-  left:3vw;
+  top: -1045vw;
+  left: 3vw;
   z-index: 1;
 }
-#femtende{
+
+#femtende {
   display: block;
   justify-content: center;
   align-items: center;
@@ -856,11 +929,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1020vw;
+  top: -1020vw;
   left: 56vw;
   z-index: 1;
 }
-#sekstende{
+
+#sekstende {
   display: block;
   justify-content: center;
   align-items: center;
@@ -869,11 +943,12 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1115vw;
-  left:3vw;
+  top: -1115vw;
+  left: 3vw;
   z-index: 1;
 }
-#syttende{
+
+#syttende {
   display: block;
   justify-content: center;
   align-items: center;
@@ -882,22 +957,24 @@ hr {
   line-height: 25px;
 
   position: relative;
-  top:-1100vw;
-  left:3vw;
+  top: -1100vw;
+  left: 3vw;
   z-index: 1;
 }
-  /* tekst til kort */
-#historie p{
+
+/* tekst til kort */
+#historie p {
   text-align: center;
   width: 30vw;
   margin-left: auto;
   margin-right: auto;
 }
-  /* læs mere om knapper (CTA) til kort */
-.læsom{
+
+/* læs mere om knapper (CTA) til kort */
+.læsom {
   background-color: rgba(212, 152, 36, 1);
   border: solid rgba(212, 152, 36, 1);
-  border-radius:30px;
+  border-radius: 30px;
   line-height: 30px;
   padding: 1.5%;
   padding-left: 2.5%;
@@ -912,12 +989,14 @@ hr {
   transition-duration: 350ms;
   cursor: pointer;
 }
-.læsom:hover{
+
+.læsom:hover {
   background-color: #8EA95D;
   border: solid #8EA95D;
 }
-  /* billeder til kort */
-.hisfoto{
+
+/* billeder til kort */
+.hisfoto {
   width: 35vw;
   border-radius: 10px;
 }
@@ -971,7 +1050,8 @@ hr {
   z-index: 20;
 
 }
-.overlay{
+
+.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -980,7 +1060,7 @@ hr {
 }
 
 .model-name {
-  
+
   color: rgb(255, 255, 255);
   font-family: poller one;
   font-size: 5em;
@@ -1023,10 +1103,10 @@ hr {
 
 }
 
-.læsmere{
+.læsmere {
   background-color: rgba(212, 152, 36, 1);
   border: solid rgba(212, 152, 36, 1);
-  border-radius:30px;
+  border-radius: 30px;
   line-height: 2.5em;
   padding: 1.5%;
   padding-left: 2.5%;
@@ -1042,7 +1122,8 @@ hr {
   transition-duration: 350ms;
 
 }
-.læsmere:hover{
+
+.læsmere:hover {
   background-color: #8EA95D;
   border: solid #8EA95D;
 }
@@ -1076,7 +1157,8 @@ hr {
   height: 100vh;
   position: relative;
   width: 100%;
-  justify-content: space-between; /* Ensures the shapes are evenly distributed */
+  justify-content: space-between;
+  /* Ensures the shapes are evenly distributed */
 
 }
 
@@ -1092,22 +1174,30 @@ hr {
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out; /* Added transition for width */
+  transition: width 0.3s ease-in-out;
+  /* Added transition for width */
 
-  
+
 }
+
 .shape:hover {
-  width: calc(200% + 8px); /* Expand the width of the hovered shape */
-  border-right: 2px solid transparent; /* Hide the border on the expanded shape */
-  z-index: 1; /* Ensure the hovered shape is on top */
+  width: calc(200% + 8px);
+  /* Expand the width of the hovered shape */
+  border-right: 2px solid transparent;
+  /* Hide the border on the expanded shape */
+  z-index: 1;
+  /* Ensure the hovered shape is on top */
 }
 
 .shape:not(:hover) {
-  width: calc(60% - 8px); /* Collapse the width of other shapes */
-  border-right: 2px solid #7ECC4D; /* Restore border color for other shapes */
+  width: calc(60% - 8px);
+  /* Collapse the width of other shapes */
+  border-right: 2px solid #7ECC4D;
+  /* Restore border color for other shapes */
 }
-.shape:hover .tooltip{
-color: white;
+
+.shape:hover .tooltip {
+  color: white;
 }
 
 
@@ -1142,7 +1232,7 @@ color: white;
   font-size: 3.5vh;
   font-weight: bold;
   font-family: 'Arvo', serif;
-  
+
   z-index: 2;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
@@ -1213,6 +1303,7 @@ color: white;
   background-image: url('images/IMG_2172.avif');
 
 }
+
 .image-7 {
   background-image: url('images/IMG_2124.avif');
 }
@@ -1247,8 +1338,8 @@ color: white;
 
 
 /* ---------Footer-------- */
-  /* Deko */
-.footerdeko{
+/* Deko */
+.footerdeko {
   margin-bottom: -1vw;
   width: 100%;
 }
