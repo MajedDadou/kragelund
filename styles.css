@@ -160,9 +160,7 @@ hr {
   border: px1 solid black;
 }
 
-.intro-container {
-  margin-top: 20%;
-}
+
 
 .welcome-text {
   overflow-wrap: break-word;
@@ -206,7 +204,6 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: em;
 }
 
 .image-card {
@@ -308,10 +305,7 @@ hr {
   justify-content: center;
 }
 .contact-left {
-  display: flex;
-  flex-direction: column;
-  /* flex: 1; */
-  /* text-align: center; */
+
 }
 .contact-left h3 {
   overflow-wrap: break-word;
