@@ -352,13 +352,12 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   margin-bottom: 5%;
 }
     /* Billede del */
 #billedeomos {
   width: 55%;
-  margin-left: 7%;
+  margin: 7%;
 }
 #infobilledeomos{
   width: 45vw;
@@ -375,6 +374,10 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.infotop p{
+ width:70vw;
+ text-align: center;
 }
 .ikonmidt{
   margin-top: 5vw;
@@ -907,6 +910,11 @@ hr {
   margin-bottom: 3%;
   width: 50%;
   transition-duration: 350ms;
+  cursor: pointer;
+}
+.læsom:hover{
+  background-color: #8EA95D;
+  border: solid #8EA95D;
 }
   /* billeder til kort */
 .hisfoto{
