@@ -157,7 +157,7 @@ footer {
 
 hr {
 
-  border: px solid black;
+  border: px1 solid black;
 }
 
 .intro-container {
@@ -179,13 +179,14 @@ hr {
   font-family: 'Arvo', serif;
   font-weight: bold;
   /* font-size: 96px; */
+  font-size: 12vh;
   text-align: center;
   margin-bottom: 1.2em;
 }
 
 .description {
   font-family: 'Inter', sans-serif;
-  /* font-size: 32px; */
+  font-size: 3vh;
   line-height: 2.5em;
   text-align: center;
   margin: 0 10%;
@@ -956,11 +957,10 @@ hr {
 
 .navigation {
   position: fixed;
-  top: 50%;
+  top: 60%;
   margin-top: -315px;
   text-align: center;
   z-index: 20;
-
 
 }
 .overlay{
@@ -972,7 +972,7 @@ hr {
 }
 
 .model-name {
-  padding-top: 0.3em;
+  
   color: rgb(255, 255, 255);
   font-family: poller one;
   font-size: 5em;
@@ -988,14 +988,15 @@ hr {
   width: 40%;
   text-align: center;
   margin: auto;
+  margin-top: 10%;
 }
 
 
 .describtion {
-  margin-top: 20%;
   color: aliceblue;
   font-family: inter;
   font-size: 1.2em;
+  line-height: 2em;
 
 }
 
@@ -1004,7 +1005,7 @@ hr {
   color: rgb(255, 255, 255);
   display: block;
   padding: 0 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: Arvo;
   line-height: 9.5vh;
   font-weight: 900;
   text-align: center;
@@ -1014,19 +1015,46 @@ hr {
 
 }
 
+.læsmere{
+  background-color: rgba(212, 152, 36, 1);
+  border: solid rgba(212, 152, 36, 1);
+  border-radius:30px;
+  line-height: 2.5em;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 10%;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: Arvo;
+  font-size: 1vw;
+  cursor: pointer;
+  margin-bottom: 3%;
+  width: 50%;
+  transition-duration: 350ms;
+
+}
+.læsmere:hover{
+  background-color: #8EA95D;
+  border: solid #8EA95D;
+}
+
 
 .navigation a {
   text-decoration: none;
 }
 
+
+
 /*Hover*/
 .navigation li.light-menu {
   border-bottom: 0.1em solid #ffffff;
+  margin: auto;
 
 }
 
 .navigation li.light-menu:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
 
 }
 
@@ -1082,7 +1110,7 @@ color: white;
 
 
 
-.shape-7 {
+.shape-6 {
   border-right: none;
 }
 
@@ -1095,18 +1123,18 @@ color: white;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
 }
-.shape-4{
-width: 120%;
-}
+
 
 .tooltip {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #000000;
-  font-size: 3vh;
+  color: #90CA5F;
+  font-size: 3.5vh;
+  font-weight: bold;
   font-family: 'Arvo', serif;
+  
   z-index: 2;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
