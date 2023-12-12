@@ -425,6 +425,17 @@ hr {
   width: 45%;
   margin-left: 7%;
 }
+/* fun facts */
+.tekstet_{
+  background-color: rgba(234, 211, 149, 1);
+  width: 45%;
+  margin-left: 7vw;
+  margin-right: 2vw;
+  text-align: left;
+}
+.tekstet_ ul{
+  line-height: 2em;
+}
 
 .billedeet {
   width: 55%;
