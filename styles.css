@@ -48,6 +48,14 @@ a {
   color: #000;
 }
 
+/* Header */
+header{
+  height: fit-content;
+  background-color:white;
+}
+.headlogo{
+  margin-left:7vw;
+}
 
 /**************** nav *************/
 /* Define initial state of the navigation (hidden) */
