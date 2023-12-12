@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantesiden</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font Arvo regular, bold, italic -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <!-- font Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="headlogo" src="images/logotekst.png">
+        <nav class="color-frontpage">
+            <div id="sidebar">
+                <div class="toggle-btn" onclick="show()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <div id="logo-image">
+                        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                        <li><a class="link-style" href="index.html">Home</a></li>
+                        <li><a class="link-style" href="omprojektet.html">Om projektet</a></li>
+                        <li><a class="link-style" href="dyr.html">Dyreliv</a></li>
+                        <li><a class="link-style" href="planter.html">Planteliv</a></li>
+                        <li><a class="link-style" href="#.html">test</a></li>
+                        <li><a class="link-style" href="#.html">test</a></li>
+                        <li><a class="link-style" href="#.html">test</a></li>
+                </ul>
+            </div>
+            <!-- div for the rest of nav content -->
+            <div id="nav-content">
+                <div id="empty-box"></div>
+                <!-- image -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Lokal Menu -->
+        <div id="lokalmenuplanter">
+            <!-- Maj Gøjeurt -->
+            <a class="ikontekst" href="#majgoejeurt">
+                <img class="ikon" src="images/majgoejeurt.png" alt="maj-gøjeurts ikon">
+                <h4>Maj-Gøjeurt</h4>
+            </a>
+            <hr>
+            <!-- Otteradet Ulvefod -->
+            <a class="ikontekst" href="#otteradetulvefod">
+                <img class="ikon" src="images/otteradetulvefod.png" alt="Otteradet Ulvefods ikon">
+                <h4>Otteradet-Ulvefod</h4>
+            </a>
+            <hr>
+            <!-- Klokke-Ensian -->
+            <a class="ikontekst" href="#klokkeensian">
+                <img class="ikon" src="images/klokkeensian.png" alt="Klokke-Ensians ikon">
+                <h4>Klokke-Ensian</h4>
+            </a>
+            <hr>
+            <!-- Rundbladet soldug -->
+            <a class="ikontekst" href="#rundbladetsoldug">
+                <img class="ikon" src="images/rundbladetsoldug.png" alt="Rundbladet Soldug ikon">
+                <h4>Rundbladet-soldug</h4>
+            </a>
+            <hr>
+            <!-- Tvebo Baldrian -->
+            <a class="ikontekst" href="#tvebobaldrian">
+                <img class="ikon" src="images/tvebobaldrian.png" alt="tvebo baldrians ikon">
+                <h4>Tvebo-Baldrian</h4>
+            </a>
+            <hr>
+            <!-- Almindelig Fredsløs -->
+            <a class="ikontekst" href="#almindeligfredloes">
+                <img class="ikon" src="images/almindeligfredloes.png" alt="Almindelig Fredløs' ikon">
+                <h4>Almindelig-fredløs</h4>
+            </a>
+        </div>
+        <!-- Maj Gøjeurt -->
+        <div id="majgoejeurt">
+            <h1>Maj - Gøjeurt</h1>
+            <!-- informations section "to" -->
+            <div class="infoto">
+                <!-- billede section -->
+                <div class="billedeto">
+                    <img class="infobilledeto" src="images/" alt="Billede af en Maj-Gøjeurt">
+                </div>
+                <!-- tekst section -->
+                <section class="tekstto">
+                    <h4>Ny orkidé blomstrer i mosen</h4>
+                    <p>Først registreret i 2020, trives maj-gøgeurt i kalkrig jord og har spredt sig hurtigt, med over 300 blomstrende skud i 2022. Orkidéen blomstrer i maj-juni og nar uerfarne humlebier ved at tilbyde ingen belønning for bestøvning, hvilket gør det til en unik art i mosen. Den pragtfulde lilla farve bryder landskabets grøn brune arealer, som en drøm.</p>
+                </section>
+            </div>
+        </div>
+        <!-- Otteradet ulvefod -->
+        <div id="otteradetulvefod">
+            <h1>Otteradet - ulvefod</h1>
+            <!-- informations section "et" -->
+            <div class="infoet">
+                <!-- tekst section -->
+                <section class="tekstet">
+                    <h4>Skrøbelig plante trives trods giftighed</h4>
+                    <p>Den ser ikke ud af meget, otteradet ulvefod. Det er en primitiv, uanselig grøn plante, der ikke bliver mere end 5-20 cm høj. Den har ingen blomster, men formerer sig med sporer. Den er sjælden i Danmark. På trods af dens lidenhed er det en spændende plante, og Miljøministeren udnævnte den i 2007 til at være Vejen Kommunes ansvarsart.</p>
+                </section>
+                <!-- billede section -->
+                <div class="billedeet">
+                    <img class="infobilledeet" src="images/" alt="billede af en otteradet ulvefod">
+                </div>
+            </div>
+        </div>
+        <!-- Klokke-ensian -->
+        <div id="klokkeensian">
+            <h1>Klokke - Ensian</h1>
+            <!-- informations section "to" -->
+            <div class="infoto">
+                <!-- billede section -->
+                <div class="billedeto">
+                    <img class="infobilledeto" src="images/" alt="Klokke - Ensian">
+                </div>
+                <!-- tekst section -->
+                <section class="tekstto">
+                    <h4>Tvebo Baldrian Trives i Åbnet Moseområde</h4>
+                    <p>I sensommeren lyser de dybblå blomster af klokke-ensian op enkelte steder i mosen. Blomsterne kan i sjældne tilfælde være lyseblå eller hvide. Arten er sjælden i Danmark og vokser i næringsfattige naturtyper.<br>
+                        Klokke-ensian har været brugt som lægeplante og skulle efter sigende have en beroligende effekt på mennesker og husdyr.
+                        Arten er værtsplante for den sjældne sommerfugl, ensian-blåfugl, men denne findes desværre ikke i mosen (endnu).</p>
+                </section>
+            </div>
+        </div>
+        <!-- Rundbladet soldug -->
+        <div id="rundbladetsoldug">
+            <h1>Rundbladet soldug</h1>
+            <!-- informations section "et" -->
+            <div class="infoet">
+                <!-- tekst section -->
+                <section class="tekstet">
+                    <h4>Den kødædende plante i mosen</h4>
+                    <p>Rundbladet soldug er en lille kødædende plante. På bladende sidder klæbrige kirtler ”dug”, der kan fastholde små insekter, og som indeholder enzymer der kan opløse insekterne. Hermed kan planten få tilført vigtige proteiner og klare sig i næringsfattige naturtyper.<br>
+                        Når planten skal bestøves, sætter den hvide blomster op på et hævet skaft, så bestøverne ikke havner i ”dødsfælden” på bladene ved jordoverfladen. <br>
+                        Rundbladet soldug findes hist og her i mosen, hvor der er blottet jordoverflade. Dyrenes tramp og roden er dermed med til at forbedre levevilkårene for arten.</p>
+                </section>
+                <!-- billede section -->
+                <div class="billedeet">
+                    <img class="infobilledeet" src="images/" alt="billede af en Rundbladet soldug">
+                </div>
+            </div>
+        </div>
+        <!-- Tvebo baldrian -->
+        <div id="tvebobaldrian">
+            <h1>Tvebo baldrian</h1>
+            <!-- informations section "to" -->
+            <div class="infoto">
+                <!-- billede section -->
+                <div class="billedeto">
+                    <img class="infobilledeto" src="images/" alt="Billede af en Tvebo baldrian">
+                </div>
+                <!-- tekst section -->
+                <section class="tekstto">
+                    <h4>Tvebo Baldrian Trives i Åbnet Moseområde</h4>
+                     <p>I mosen trives en stor bestand af tvebo baldrian, en sjælden art i Sydjylland og på øerne. Navnet stammer fra hun- og hanplanter, hvor hanblomster sidder løst i halvskærme, mens hunblomster er tættere samlet i hoveder. Området, tidligere overgroet af tagrør, er nu åbnet op af græssende dyr, der græsser tagrørene og skaber spirebede for nye planter.<br> Resultatet er hundredevis af blomstrende baldrian i maj.</p>
+                </section>
+            </div>
+        </div>
+        <!-- Almindelig fredløs -->
+        <div id="almindeligfredloes">
+            <h1>Almindelig fredløs</h1>
+            <!-- informations section "et" -->
+            <div class="infoet">
+                <!-- tekst section -->
+                <section class="tekstet">
+                    <h4>Gul Pragt i Mosen: Almindelig Fredløs og dens Bi-partner</h4>
+                    <p>I højsommeren lyser almindelig fredløs op med sine gule blomster i mosen. Den er udbredt i fugtige områder som moser, enge, og grøfter.<br>
+                        En særlig bi, hvidbenet oliebi, er 100 % afhængig af denne plante. Den samler udelukkende pollen fra almindelig fredløs og opsamler en olie til yngelpleje. Den bruger olien til at skabe madpakker til afkommet og til at beklæde reden i jorden, beskyttende den mod vand.</p>
+                </section>
+                <!-- billede section -->
+                <div class="billedeet">
+                    <img class="infobilledeet" src="images/" alt="billede af en Almindelig fredløs">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
