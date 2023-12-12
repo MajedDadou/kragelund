@@ -685,11 +685,10 @@ hr {
 
 .navigation {
   position: fixed;
-  top: 50%;
+  top: 60%;
   margin-top: -315px;
   text-align: center;
   z-index: 20;
-
 
 }
 .overlay{
@@ -701,7 +700,7 @@ hr {
 }
 
 .model-name {
-  padding-top: 0.3em;
+  
   color: rgb(255, 255, 255);
   font-family: poller one;
   font-size: 5em;
@@ -717,14 +716,15 @@ hr {
   width: 40%;
   text-align: center;
   margin: auto;
+  margin-top: 10%;
 }
 
 
 .describtion {
-  margin-top: 20%;
   color: aliceblue;
   font-family: inter;
   font-size: 1.2em;
+  line-height: 2em;
 
 }
 
@@ -733,7 +733,7 @@ hr {
   color: rgb(255, 255, 255);
   display: block;
   padding: 0 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: Arvo;
   line-height: 9.5vh;
   font-weight: 900;
   text-align: center;
@@ -743,19 +743,46 @@ hr {
 
 }
 
+.læsmere{
+  background-color: rgba(212, 152, 36, 1);
+  border: solid rgba(212, 152, 36, 1);
+  border-radius:30px;
+  line-height: 2.5em;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 10%;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: Arvo;
+  font-size: 1vw;
+  cursor: pointer;
+  margin-bottom: 3%;
+  width: 50%;
+  transition-duration: 350ms;
+
+}
+.læsmere:hover{
+  background-color: #8EA95D;
+  border: solid #8EA95D;
+}
+
 
 .navigation a {
   text-decoration: none;
 }
 
+
+
 /*Hover*/
 .navigation li.light-menu {
   border-bottom: 0.1em solid #ffffff;
+  margin: auto;
 
 }
 
 .navigation li.light-menu:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
 
 }
 
