@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 
@@ -1002,7 +1001,7 @@ hr {
 }
 
 
-
+/* -----------------------dyresiden------------------------------------- */
 
 .slide {
 
@@ -1088,6 +1087,11 @@ hr {
 
 }
 
+.underoverskrifter{
+  font-weight: bold;
+  font-family: ARVO;
+}
+
 .navigation li {
 
   color: rgb(255, 255, 255);
@@ -1102,6 +1106,16 @@ hr {
   font-size: 1em !important;
 
 }
+
+.infotilskudsfodring{
+  width: 86%;
+  margin: auto;
+}
+
+#kontroldyresiden{
+  margin-top: 10vw;
+}
+
 
 .læsmere {
   background-color: rgba(212, 152, 36, 1);
