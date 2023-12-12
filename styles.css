@@ -480,28 +480,31 @@ hr {
 /*Lokal menu*/
 .lokalmenu {
   display: flex;
+  height: 12.5vw;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(234, 211, 149, 1);
   padding-left: 10%;
   padding-right: 10%;
+  position: sticky;
+  top:0;
+  z-index: 4;
 }
-
 .lokalmenu a {
   text-decoration: none;
   color: black;
 }
-
+.lokalmenu h4{
+  margin:-0.4em 0 0 0;
+}
 .ikontekst {
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
 .ikon {
-  margin-top: 10%;
-  margin-bottom: -20%;
+  margin-top: -1em;
 }
 
 /*Tidslinje*/
