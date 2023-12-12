@@ -54,6 +54,7 @@ header{
   background-color:white;
 }
 .headlogo{
+
   margin-left:7vw;
 }
 
@@ -73,7 +74,10 @@ header{
 }
 
 .color-frontpage {
-  z-index: 2000;
+  z-index: 10;
+}
+.color-frontpage div{
+  z-index: 10;
 }
 
 #sidebar {
@@ -82,7 +86,7 @@ header{
   height: 100%;
   right: -300px;
   transition: .4s;
-  z-index: 1;
+  z-index: 10;
   /* Add a higher z-index to make the text overlay above the menu */
 
 }
@@ -99,6 +103,8 @@ header{
   position: absolute;
   top: 30px;
   right: 330px;
+  z-index: 5;
+
 }
 
 .toggle-btn span {
@@ -107,9 +113,12 @@ header{
   background: #90CA5F;
   display: block;
   margin-top: 4px;
+  z-index: 5;
 }
 
 #sidebar.active {
+  z-index: 5;
+
   right: 0;
 }
 
@@ -557,12 +566,11 @@ hr {
 }
 
 /* Aarti tekst bokse */
-#et {
+.common-styling {
   background-color: rgba(142, 169, 93, 1);
   border: solid rgba(142, 169, 93, 1);
   border-radius: 30px;
   color: white;
-  border-radius: 30px;
   margin-bottom: 3%;
   transition-duration: 350ms;
   padding: 1.5%;
@@ -575,400 +583,136 @@ hr {
   width: 7%;
   text-transform: uppercase;
   line-height: 30px;
-
   position: relative;
-  top: -640vw;
   left: 43.5vw;
   z-index: 3;
+}
+
+#et {
+  top: -640vw;
 }
 
 #to {
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius: 30px;
-  color: white;
-  border-radius: 30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position: relative;
   top: -650vw;
-  left: 43.5vw;
-  z-index: 3;
 }
 
 #tre {
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius: 30px;
-  color: white;
-  border-radius: 30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position: relative;
   top: -710vw;
-  left: 43.5vw;
-  z-index: 3;
 }
 
 #fire {
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius: 30px;
-  color: white;
-  border-radius: 30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position: relative;
   top: -850vw;
-  left: 43.5vw;
-  z-index: 3;
 }
 
 #fem {
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius: 30px;
-  color: white;
-  border-radius: 30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position: relative;
   top: -930vw;
-  left: 43.5vw;
-  z-index: 3;
 }
 
 #seks {
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius: 30px;
-  color: white;
-  border-radius: 30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position: relative;
   top: -1080vw;
-  left: 43.5vw;
-  z-index: 3;
 }
 
 #syv {
-  background-color: rgba(142, 169, 93, 1);
-  border: solid rgba(142, 169, 93, 1);
-  border-radius: 30px;
-  color: white;
-  border-radius: 30px;
-  margin-bottom: 3%;
-  transition-duration: 350ms;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 3%;
-  font-family: Arvo;
-  font-size: 3vw;
-  text-align: center;
-  width: 7%;
-  text-transform: uppercase;
-  line-height: 30px;
-
-  position: relative;
   top: -1090vw;
-  left: 43.5vw;
-  z-index: 3;
 }
 
 /* sectioner i tidslinje */
-#forste {
+.box-styling {
   display: block;
   justify-content: center;
   align-items: center;
   width: 40vw;
   text-align: center;
   line-height: 25px;
-
   position: relative;
+  z-index: 1;
+}
+
+#forste {
   top: 15vw;
   left: 3vw;
-  z-index: 1;
 }
 
 #anden {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-  position: relative;
   top: -640vw;
   left: 56vw;
-  z-index: 1;
 }
 
 #tredje {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -675vw;
   left: 3vw;
-  z-index: 1;
 }
 
 #fjerde {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -700vw;
   left: 56vw;
-  z-index: 1;
 }
 
 #femte {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -750vw;
   left: 3vw;
-  z-index: 1;
 }
 
 #sjette {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -780vw;
   left: 56vw;
-  z-index: 1;
 }
 
 #syvende {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -800vw;
   left: 3vw;
-  z-index: 1;
 }
 
 #ottende {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -840vw;
   left: 56vw;
-  z-index: 1;
 }
 
 #niende {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -870vw;
   left: 3vw;
-  z-index: 1;
 }
 
 #tiende {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -910vw;
   left: 56vw;
-  z-index: 1;
 }
 
 #elte {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -915vw;
   left: 56vw;
-  z-index: 1;
 }
 
 #tolvte {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -980vw;
   left: 3vw;
-  z-index: 1;
 }
 
 #trettende {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -955vw;
   left: 56vw;
-  z-index: 1;
 }
 
 #fjordende {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -1045vw;
   left: 3vw;
-  z-index: 1;
 }
 
 #femtende {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -1020vw;
   left: 56vw;
-  z-index: 1;
 }
 
 #sekstende {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -1115vw;
   left: 3vw;
-  z-index: 1;
 }
 
 #syttende {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  text-align: center;
-  line-height: 25px;
-
-  position: relative;
   top: -1100vw;
   left: 3vw;
-  z-index: 1;
 }
+
 
 /* tekst til kort */
 #historie p {
