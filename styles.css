@@ -51,17 +51,9 @@ a {
 
 /**************** nav *************/
 /* Define initial state of the navigation (hidden) */
-#mainNav {
+.hidden-sidebar {
   display: none;
 }
-
-/* Define the class to make the navigation visible */
-#mainNav.visible-nav {
-  display: block;
-  /* Add any other styles to make it visible */
-}
-
-
 
 
 .color-frontpage #sidebar {
@@ -154,12 +146,6 @@ a {
   width: 100%;
 }
 
-/* nav content */
-#nav-content {
-  display: flex;
-
-
-}
 
 /* nav logo image */
 #logo-image {
@@ -1163,7 +1149,7 @@ hr {
 }
 
 .shape {
-  border-right: 2px solid #7ECC4D;
+  /* border-right: 2px solid #7ECC4D; */
 
   position: relative;
   width: 100%;
@@ -1183,17 +1169,21 @@ hr {
 .shape:hover {
   width: calc(200% + 8px);
   /* Expand the width of the hovered shape */
-  border-right: 2px solid transparent;
+  /* border-right: 2px solid transparent; */
   /* Hide the border on the expanded shape */
-  z-index: 1;
+  /* z-index: 1; */
   /* Ensure the hovered shape is on top */
 }
 
 .shape:not(:hover) {
   width: calc(60% - 8px);
   /* Collapse the width of other shapes */
-  border-right: 2px solid #7ECC4D;
+  /* border-right: 2px solid #7ECC4D; */
   /* Restore border color for other shapes */
+}
+
+.shape:hover .circle-logo{
+  /* z-index: 200; */
 }
 
 .shape:hover .tooltip {
@@ -1202,7 +1192,7 @@ hr {
 
 
 .shape-3 {
-  border-right: 2px solid #7ECC4D;
+  /* border-right: 2px solid #7ECC4D; */
 
 }
 

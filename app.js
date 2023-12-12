@@ -80,5 +80,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Function to show sidebar
+function showSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.remove('hidden-sidebar');
+}
+
+// Function to hide sidebar
+function hideSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.add('hidden-sidebar');
+}
+
+// Function to check scroll position and trigger the sidebar visibility
+function checkScroll() {
+  const specificPoint = 800; // Change this value to the scroll position where you want the sidebar to appear
+  const sidebar = document.getElementById('sidebar');
+
+  if (window.scrollY >= specificPoint) {
+    showSidebar();
+  } else {
+    hideSidebar();
+  }
+}
+
+// Event listener to check scroll position
+window.addEventListener('scroll', checkScroll);
+
+// Initially, check the scroll position on page load
+document.addEventListener('DOMContentLoaded', function () {
+  checkScroll();
+});
+
 
 
