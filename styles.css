@@ -333,6 +333,18 @@ hr {
   margin-bottom: 1em;
 }
 
+/* Tilbage knap på læs mere siderne */
+.tilbage{
+  display: flex;
+  justify-content: left;
+  font-size: 4vw;
+  padding-left: 5vw;
+}
+.tilbage a{
+  text-decoration: none;
+  color: black;
+}
+
 /*Informations sectioner*/
   /* Info om os med billede til venstre og tekst til højre */
 #infoomos {
