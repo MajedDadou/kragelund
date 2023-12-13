@@ -621,6 +621,10 @@ hr {
   height: 625vw;
 }
 
+.History{
+  z-index: 2;
+}
+
 #startcirkel {
   background-color: rgba(142, 169, 93, 1);
   width: 10vw;
