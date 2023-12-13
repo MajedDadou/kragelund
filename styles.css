@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html{
@@ -425,8 +427,7 @@ hr {
 
 .placeholder {
   width: 100%;
-  height: 616px;
-  background-color: #30b88a;
+  height: 80vh;
 }
 
 /* Info "et" med tekst til venstre og billede til højre */
@@ -435,7 +436,8 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
+  margin-top: 5vw;
 }
 
 .tekstet {
@@ -457,7 +459,12 @@ hr {
 .billedeet {
   width: 55%;
   margin-right: 7%;
+  margin-left: 8%;
 }
+.billedeet img{
+  width: 100%;
+}
+
 
 .infobilledeet {
   border-radius: 10px;
@@ -469,7 +476,8 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
+  margin-top: 5vw;
 }
 
 .tekstto {
@@ -479,7 +487,13 @@ hr {
 
 .billedeto {
   width: 55%;
+  margin-right: 8%;
   margin-left: 7%;
+}
+
+.billedeto img{
+  width: 100%;
+  
 }
 
 .infobilledeto {
@@ -802,6 +816,21 @@ hr {
 
 
 /* -----------------------dyresiden------------------------------------- */
+
+/* dronevideo */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Fylder hele skærmen lodret */
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
 
 .slide {
 
