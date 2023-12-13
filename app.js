@@ -84,7 +84,7 @@ function toggleInfo(button) {
   mereInfo.classList.toggle("hidden");
 
   // Opdater teksten på knappen baseret på div-elementets tilstand
-  var buttonText = mereInfo.classList.contains("hidden") ? "Læs om fordele her" : "Skjul information";
+  var buttonText = mereInfo.classList.contains("hidden") ? "Læs om fordele" : "Skjul fordele";
   button.innerText = buttonText;
 }
 

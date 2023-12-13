@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sponsor</title>
+    <title>Bliv medejer i dag</title>
     <script src="app.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,62 @@
         rel="stylesheet">
 </head>
 <body>
+    <main>
+        <!-- Informations section u. bred img -->
+        <div class="infotop">
+            <h1>Bliv medejer i dag</h1>
+            <h5>Uanset hvad vil hele din støtte gå ubeskåret til genopretningsarbejdet. </h5>
+            <div class="trekort">
+                <div class="kortejer">
+                    <h2>Bøffel medejerskab</h2>
+                    <img src="images/vandboefel.png">
+                    <ul>
+                        <div id="mereInfo" class="hidden">
+                            <li>Få opkaldt et dyr*</li>
+                            <li>Reklamere som medejer*</li>
+                            <li>Luksus guidet rundtur*</li>
+                            <li>Primitiv overnatning*</li>
+                            <li>Deltagelse i generalforsamling*</li>
+                            <li>Deltage i julefrokost*</li>
+                            <li>Tilkøb navngivning*</li>
+                        </div>
+                    </ul>
+                    <button class="læsfordele" onclick="toggleInfo(this)">Læs om fordele her</button>
+                </div>
+                <div class="kortejer">
+                    <h2>Pony medejerskab</h2>
+                    <img src="images/hest.png">
+                    <ul>
+                        <div id="mereInfo" class="hidden">
+                            <li>Få opkaldt et dyr*</li>
+                            <li>Reklamere som medejer*</li>
+                            <li>Luksus guidet rundtur*</li>
+                            <li>Tilkøb navngivning*</li>
+                            <li>Deltagelse i generalforsamling*</li>
+                            <li>Deltagelse* i julefrokost*</li>
+                        </div>
+                    </ul>
+                    <button class="læsfordele" onclick="toggleInfo(this)">Læs om fordele her</button>
+                </div>
+                <div class="kortejer">
+                    <h2>Uldgrise medejerskab</h2>
+                    <img src="images/gris.png">
+                    <ul>
+                        <div id="mereInfo" class="hidden">
+                            <li>Luksus guidet rundtur*</li>
+                            <li>Tilkøb navngivning*</li>
+                            <li>Deltagelse i generalforsamling*</li>
+                            <li>Deltagelse* i julefrokost*</li>
+                        </div>
+                    </ul>
+                    <button class="læsfordele" onclick="toggleInfo(this)">Læs om fordele her</button>
+                </div>
+            </div>
+        </div>
+        <div class="trekort">
+            <input type="checkbox">
+        </div>
+    </main>
     
 </body>
 </html>

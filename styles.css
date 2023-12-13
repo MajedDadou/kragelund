@@ -536,6 +536,7 @@ hr {
   align-items: center;
 }
 
+
 .kort {
   background-color: #8EA95D;
   margin: 2vw;
@@ -1162,6 +1163,38 @@ video {
   margin-bottom: 10vw;
 }
 
+/* Medejer siden */
+  /* Tre medejerskaber */
+.kortejer {
+  background-color: rgba(221, 184, 84, 1);
+  margin: 2vw;
+  width: 28vw;
+  height: auto;
+  text-align: center;
+}
+.kortejer h2{
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+.kortejer p {
+  width: 20vw;
+}
+.kortejer img{
+  margin-top: -1vw;
+  margin-bottom: 1vw;
+}
+.kortejer #mereInfo{
+  text-align: left;
+}
+.kortejer:nth-child(2) {
+  background: rgba(201, 198, 190, 1);
+}
+.kortejer:nth-child(3) {
+  background: rgba(237, 171, 124, 1);
+}
+.kortejer .læsfordele{
+  margin-bottom: 1vw;
+}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
