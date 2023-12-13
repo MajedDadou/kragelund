@@ -127,6 +127,7 @@ header {
   top: 30px;
   right: 330px;
   z-index: 5;
+  cursor: pointer;
 
 }
 
@@ -1037,6 +1038,35 @@ video {
   border-bottom: 3px solid #ffffff;
 
 }
+
+
+/*----------------- inskter --------------------------*/
+
+
+#section6 {
+  background-image: url('images/dukatsommerfugl_hun-3.avif');
+  z-index: 0;
+
+}
+
+#section7 {
+  background-image: url('images/engkoellesvaermer.avif');
+}
+
+#section8 {
+  background-image: url('images/groen-koellesvaermer.avif');
+}
+
+#section9 {
+  background-image: url('images/mose-randoeje.avif');
+}
+
+#section10 {
+  background-image: url('images/perlemorsommerfugl_underside.avif');
+}
+
+
+
 
 /* ----------Test for shapes in front page -----------*/
 
