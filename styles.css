@@ -1,4 +1,4 @@
-body {
+body,html {
   margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -871,7 +871,7 @@ video {
 .navigation {
   position: fixed;
   top: 60%;
-  margin-top: -315px;
+  margin-top: -300px;
   text-align: center;
   z-index: 20;
 

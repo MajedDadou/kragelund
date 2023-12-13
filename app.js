@@ -21,7 +21,7 @@ document.addEventListener('scroll', function () {
         visibleSection = section;
 
         // Reset the color of all watch elements
-        for (var j = 1; j <= 5; j++) {
+        for (var j = 1; j <= 6; j++) {
           var allpicElements = document.querySelectorAll('#pic' + j);
           allpicElements.forEach(function (picElement) {
             picElement.style.color = ''; // Reset color to default
