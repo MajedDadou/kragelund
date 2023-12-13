@@ -4,8 +4,6 @@ function show() {
 }
 
 
-
-
 document.addEventListener('scroll', function () {
   var nav = document.getElementById('upper-nav');
   var visibleSection = null;
@@ -77,6 +75,19 @@ window.addEventListener('scroll', () => {
 document.addEventListener('DOMContentLoaded', () => {
   handleFadeIn();
 });
+
+// Funktion til at folde fordele ud med mere information
+function toggleInfo(button) {
+  var additionalInfo = button.previousElementSibling.querySelector("#additionalInfo");
+
+  // Toggle klassen "hidden" for at skifte mellem visning og skjulning af ekstra information
+  additionalInfo.classList.toggle("hidden");
+
+  // Opdater teksten på knappen baseret på div-elementets tilstand
+  var buttonText = additionalInfo.classList.contains("hidden") ? "Læs om fordele her" : "Skjul information";
+  button.innerText = buttonText;
+}
+
 
 
 

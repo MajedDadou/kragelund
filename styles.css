@@ -61,8 +61,9 @@ a {
 .billboard {
 
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   object-fit: cover;
+  top: 10%;
 }
 
 /* Header */
@@ -468,14 +469,19 @@ hr {
 /* fun facts */
 .tekstet_ {
   background-color: rgba(234, 211, 149, 1);
-  width: 45%;
+  width: 42%;
+  height: 25vw;
   margin-left: 7vw;
   margin-right: 2vw;
   text-align: left;
+  border-radius: 10px;
+  
 }
 
 .tekstet_ ul {
   line-height: 2em;
+  margin: 10%;
+  
 }
 
 .billedeet {
@@ -1038,7 +1044,111 @@ video {
 
 /* ----------Test for shapes in front page -----------*/
 
+/* Sponsor side */
+  /* Medejer skaber */
+.trekoloner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.medejerskab{
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    background-color: rgba(221, 184, 84, 1);
+    border-radius: 2.5vw;
+    margin-bottom: 2vw;
+}
+.medejerskab:nth-child(2) {
+    background: rgba(201, 198, 190, 1);
+}
+.medejerskab:nth-child(3) {
+    background: rgba(237, 171, 124, 1);
+}
+.ikonpris{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vw;
+    margin: auto;
+}
+.ikonpris img{
+    margin-bottom: -3em;
+    margin-top: 1em;
+}
+.fordele{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.fordele h4{
+    text-align: left;
+    margin:0;
+}
+.fordele li{
+    line-height: 3.5vw;
+}
+.læsfordele{
+    background-color: white;
+    border: solid white;
+    border-radius: 30px;
+    line-height: 1.5em;
+    padding: 1.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arvo;
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    transition-duration: 350ms;
+}
+.læsfordele:hover{
+    background-color: #8EA95D;
+    border: solid #8EA95D;
+}
+  /* Mere info ved onclick */
+.hidden {
+  display: none;
+}
 
+  /* Donation */
+#beloeb{
+  width: 50vw;
+  height: 20vw;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 3vw;
+  margin-top: 0;
+  background-color:#8ea95d93;
+  font-family: Arvo;
+  font-size: 10rem;
+  text-align: center;
+}
+  /* Store knapper der leder videre */
+.videre{
+  background-color: #8EA95D;
+  border: solid white;
+  border-radius: 10px;
+  line-height: 5em;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-transform: uppercase;
+  color: black;
+  font-family: Arvo;
+  font-size: 1vw;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30vw;
+  transition-duration: 350ms;
+  margin-bottom: 10vw;
+}
 
 
 /* The actual timeline (the vertical ruler) */
