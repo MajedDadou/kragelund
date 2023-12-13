@@ -536,7 +536,6 @@ hr {
   align-items: center;
 }
 
-
 .kort {
   background-color: #8EA95D;
   margin: 2vw;
@@ -1194,6 +1193,16 @@ video {
 }
 .kortejer .læsfordele{
   margin-bottom: 1vw;
+}
+  /* Checkbox */
+.trekort input{
+  /*background-color: #8EA95D; Vil gerne have ændret farven på checkboxene samt stregen*/
+  margin: 2vw;
+  width: 2vw;
+  height: 2vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* The actual timeline (the vertical ruler) */
