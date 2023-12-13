@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 
@@ -484,7 +483,22 @@ hr {
 .infobilledeto {
   border-radius: 10px;
 }
-
+  /* Information med kort */
+.trekort{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.kort{
+  background-color: #8EA95D;
+  margin: 2vw;
+  width: 28vw;
+  height: 25vw;
+  text-align: center;
+}
+.kort p{
+  width: 20vw;
+}
 /*Lokal menu*/
 .lokalmenu {
   display: flex;
@@ -515,6 +529,7 @@ hr {
 .ikon {
   margin-top: -1em;
 }
+
   /* Kun på plantesiden, da den lokalemenu består af mange titler */
 #lokalmenuplanter{
   display: flex;
@@ -784,7 +799,7 @@ hr {
 }
 
 
-
+/* -----------------------dyresiden------------------------------------- */
 
 .slide {
 
@@ -870,6 +885,11 @@ hr {
 
 }
 
+.underoverskrifter{
+  font-weight: bold;
+  font-family: ARVO;
+}
+
 .navigation li {
 
   color: rgb(255, 255, 255);
@@ -884,6 +904,16 @@ hr {
   font-size: 1em !important;
 
 }
+
+.infotilskudsfodring{
+  width: 86%;
+  margin: auto;
+}
+
+#kontroldyresiden{
+  margin-top: 10vw;
+}
+
 
 .læsmere {
   background-color: rgba(212, 152, 36, 1);
@@ -902,7 +932,6 @@ hr {
   margin-bottom: 3%;
   width: 50%;
   transition-duration: 350ms;
-
 }
 
 .læsmere:hover {
