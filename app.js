@@ -4,8 +4,6 @@ function show() {
 }
 
 
-
-
 document.addEventListener('scroll', function () {
   var nav = document.getElementById('upper-nav');
   var visibleSection = null;
@@ -39,7 +37,7 @@ document.addEventListener('scroll', function () {
     }
   }
 
-  if (visibleSection) {
+  if (visibleSection && window.scrollY > 600) {
     nav.style.display = 'block';
   } else {
     nav.style.display = 'none';
@@ -77,6 +75,19 @@ window.addEventListener('scroll', () => {
 document.addEventListener('DOMContentLoaded', () => {
   handleFadeIn();
 });
+
+// Funktion til at folde fordele ud med mere information
+function toggleInfo(button) {
+  var mereInfo = button.previousElementSibling.querySelector("#mereInfo");
+
+  // Toggle klassen "hidden" for at skifte mellem visning og skjulning af ekstra information
+  mereInfo.classList.toggle("hidden");
+
+  // Opdater teksten på knappen baseret på div-elementets tilstand
+  var buttonText = mereInfo.classList.contains("hidden") ? "Læs om fordele" : "Skjul fordele";
+  button.innerText = buttonText;
+}
+
 
 
 

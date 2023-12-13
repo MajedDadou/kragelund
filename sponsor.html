@@ -92,48 +92,62 @@
             <div class="medejerskab">
                 <div class="ikonpris">
                     <img src="images/vandboefel.png">
-                    <h2>150.000 kr</h2>
+                    <h2>150.000kr.</h2>
                 </div>
                 <div class="fordele">
                     <h4>Bøffel Medejerskab</h4>
                     <ul>
                         <li>Retten til at få opkaldt et dyr årligt efter eget valg</li>
-                        <li>Retten til at reklamere med, at du er medejer af og støtter naturgenopretningsprojektet</li>
+                        <li>Retten til at reklamere med, at du er medejer af og støtter naturgenopretningsprojektet “Kragelund - en lysåben mose”</li>
                         <li>Retten til en primitiv overnatning i Kragelund Mose for en gruppe på op til seks</li>
+                        <div id="mereInfo" class="hidden">
+                            <li>Mulighed for at købe sig til retten til at navngive et dyr. Der medfølger naturligvis et flot certifikat</li>
+                            <li>En årlig eksklusiv guidet rundtur i mosen for en gruppe på op til fem personer inklusiv medejeren</li>
+                            <li>Retten til at deltage i den årlige generalforsamling med efterfølgende spisning og fagligt oplæg.</li>
+                            <li>Retten til at deltage i den årlige julefrokost/sommerfest</li>
+                        </div>
                     </ul>
-                    <button class="læsfordele">Læs om fordele her</button>
+                    <button class="læsfordele" onclick="toggleInfo(this)">Læs om fordele her</button>
                 </div>
             </div>
             <div class="medejerskab">
                 <div class="ikonpris">
                     <img src="images/hest.png">
-                    <h2>100.000 kr</h2>
+                    <h2>100.000kr.</h2>
                 </div>
                 <div class="fordele">
                     <h4>Pony Medejerskab</h4>
                     <!-- Punktform: https://www.w3schools.com/html/html_lists.asp -->
                     <ul>
                         <li>Retten til at få opkaldt et dyr årligt efter eget valg</li>
-                        <li>Retten til at reklamere med, at du er medejer af og støtter naturgenopretningsprojektet</li>
-                        <li>Retten til en primitiv overnatning i Kragelund Mose for en gruppe på op til seks</li>
+                        <li>Retten til at reklamere med, at du er medejer af og støtter naturgenopretningsprojektet “Kragelund - en lysåben mose”</li>
+                        <li>En årlig eksklusiv  guidet rundtur i mosen for en gruppe på op til fem personer inklusive medejeren.</li>
+                        <div id="mereInfo" class="hidden">
+                            <li>Mulighed for at købe sig til retten til navngive et dyr. Der medfører flot certifikat.</li>
+                            <li>Retten til at deltage i den årlige generalforsamling med efterfølgende spisning og fagligt oplæg.</li>
+                            <li>Retten til at deltage i den årlige julefrokost/sommerfest.</li>
+                        </div>
                     </ul>
-                    <button class="læsfordele">Læs om fordele her</button>
+                    <button class="læsfordele" onclick="toggleInfo(this)">Læs om fordele her</button>
                 </div>
             </div>
             <div class="medejerskab">
                 <div class="ikonpris">
                     <img src="images/gris.png">
-                    <h2>75.000 kr</h2>
+                    <h2>75.000kr.</h2>
                 </div>
                 <div class="fordele">
                     <h4>Uldgrise Medejerskab</h4>
                     <!-- Punktform: https://www.w3schools.com/html/html_lists.asp -->
                     <ul>
-                        <li>En årlig eksklusiv guidet rundtur i mosen for en gruppe på op til seks personer</li>
+                        <li>En årlig eksklusiv guidet rundtur i mosen for en gruppe på op til fem personer</li>
                         <li>Mulighed for at købe sig retten til at navngive et dyr. Der medfølger et flot certifikat</li>
-                        <li>Mulighed for på egen regning at deltage u den årlige julefrokost/sommerfest</li>
+                        <li>Mulighed for på egen regning at deltage i den årlige julefrokost/sommerfest med en egen betalling for medejer</li>
+                        <div id="mereInfo" class="hidden">
+                            <li>Retten til at deltage i den årlige generalforsamling med efterfølgende spisning og fagligt oplæg.</li>
+                        </div>
                     </ul>
-                    <button class="læsfordele">Læs om fordele her</button>
+                    <button class="læsfordele" onclick="toggleInfo(this)">Læs om fordele her</button>
                 </div>
             </div>
             <a href="#">
@@ -141,16 +155,35 @@
             </a>
         </div>
         <!-- Informations section u. bred img -->
-        <div id="">
-
-        </div>
         <div class="infotop">
             <h1>Doner et beløb</h1>
             <p><i>Angiv beløbet i Danske kr. og uden punktum - se hvad du støtter nedenfor! Fælles om naturens genopretning</i></p>
-            <input type="tekst" id="doner">1000</div>
+            <input type="text" id="beloeb" name="beloeb" placeholder="1000">
             <a href="#">
                 <button class="videre"><h4>Doner nu</h4></button>
             </a>
+        </div>
+        <!-- Informations section u. bred img -->
+        <div class="infotop">
+            <h1>Støtteforening</h1>
+            <h5>Støtteforeningen af frivillige - Kragelund Moses venner.</h5>
+            <h5>Støtteforeningen består af en gruppe frivillige som har adgang til og indgående kendskab til projektområdet, de græssende dyr og flora, fauna og funga helt generelt.  Gruppen af frivillige har mange forskellige gøremål blandt andet tilsyn med dyrene, samt at hjælpe til ved større arrangementer når mosen har mange gæster.</h5>
+        </div>
+        <!-- informations section "et" -->
+        <div class="infoet">
+            <!-- tekst section -->
+            <section class="tekstet">
+                    <h4>Fælles om udviklingen</h4>
+                    <p>I det daglige er de enkelte frivilliges indsats mindre iøjenfaldende - nogle overvåger/monitorerer botanikken, andre overvåger insekter eller fugle og endelig er der nogle, som nærmest udelukkende fokuserer på svampe. I gruppen findes også nørder som kun fokuserer på laver og mosser og endelig tæller gruppen også folk med en bred interesse og kærlighed til naturen og genopretningen heraf.</p>
+            </section>
+                <!-- billede section -->
+            <div class="billedeet">
+                <img class="infobilledeet" src="images/" alt="billede af frivillige">
+            </div>
+        </div>
+        <div class="infotop">
+            <h5>Vi er priviligerede af at gruppen har nogle dygtige fotografer og gode formidlere som fra tid til anden lægger opslag op i FB-gruppen omkring deres observationer i mosen. Tak for det. </h5>
+            <h5>Er du interesseret i at blive medlem i Kragelund Moses venner så kontakt os endelig</h5>
         </div>
     </main>
 </body>

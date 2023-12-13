@@ -476,13 +476,13 @@ hr {
   margin-right: 2vw;
   text-align: left;
   border-radius: 10px;
-  
+
 }
 
 .tekstet_ ul {
   line-height: 2em;
   margin: 10%;
-  
+
 }
 
 .billedeet {
@@ -626,6 +626,10 @@ hr {
 #historie {
   width: 100%;
   height: 625vw;
+}
+
+.History {
+  z-index: 2;
 }
 
 #startcirkel {
@@ -1070,8 +1074,166 @@ video {
 
 /* ----------Test for shapes in front page -----------*/
 
+/* Sponsor side */
+/* Medejer skaber */
+.trekoloner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.medejerskab {
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  background-color: rgba(221, 184, 84, 1);
+  border-radius: 2.5vw;
+  margin-bottom: 2vw;
+}
 
+.medejerskab:nth-child(2) {
+  background: rgba(201, 198, 190, 1);
+}
+
+.medejerskab:nth-child(3) {
+  background: rgba(237, 171, 124, 1);
+}
+
+.ikonpris {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5vw;
+  margin: auto;
+}
+
+.ikonpris img {
+  margin-bottom: -3em;
+  margin-top: 1em;
+}
+
+.fordele {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.fordele h4 {
+  text-align: left;
+  margin: 0;
+}
+.fordele li{
+    line-height: 3vw;
+    font-family: Inter;
+}
+
+.læsfordele {
+  background-color: white;
+  border: solid white;
+  border-radius: 30px;
+  line-height: 1.5em;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-transform: uppercase;
+  color: black;
+  font-family: Arvo;
+  font-size: 1vw;
+  font-weight: bold;
+  cursor: pointer;
+  width: 50%;
+  transition-duration: 350ms;
+}
+
+.læsfordele:hover {
+  background-color: #8EA95D;
+  border: solid #8EA95D;
+}
+
+/* Mere info ved onclick */
+.hidden {
+  display: none;
+}
+
+/* Donation */
+#beloeb {
+  width: 50vw;
+  height: 20vw;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 3vw;
+  margin-top: 0;
+  background-color: #8ea95d93;
+  font-family: Arvo;
+  font-size: 10rem;
+  text-align: center;
+}
+
+/* Store knapper der leder videre */
+.videre {
+  background-color: #8EA95D;
+  border: solid white;
+  border-radius: 10px;
+  line-height: 5em;
+  padding: 1.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-transform: uppercase;
+  color: black;
+  font-family: Arvo;
+  font-size: 1vw;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30vw;
+  transition-duration: 350ms;
+  margin-bottom: 10vw;
+}
+
+/* Medejer siden */
+  /* Tre medejerskaber */
+.kortejer {
+  background-color: rgba(221, 184, 84, 1);
+  margin: 2vw;
+  width: 28vw;
+  height: auto;
+  text-align: center;
+}
+.kortejer h2{
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+.kortejer p {
+  width: 20vw;
+}
+.kortejer img{
+  margin-top: -1vw;
+  margin-bottom: 1vw;
+}
+.kortejer #mereInfo{
+  text-align: left;
+}
+.kortejer:nth-child(2) {
+  background: rgba(201, 198, 190, 1);
+}
+.kortejer:nth-child(3) {
+  background: rgba(237, 171, 124, 1);
+}
+.kortejer .læsfordele{
+  margin-bottom: 1vw;
+}
+  /* Checkbox */
+.trekort input{
+  /*background-color: #8EA95D; Vil gerne have ændret farven på checkboxene samt stregen*/
+  margin: 2vw;
+  width: 2vw;
+  height: 2vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -1211,25 +1373,6 @@ video {
     left: 0%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
