@@ -78,13 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Funktion til at folde fordele ud med mere information
 function toggleInfo(button) {
-  var additionalInfo = button.previousElementSibling.querySelector("#additionalInfo");
+  var mereInfo = button.previousElementSibling.querySelector("#mereInfo");
 
   // Toggle klassen "hidden" for at skifte mellem visning og skjulning af ekstra information
-  additionalInfo.classList.toggle("hidden");
+  mereInfo.classList.toggle("hidden");
 
   // Opdater teksten på knappen baseret på div-elementets tilstand
-  var buttonText = additionalInfo.classList.contains("hidden") ? "Læs om fordele her" : "Skjul information";
+  var buttonText = mereInfo.classList.contains("hidden") ? "Læs om fordele her" : "Skjul information";
   button.innerText = buttonText;
 }
 
