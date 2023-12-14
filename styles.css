@@ -403,7 +403,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 /* Billede del */
@@ -1763,12 +1762,16 @@ video {
     margin: 0.5em 0;
     font-size: 14px;
   }
+  #infoomos {
+    flex-direction: column;
+  }
  
   .headlogo{
     display: none;
   }
   
 }
+
 
 @media screen and (max-width: 768px) {
   .image-card {
