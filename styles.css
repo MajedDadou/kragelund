@@ -1187,7 +1187,7 @@ video {
   font-size: 1vw;
   font-weight: bold;
   cursor: pointer;
-  width: 30vw;
+  width: 40vw;
   transition-duration: 350ms;
   margin-bottom: 10vw;
 }
@@ -1233,6 +1233,15 @@ video {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+#tokort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tokort .kort{
+  background-color: #EAD395;
 }
 
 /* The actual timeline (the vertical ruler) */
