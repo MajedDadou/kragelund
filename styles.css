@@ -403,6 +403,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 /* Billede del */
@@ -414,6 +415,7 @@ hr {
 #infobilledeomos {
   width: 45vw;
   border-radius: 10px;
+  margin-top: 40px;
 }
 
 /* Tekst del */
