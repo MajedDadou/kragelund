@@ -118,7 +118,7 @@ header {
   list-style: none;
   color: #fff;
   font-size: 20px;
-  padding: 26px 24px;
+  padding: 10px 10px;
   margin-bottom: 1.2rem;
 }
 
@@ -573,9 +573,6 @@ hr {
 }
 
 .ikontekst {
-
-  /* width: 40%; */
-  /* height: 100%; */
   display: block;
   justify-content: center;
   align-items: center;
@@ -590,7 +587,7 @@ hr {
 /* Kun på plantesiden, da den lokalemenu består af mange titler */
 #lokalmenuplanter {
   display: flex;
-  height: 13vw;
+  height: 9vw;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(234, 211, 149, 1);

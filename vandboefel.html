@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="da">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Læs mere om Vandbøfler</title>
-        <script src="app.js"></script>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- font Arvo regular, bold, italic -->
-        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap" rel="stylesheet">
-        <!-- font Inter -->
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Læs mere om Vandbøfler</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font Arvo regular, bold, italic -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <!-- font Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
     <main>
+        <header>
+            <nav class="color-frontpage">
+                <div id="sidebar">
+                    <div class="toggle-btn" onclick="show()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <div id="logo-image">
+                            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                            <li><a class="link-style" href="index.html">Home</a></li>
+                            <li><a class="link-style" href="omprojektet.html">Om projektet</a></li>
+                            <li><a class="link-style" href="dyr.html">Dyr</a></li>
+                            <li><a class="link-style" href="insekt.html">Insekter</a></li>
+                            <li><a class="link-style" href="planter.html">Planter</a></li>
+                            <li><a class="link-style" href="sponsor.html">Sponser</a></li>
+                            <li><a class="link-style" href="kontakt.html">Kontakt</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <!-- div for the rest of nav content -->
+                <div id="nav-content">
+                    <div id="empty-box"></div>
+                    <!-- image -->
+                </div>
+                <img class="headlogo" src="images/logotekst.png">
+
+            </nav>
+        </header>
         <div class="tilbage">
             <a href="dyr.html">
                 <!-- Pil taget fra:https://da.piliapp.com/symbol/arrow/ -->
@@ -27,7 +63,8 @@
             <div class="placeholder"><img class="billboard" src="images/IMG_2491.avif" alt="vandboefler"></div>
             <div class="placeholder"></div>
             <!-- Smiley taget fra: https://da.piliapp.com/facebook-symbols/ -->
-            <h5>Vandbøfler sætter ikke nogen stor tyk pels, men de har til gengæld et tykt lag isolerende subkutan fedt.</h5>
+            <h5>Vandbøfler sætter ikke nogen stor tyk pels, men de har til gengæld et tykt lag isolerende subkutan fedt.
+            </h5>
         </div>
         <!-- informations section "to" -->
         <div class="infoto">
@@ -37,18 +74,24 @@
             </div>
             <!-- tekst section -->
             <section class="tekstto">
-                    <h4>Idyllisk mose dyr</h4>
-                    <p>Det lyder eksotisk, men er det nok langt fra. Vi introducerede vandbøfler, fordi vi er placeret i en mose og området kan blive ganske vådt, tiltrods for at arealet er gennemdrænet og gennemskåret af kanaler. Vandbøflernes uforholdsmæssigt brede klove, lange ben og generelle adræthed gør dem ideelle til at søge føde på områder, som ville blive fravalgt af andre dyr.</p>
+                <h4>Idyllisk mose dyr</h4>
+                <p>Det lyder eksotisk, men er det nok langt fra. Vi introducerede vandbøfler, fordi vi er placeret i en
+                    mose og området kan blive ganske vådt, tiltrods for at arealet er gennemdrænet og gennemskåret af
+                    kanaler. Vandbøflernes uforholdsmæssigt brede klove, lange ben og generelle adræthed gør dem ideelle
+                    til at søge føde på områder, som ville blive fravalgt af andre dyr.</p>
             </section>
         </div>
         <!-- informations section "et" -->
         <div class="infoet">
             <!-- tekst section -->
             <section class="tekstet">
-                    <h4>Føde</h4>
-                    <p>Hertil kommer, at bøflerne også er ganske nøjsomme. Ja – de vil selvfølgelig også gerne spise saftigt grønt kløver, men de tager også fra de andre hylder og klare sig fint på, hvad området nu har at tilbyde. Tagrørerne er de glade for. Det er de imidlertid ikke ene om. Der er mere sukker i nye friske tagrørsskud, end der er i majs.</p>
+                <h4>Føde</h4>
+                <p>Hertil kommer, at bøflerne også er ganske nøjsomme. Ja – de vil selvfølgelig også gerne spise saftigt
+                    grønt kløver, men de tager også fra de andre hylder og klare sig fint på, hvad området nu har at
+                    tilbyde. Tagrørerne er de glade for. Det er de imidlertid ikke ene om. Der er mere sukker i nye
+                    friske tagrørsskud, end der er i majs.</p>
             </section>
-                <!-- billede section -->
+            <!-- billede section -->
             <div class="billedeet">
                 <img class="infobilledeet" src="images/vandboeflertinabilleder.avif" alt="billede af bøfel">
             </div>
@@ -61,16 +104,23 @@
             </div>
             <!-- tekst section -->
             <section class="tekstto">
-                    <h4>Tilskudsfodring</h4>
-                    <p>Selv om vi er friske på at tilstræbe en vinter uden tilskudsfodring, så er det altid dyrenes tarv, som afgør om vi tilskudsfodre. Sidste år var det vores bøffeltyr, som kom fra et stue-opdræt, som havde sværest ved omstillingen og det blev på grund af ham, at vi iværksatte tilskudsfodring. Dette til trods for, at vi havde to bøffelkøer til at gå med små kalve.</p>
+                <h4>Tilskudsfodring</h4>
+                <p>Selv om vi er friske på at tilstræbe en vinter uden tilskudsfodring, så er det altid dyrenes tarv,
+                    som afgør om vi tilskudsfodre. Sidste år var det vores bøffeltyr, som kom fra et stue-opdræt, som
+                    havde sværest ved omstillingen og det blev på grund af ham, at vi iværksatte tilskudsfodring. Dette
+                    til trods for, at vi havde to bøffelkøer til at gå med små kalve.</p>
             </section>
         </div>
         <!-- informations section "et" -->
         <div class="infoet">
             <!-- tekst section -->
             <section class="tekstet">
-                    <h4>Stedfortræder</h4>
-                    <p>Vores domesticerede vandbøfler fungerer som stedfortræder for den uddøde europæiske vandbøffel. Vandbøfler benyttes i mange andre lande, Tyskland, Polen, Holland og i Donau-deltaet, mere aktivt end i Danmark, hvilket er en skam. Dyrene vil altid være et niche dyr på grund af sin stærke tilknytning til vand, men den har så bestemt sin berettigelse og gør det fremragende. Jeg vil gå så vidt, som til at sige, at den er en overset nøgleart når det kommer til mere våde områder.</p>
+                <h4>Stedfortræder</h4>
+                <p>Vores domesticerede vandbøfler fungerer som stedfortræder for den uddøde europæiske vandbøffel.
+                    Vandbøfler benyttes i mange andre lande, Tyskland, Polen, Holland og i Donau-deltaet, mere aktivt
+                    end i Danmark, hvilket er en skam. Dyrene vil altid være et niche dyr på grund af sin stærke
+                    tilknytning til vand, men den har så bestemt sin berettigelse og gør det fremragende. Jeg vil gå så
+                    vidt, som til at sige, at den er en overset nøgleart når det kommer til mere våde områder.</p>
             </section>
             <!-- billede section -->
             <div class="billedeet">
@@ -80,15 +130,16 @@
         <!-- informations section "et" -->
         <div class="infoet">
             <!-- tekst section -->
-           
-                <!-- billede section -->
+
+            <!-- billede section -->
 
             <div class="tekstet_">
                 <h4>Fun facts</h4>
                 <ul>
-                <li>Vandbøfler er det husdyr i verden, som flest mennesker er afhængige af.</li>
-                <br>
-                <li>I Italien står der flere hundredetusinde vandbøfler på stald, som alene anvendes til produktion af bøffel-mozzarella.</li>
+                    <li>Vandbøfler er det husdyr i verden, som flest mennesker er afhængige af.</li>
+                    <br>
+                    <li>I Italien står der flere hundredetusinde vandbøfler på stald, som alene anvendes til produktion
+                        af bøffel-mozzarella.</li>
                 </ul>
             </div>
 
@@ -98,4 +149,5 @@
         </div>
     </main>
 </body>
+
 </html>
