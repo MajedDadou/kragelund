@@ -88,6 +88,54 @@ function toggleInfo(button) {
   button.innerText = buttonText;
 }
 
+/* Funktion til at check af afkrydsning
+document.addEventListener('DOMContentLoaded', function() {
+  // Hent checkboxer og knap
+  var checkbox1 = document.getElementById('checkbox1');
+  var checkbox2 = document.getElementById('checkbox2');
+  var checkbox3 = document.getElementById('checkbox3');
+  var submitButton = document.getElementById('submitButton');
+  var resultBox = document.getElementById('resultBox');
+
+  // Tilføj en eventlistener til hver checkbox for at opdatere knappens tilstand
+  checkbox1.addEventListener('change', updateButtonState);
+  checkbox2.addEventListener('change', updateButtonState);
+  checkbox3.addEventListener('change', updateButtonState);
+
+  // Funktion til at opdatere knappens tilstand
+  function updateButtonState() {
+    submitButton.disabled = !(checkbox1.checked || checkbox2.checked || checkbox3.checked);
+  }
+
+  // Tilføj en eventlistener til knappen for at vise boksen
+  submitButton.addEventListener('click', function() {
+    resultBox.style.display = 'block'; // Vis boksen
+  });
+});*/
+
+let checkaf = document.querySelector(".checkaf");
+const buttoncheck = document.getElementById("buttoncheck");
+const checkboxes = document.querySelectorAll('.custom-checkbox'); // Opdateret klasse
+
+function seOmChecked() {
+    let checkedCount = 0; // Tæller for markerede checkboxes
+
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            checkedCount++;
+        }
+    }
+
+    if (checkedCount >= 1) {
+        checkaf.innerHTML = "Du har bekræftet medejerskabet - du hører fra Martin snarest muligt";
+        checkaf.style.color = "green";
+    } else {
+        checkaf.innerHTML = "Afkryds mindst én checkbox!";
+        checkaf.style.color = "red";
+    }
+}
+
+
 
 
 
