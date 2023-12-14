@@ -1769,7 +1769,21 @@ video {
   .headlogo{
     display: none;
   }
-  
+  h5{
+    font-size: 100%;
+    line-height: 100%;
+
+  }
+  .infoto, .infoet{
+    flex-direction: column;
+  }
+  .tekstto, .tekstet{
+  margin-left: 7%;
+  width: 85%;
+
+  }
+
+
 }
 
 
