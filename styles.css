@@ -53,7 +53,7 @@ a {
   color: #000;
 }
 
-#vertikalbilleder {
+.vertikalbilleder {
   width: 70%;
 
 }
@@ -1780,6 +1780,7 @@ video {
   .tekstto, .tekstet{
   margin-left: 7%;
   width: 85%;
+  margin-right: 7%;
 
   }
 
