@@ -1274,7 +1274,6 @@ video {
 /* Container around content */
 .container {
   box-sizing: border-box;
-
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
@@ -1764,6 +1763,11 @@ video {
     margin: 0.5em 0;
     font-size: 14px;
   }
+ 
+  .headlogo{
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {

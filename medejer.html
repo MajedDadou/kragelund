@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <main>
         <!-- Informations section u. bred img -->
@@ -71,22 +73,27 @@
             </div>
         </div>
         <div class="trekort">
-            <input type="checkbox" class="custom-checkbox">
-            <input type="checkbox" class="custom-checkbox">
-            <input type="checkbox" class="custom-checkbox">
+            <input type="checkbox" id="checkbox1" class="custom-checkbox">
+            <input type="checkbox" id="checkbox2" class="custom-checkbox">
+            <input type="checkbox" id="checkbox3" class="custom-checkbox">
         </div>
         <div class="infotop">
             <h5>Afkryds det medejerskab du ønsker og tag ansvar</h5>
-            <button id="buttoncheck" class="videre" onclick = "seOmChecked()"><h4>Bekræft medejerskab</h4></button>
+            <button onclick="validateCheckboxes()"  class="videre">
+                <h4>Bekræft medejerskab</h4>
+            </button>
             <p id="checkaf">...</p>
         </div>
+
+
         <div class="infotop">
             <h1>Husk dine andre to muligheder</h1>
             <h5>Du har flere muligheder for at støtte Kragelund - en lysåben mose på. Se nedenfor</h5>
             <div id="tokort">
                 <div class="kort">
                     <h2>Sponsorater</h2>
-                    <p>Støt genopretningsprojektet med donationer. Det er muligt at donerer et årligt- eller månedligt beløb engangsbeløb.</p>
+                    <p>Støt genopretningsprojektet med donationer. Det er muligt at donerer et årligt- eller månedligt
+                        beløb engangsbeløb.</p>
                 </div>
                 <div class="kort">
                     <h2>Støtteforening</h2>
@@ -94,10 +101,13 @@
                 </div>
             </div>
             <a href="#">
-                <button class="videre"><h4>Tilbage til sponsor siden</h4></button>
+                <button class="videre">
+                    <h4>Tilbage til sponsor siden</h4>
+                </button>
             </a>
         </div>
     </main>
-    
+
 </body>
+
 </html>
