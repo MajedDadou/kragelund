@@ -21,18 +21,37 @@
 
 <body>
     <main>
-        <ul>
-            <div id="logo-image">
-                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-                <li><a class="link-style" href="index.html">Home</a></li>
-                <li><a class="link-style" href="omprojektet.html">Om projektet</a></li>
-                <li><a class="link-style" href="dyr.html">Dyr</a></li>
-                <li><a class="link-style" href="insekt.html">Insekter</a></li>
-                <li><a class="link-style" href="planter.html">Planter</a></li>
-                <li><a class="link-style" href="sponsor.html">Sponser</a></li>
-                <li><a class="link-style" href="kontakt.html">Kontakt</a></li>
-            </div>
-        </ul>
+  
+        <header>
+            <nav class="color-frontpage">
+                <div id="sidebar">
+                    <div class="toggle-btn" onclick="show()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <div id="logo-image">
+                            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                            <li><a class="link-style" href="index.html">Home</a></li>
+                            <li><a class="link-style" href="omprojektet.html">Om projektet</a></li>
+                            <li><a class="link-style" href="dyr.html">Dyr</a></li>
+                            <li><a class="link-style" href="insekt.html">Insekter</a></li>
+                            <li><a class="link-style" href="planter.html">Planter</a></li>
+                            <li><a class="link-style" href="sponsor.html">Sponser</a></li>
+                            <li><a class="link-style" href="kontakt.html">Kontakt</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <!-- div for the rest of nav content -->
+                <div id="nav-content">
+                    <div id="empty-box"></div>
+                    <!-- image -->
+                </div>
+                
+    
+            </nav>
+        </header>
         <div class="tilbage">
             <a href="dyr.html">
                 <h4>← Tilbage</h4>
@@ -41,7 +60,7 @@
         <!-- Informations section m. bred img -->
         <div class="infotop">
             <h1>Kreaturer</h1>
-            <div class="placeholder"></div>
+            <div class="placeholder"><img class="billboard" src="images/IMG_2309.avif" alt="billeder af ponyer">
             <h5>I dag har vi en mindre flok Galloway samt en enkelt Dexter og et Dexter/Skotte-x. Vi er ikke
                 race-forelskede. Vi ønsker at have så ekstensive dyr som muligt. Vi har ingen fokus på produktion af
                 kød.</h5>
@@ -50,7 +69,7 @@
         <div class="infoto">
             <!-- billede section -->
             <div class="billedeto">
-                <img class="infobilledeto" src="images/" alt="billede af martin">
+                <img class="infobilledeto" src="images/skotskkreatur.avif" alt="billede af martin">
             </div>
             <!-- tekst section -->
             <section class="tekstto">
