@@ -533,16 +533,19 @@ hr {
 
 /* Information med kort */
 .trekort {
+  flex-direction: row;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  /* align-items: center; */
+  width: 100%;
 }
 
 .kort {
+  justify-content: space-around;
   background-color: #8EA95D;
-  margin: 2vw;
-  width: 28vw;
-  height: 25vw;
+  width: 30%;
+  margin: ;
+  /* height: 25vw; */
   text-align: center;
 }
 
@@ -1806,6 +1809,13 @@ font-size: 0.9rem;
 }
 #upper-nav, .navigation{
   display: none;
+}
+.trekort{
+
+  flex-direction: column;
+}
+.kort h2{
+
 }
 
 }
