@@ -561,6 +561,16 @@ hr {
   font-size: 2em;
 }
 
+#firenulfire .læsom{
+  width: 30vw;
+}
+#firenulfire .infoet{
+  margin-top: -4vw;
+}
+#firenulfire h2{
+  margin-top: 3vw;
+}
+
 /*Lokal menu*/
 .lokalmenu {
   width: 100%;
