@@ -12,9 +12,10 @@ html {
 /*Tekst på sitet*/
 h1 {
   font-family: Arvo;
-  font-size: 4rem;
+  font-size: 4em;
   text-align: center;
   margin-bottom: 1vw;
+  margin-top: 5%;
 }
 
 h2 {
@@ -37,7 +38,7 @@ h5 {
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
-  line-height: 3vw;
+  line-height: 100%;
 }
 
 p {
@@ -53,7 +54,7 @@ a {
   color: #000;
 }
 
-#vertikalbilleder {
+.vertikalbilleder {
   width: 70%;
 
 }
@@ -118,7 +119,7 @@ header {
   list-style: none;
   color: #fff;
   font-size: 20px;
-  padding: 26px 24px;
+  padding: 10px 10px;
   margin-bottom: 1.2rem;
 }
 
@@ -249,7 +250,6 @@ hr {
 .image-section {
   max-width: 100%;
   margin: 0 auto;
-  /* padding: 20px; */
 }
 
 .row {
@@ -414,6 +414,7 @@ hr {
 #infobilledeomos {
   width: 45vw;
   border-radius: 10px;
+  margin-top: 40px;
 }
 
 /* Tekst del */
@@ -532,16 +533,19 @@ hr {
 
 /* Information med kort */
 .trekort {
+  flex-direction: row;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  /* align-items: center; */
+  width: 100%;
 }
 
 .kort {
+  justify-content: space-around;
   background-color: #8EA95D;
-  margin: 2vw;
-  width: 28vw;
-  height: 25vw;
+  width: 30%;
+  margin: ;
+  /* height: 25vw; */
   text-align: center;
 }
 
@@ -573,9 +577,6 @@ hr {
 }
 
 .ikontekst {
-
-  /* width: 40%; */
-  /* height: 100%; */
   display: block;
   justify-content: center;
   align-items: center;
@@ -590,7 +591,7 @@ hr {
 /* Kun på plantesiden, da den lokalemenu består af mange titler */
 #lokalmenuplanter {
   display: flex;
-  height: 13vw;
+  height: 9vw;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(234, 211, 149, 1);
@@ -1012,9 +1013,9 @@ video {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   font-family: Arvo;
-  font-size: 1vw;
+  font-size: 90%;
   cursor: pointer;
-  margin-bottom: 3%;
+  /* margin-bottom: 3%; */
   width: 50%;
   transition-duration: 350ms;
 }
@@ -1275,7 +1276,6 @@ video {
 /* Container around content */
 .container {
   box-sizing: border-box;
-
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
@@ -1519,31 +1519,32 @@ video {
   /* background-attachment: fixed; */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('images/IMG_2089.avif');
+  background-image: url('images/IMG_2433.avif');
 
 }
 
 .image-2 {
-  background-image: url('images/IMG_2118.avif');
+  background-image: url('images/IMG_2124.avif');
+
 }
 
 .image-3 {
-  background-image: url('images/IMG_2491.avif');
+  background-image: url('images/maj-goegeurt-1-2.avif');
+ 
 
 }
 
 .image-4 {
-  background-image: url('images/IMG_2205.avif');
-
+  background-image: url('images/mose-randoeje.avif');
 }
 
 .image-5 {
-  background-image: url('images/IMG_2187.avif');
+  background-image: url('images/bioblitz.avif');
 
 }
 
 .image-6 {
-  background-image: url('images/IMG_2172.avif');
+  background-image: url('images/ged3tinabillede.avif');
 
 }
 
@@ -1765,7 +1766,60 @@ video {
     margin: 0.5em 0;
     font-size: 14px;
   }
+  #infoomos {
+    flex-direction: column;
+  }
+ 
+  .headlogo{
+    display: none;
+  }
+  h1{
+    font-size: 2em;
+
+  }
+
+  h5{
+    font-size: 100%;
+    /* margin: 0; */
+    width: 90%;
+
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .infoto, .infoet{
+    flex-direction: column;
+  }
+  .tekstto, .tekstet{
+  margin-left: 7%;
+
+  width: 85%;
+  margin-right: 7%;
+
+  }
+.describtion{
+font-size: 0.9rem;
 }
+.year{
+  width: 90%;
+  height: 100%;
+}
+.læsmere div{
+
+}
+#upper-nav, .navigation{
+  display: none;
+}
+.trekort{
+
+  flex-direction: column;
+}
+.kort h2{
+
+}
+
+}
+
 
 @media screen and (max-width: 768px) {
   .image-card {

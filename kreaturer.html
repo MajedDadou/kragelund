@@ -1,79 +1,145 @@
 <!DOCTYPE html>
 <html lang="da">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Læs mere om Kreaturer</title>
-        <script src="app.js"></script>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- font Arvo regular, bold, italic -->
-        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap" rel="stylesheet">
-        <!-- font Inter -->
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Læs mere om Kreaturer</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font Arvo regular, bold, italic -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <!-- font Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
     <main>
+
+        <header>
+            <nav class="color-frontpage">
+                <div id="sidebar">
+                    <div class="toggle-btn" onclick="show()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <div id="logo-image">
+                            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                            <li><a class="link-style" href="index.html">Home</a></li>
+                            <li><a class="link-style" href="omprojektet.html">Om projektet</a></li>
+                            <li><a class="link-style" href="dyr.html">Dyr</a></li>
+                            <li><a class="link-style" href="insekt.html">Insekter</a></li>
+                            <li><a class="link-style" href="planter.html">Planter</a></li>
+                            <li><a class="link-style" href="sponsor.html">Sponser</a></li>
+                            <li><a class="link-style" href="galleri.html">Galleri</a></li>
+                            <li><a class="link-style" href="kontakt.html">Kontakt</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <!-- div for the rest of nav content -->
+                <div id="nav-content">
+                    <div id="empty-box"></div>
+                    <!-- image -->
+                </div>
+
+
+            </nav>
+        </header>
+
         <div class="tilbage">
             <a href="dyr.html">
                 <h4>← Tilbage</h4>
             </a>
         </div>
+
         <!-- Informations section m. bred img -->
         <div class="infotop">
             <h1>Kreaturer</h1>
-            <div class="placeholder"></div>
-            <h5>I dag har vi en mindre flok Galloway samt en enkelt Dexter og et Dexter/Skotte-x. Vi er ikke race-forelskede. Vi ønsker at have så ekstensive dyr som muligt. Vi har ingen fokus på produktion af kød.</h5>
-        </div>
-        <!-- informations section "to" -->
-        <div class="infoto">
-            <!-- billede section -->
-            <div class="billedeto">
-                <img class="infobilledeto" src="images/" alt="billede af martin">
+            <div class="placeholder"><img class="billboard" src="images/IMG_2309.avif" alt="billeder af ponyer"></div>
+                <h5>I dag har vi en mindre flok Galloway samt en enkelt Dexter og et Dexter/Skotte-x. Vi er ikke
+                    race-forelskede. Vi ønsker at have så ekstensive dyr som muligt. Vi har ingen fokus på produktion af
+                    kød.</h5>
             </div>
-            <!-- tekst section -->
-            <section class="tekstto">
-                    <h4>Skotsk</h4>
-                    <p>Vores skotske højlandskvæg afgræsser og holder buske og krat nede, som fremmer og bidrager til en varieret vækst og en rig natur med dyre- og blomsterliv. Vores store arealer passer som fod i hose til deres robuste, sunde, rolige og omgængelighed. Kvægende lever i bedste velgående og bryder landskabet med deres smukke karakteristiske udseende. De er vores små charmetrolde.</p>
-            </section>
-        </div>
-        <!-- informations section "et" -->
-        <div class="infoet">
-            <!-- tekst section -->
-            <section class="tekstet">
-                    <h4>Galloway</h4>
-                    <p>Vores darlinger er effektive afgrænsnings kvæg, og en central del af beskyttelsen og udviklingen af vækst i naturen. De er en ekstensiv race, som passer sig selv året rundt og passer perfekt til vores naturbevarings projekt. De bryder landskabet med hele 700 til 900 kg fuldvoksne. De afgræsser og fordøjer store mængder af næringsfattige planter, som gør, at kvægende er i stand til at overleve vind og vejr i de barske naturområder i Kragelund Mose</p>
-            </section>
+            <!-- informations section "to" -->
+            <div class="infoto">
                 <!-- billede section -->
-            <div class="billedeet">
-                <img class="infobilledeet" src="images/kreaturedyresiden.avif" alt="billede af martin">
+                <div class="billedeto">
+                    <img class="infobilledeto vertikalbilleder" src="images/skotskkreatur.avif" alt="billede af martin">
+                </div>
+                <!-- tekst section -->
+                <section class="tekstto">
+                    <h4>Skotsk</h4>
+                    <p>Vores skotske højlandskvæg afgræsser og holder buske og krat nede, som fremmer og bidrager til en
+                        varieret vækst og en rig natur med dyre- og blomsterliv. Vores store arealer passer som fod i
+                        hose
+                        til deres robuste, sunde, rolige og omgængelighed. Kvægende lever i bedste velgående og bryder
+                        landskabet med deres smukke karakteristiske udseende. De er vores små charmetrolde.</p>
+                </section>
             </div>
-        </div>
-        <!-- informations section "to" -->
-        <div class="infoto">
-            <!-- billede section -->
-            <div class="billedeto">
-                <img class="infobilledeto" src="images/IMG_2502.avif" alt="billede af martin">
+            <!-- informations section "et" -->
+            <div class="infoet">
+                <!-- tekst section -->
+                <section class="tekstet">
+                    <h4>Galloway</h4>
+                    <p>Vores darlinger er effektive afgrænsnings kvæg, og en central del af beskyttelsen og udviklingen
+                        af
+                        vækst i naturen. De er en ekstensiv race, som passer sig selv året rundt og passer perfekt til
+                        vores
+                        naturbevarings projekt. De bryder landskabet med hele 700 til 900 kg fuldvoksne. De afgræsser og
+                        fordøjer store mængder af næringsfattige planter, som gør, at kvægende er i stand til at
+                        overleve
+                        vind og vejr i de barske naturområder i Kragelund Mose</p>
+                </section>
+                <!-- billede section -->
+                <div class="billedeet">
+                    <img class="infobilledeet" src="images/kreaturedyresiden.avif" alt="billede af martin">
+                </div>
             </div>
-            <!-- tekst section -->
-            <section class="tekstto">
+            <!-- informations section "to" -->
+            <div class="infoto">
+                <!-- billede section -->
+                <div class="billedeto">
+                    <img class="infobilledeto" src="images/IMG_2502.avif" alt="billede af martin">
+                </div>
+                <!-- tekst section -->
+                <section class="tekstto">
                     <h4>Dexter</h4>
-                    <p>Dexter racen er de mindste i højde af vores kreaturer der vandre indenfor mosens indhegning. De bidrager til naturgenopretning og naturpleje, da de er skånsomme for naturen og afgræsser mindst muligt på lavtliggende jorde. Derudover bidrager de til udvidelse af kreatur bestanden, da de kan kælve som 2-årige og samtidig er fortrinlige mødre. Vi har fornøjelsen af dem i lang tid, da de er kendt for at blive gamle og kan yngle op til 14 kalve.</p>
-            </section>
-        </div>
-        <!-- informations section "to" -->
-        <div class="infoto">
-            <!-- billede section -->
-            <div class="billedeto">
-                <img class="infobilledeto" src="images/IMG_2154.avif" alt="billede af martin">
+                    <p>Dexter racen er de mindste i højde af vores kreaturer der vandre indenfor mosens indhegning. De
+                        bidrager til naturgenopretning og naturpleje, da de er skånsomme for naturen og afgræsser mindst
+                        muligt på lavtliggende jorde. Derudover bidrager de til udvidelse af kreatur bestanden, da de
+                        kan
+                        kælve som 2-årige og samtidig er fortrinlige mødre. Vi har fornøjelsen af dem i lang tid, da de
+                        er
+                        kendt for at blive gamle og kan yngle op til 14 kalve.</p>
+                </section>
             </div>
-            <!-- tekst section -->
-            <section class="tekstto">
+            <!-- informations section "to" -->
+            <div class="infoto">
+                <!-- billede section -->
+                <div class="billedeto">
+                    <img class="infobilledeto" src="images/IMG_2154.avif" alt="billede af martin">
+                </div>
+                <!-- tekst section -->
+                <section class="tekstto">
                     <h4>Slagtning</h4>
-                    <p>Med en reproducerende bestand, vil der naturligvis løbende komme overskudsdyr. Disse dyr bliver ikke afhentet af DAKA, men enten solgt levende eller blot sendt på slagteriet. Når de slagtes, sendes de afsted, som de er – vi laver således ingen færdigfedning eller andre tiltag, for at forøge dyrenes værdi som fødevare.</p>
-            </section>
-        </div>
+                    <p>Med en reproducerende bestand, vil der naturligvis løbende komme overskudsdyr. Disse dyr bliver
+                        ikke
+                        afhentet af DAKA, men enten solgt levende eller blot sendt på slagteriet. Når de slagtes, sendes
+                        de
+                        afsted, som de er – vi laver således ingen færdigfedning eller andre tiltag, for at forøge
+                        dyrenes
+                        værdi som fødevare.</p>
+                </section>
+            </div>
     </main>
 </body>
+
 </html>

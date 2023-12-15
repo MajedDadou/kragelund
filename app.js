@@ -113,30 +113,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });*/
 
-let checkaf = document.querySelector(".checkaf");
-const buttoncheck = document.getElementById("buttoncheck");
-const checkboxes = document.querySelectorAll('.custom-checkbox'); // Opdateret klasse
+function validateCheckboxes() {
+  const checkbox1 = document.getElementById('checkbox1').checked;
+  const checkbox2 = document.getElementById('checkbox2').checked;
+  const checkbox3 = document.getElementById('checkbox3').checked;
+  const checkaf = document.getElementById('checkaf');
 
-function seOmChecked() {
-    let checkedCount = 0; // Tæller for markerede checkboxes
-
-    for (let i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-            checkedCount++;
-        }
-    }
-
-    if (checkedCount >= 1) {
-        checkaf.innerHTML = "Du har bekræftet medejerskabet - du hører fra Martin snarest muligt";
-        checkaf.style.color = "green";
-    } else {
-        checkaf.innerHTML = "Afkryds mindst én checkbox!";
-        checkaf.style.color = "red";
-    }
+  if (!checkbox1 && !checkbox2 && !checkbox3) {
+    checkaf.textContent = 'Vælg mindst én mulighed.';
+  } else {
+    checkaf.textContent = 'Bekraftelse er moddtaget';
+    // Additional logic or actions if at least one checkbox is checked
+  }
+  
 }
-
-
-
 
 
 // // Function to show sidebar
