@@ -38,7 +38,7 @@ h5 {
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
-  line-height: 100%;
+  line-height: normal;
 }
 
 p {
@@ -329,9 +329,9 @@ hr {
 /* Initially hide elements with the "fade-in" class */
 .fade-in {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(-50px);
   /* Initially move the elements down by a smaller distance */
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 /* class to fly in the elements when they come into view */
@@ -546,7 +546,6 @@ hr {
   justify-content: space-around;
   background-color: #8EA95D;
   width: 30%;
-  /* margin: ; */
   /* height: 25vw; */
   text-align: center;
 }
@@ -850,7 +849,7 @@ hr {
   font-family: Arvo;
   font-size: 1vw;
   margin-bottom: 3%;
-  width: 50%;
+  width: auto;
   transition-duration: 350ms;
   cursor: pointer;
 }
@@ -1180,20 +1179,14 @@ video {
 .videre {
   background-color: #8EA95D;
   border: solid white;
-  border-radius: 10px;
-  line-height: 5em;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  border-radius: 10px; 
   text-transform: uppercase;
   color: black;
   font-family: Arvo;
-  font-size: 1vw;
   font-weight: bold;
   cursor: pointer;
-  width: 40vw;
+  width: 30vw;
   transition-duration: 350ms;
-  margin-bottom: 10vw;
 }
 
 /* Medejer siden */
@@ -1206,10 +1199,12 @@ video {
   text-align: center;
 }
 
-.kortejer h2 {
+
+.kortejer h2  {
   font-size: 2vw;
   margin-top: 2vw;
 }
+
 
 .kortejer p {
   width: 20vw;
@@ -1726,6 +1721,14 @@ video {
   .row {
     flex-direction: column;
   }
+
+  .shape{
+    display: none;
+  }
+  .background-shapes {
+    height: 40vh;
+  
+  }
   
 
   .flip-card-front img,
@@ -1844,7 +1847,53 @@ video {
     display: none;
   }
 
-  .infotop h5 {}
+  .trekort {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .kort {
+    margin-top: 10%;
+    width: 80%;
+    border-radius: 2.5vw;
+
+  }
+
+  .kort h2 {}
+
+  .kort p {
+    width: 90%;
+  }
+
+  .medejerskab {
+    flex-direction: column;
+  }
+
+  .fordele li {
+    line-height: normal;
+    padding: 5px;
+  }
+  .fordele h4{
+    font-size: large;
+  }
+
+  .ikonpris h2{
+    padding-top: 10%;
+  }
+  .læsfordele{
+    font-size: x-small;
+    width: 60%;
+  }
+  .videre h4{
+    font-size: 1rem;
+  }
+  .videre{
+    line-height: normal;
+    padding: 0;
+    width: 70vw;
+
+  }
 
 }
 
