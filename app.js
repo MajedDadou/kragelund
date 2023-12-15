@@ -153,6 +153,38 @@ window.addEventListener('click', function (event) {
 
 
 
+function validateDonation() {
+  const beloebInput = document.getElementById('beloeb');
+  const donationAmount = parseFloat(beloebInput.value.trim()); // Get the entered amount as a number
+  
+  if (!donationAmount || isNaN(donationAmount)) {
+    document.getElementById('amountValidationModal').style.display = 'block'; // Show the modal for invalid amount
+  } else if (donationAmount < 1) {
+    alert('The amount is too little.'); // Show an alert for amounts less than 1 (modify this to fit the desired message)
+  } else {
+    document.getElementById('myModal').style.display = 'block';
+   
+  }
+}
+
+// Close the amount validation modal when the close button (×) is clicked
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('close-amount-validation')) {
+    document.getElementById('amountValidationModal').style.display = 'none';
+  }
+});
+
+// Close the amount validation modal if the user clicks outside of it
+window.addEventListener('click', function(event) {
+  const modal = document.getElementById('amountValidationModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+
+
+
 // // Function to show sidebar
 // function showSidebar() {
 //   const sidebar = document.getElementById('sidebar');

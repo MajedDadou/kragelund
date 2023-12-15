@@ -52,6 +52,21 @@
         </nav>
     </header>
     <main>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="images/logotekst.png" alt="">
+                <h2>Tak for dig og din donation</h2>
+                <p>Bøflerne, grisene, gederne, natsværmerne og engetræerne kigger din vej og siger tak for, at du tænker
+                    på naturen og dens fremtid</p>
+            </div>
+        </div>
+        <div id="donationModal" class="modal">
+            <div class="modal-content">
+              <span class="close-donation">&times;</span>
+              <p>Your donation of <span id="donationAmount"></span> kr. has been received. Thank you for your support!</p>
+            </div>
+          </div>
         <!-- Informations section u. bred img -->
         <div class="infotop">
             <h1>Støt Kragelund i dag</h1>
@@ -180,17 +195,26 @@
             </a>
         </div>
         <!-- Informations section u. bred img -->
-        <div class="infotop">
-            <h1>Doner et beløb</h1>
-            <p><i>Angiv beløbet i Danske kr. og uden punktum - se hvad du støtter nedenfor! Fælles om naturens
-                    genopretning</i></p>
-            <input type="text" id="beloeb" name="beloeb" placeholder="1000">
-            <a href="#">
-                <button class="videre">
-                    <h4>Doner nu</h4>
-                </button>
-            </a>
-        </div>
+  <!-- Add a modal container for the amount validation -->
+<div id="amountValidationModal" class="modal">
+    <div class="modal-content">
+      <span class="close-amount-validation">&times;</span>
+      <p>Please enter a valid amount to proceed.</p>
+    </div>
+  </div>
+  
+
+  
+  <!-- Rest of your existing HTML content -->
+  <div class="infotop">
+      <h1>Doner et beløb</h1>
+      <p><i>Angiv beløbet i Danske kr. og uden punktum - se hvad du støtter nedenfor! Fælles om naturens genopretning</i></p>
+      <input type="text" id="beloeb" name="beloeb" placeholder="1000">
+      <button onclick="validateDonation()" class="videre">
+          <h4>Doner nu</h4>
+      </button>
+  </div>
+  
         <!-- Informations section u. bred img -->
         <div class="infotop">
             <h1>Støtteforening</h1>
