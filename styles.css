@@ -306,6 +306,8 @@ hr {
 .flip-card-back {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .flip-card-back {
@@ -1124,9 +1126,10 @@ video {
   text-align: left;
   margin: 0;
 }
-.fordele li{
-    line-height: 3vw;
-    font-family: Inter;
+
+.fordele li {
+  line-height: 3vw;
+  font-family: Inter;
 }
 
 .læsfordele {
@@ -1192,7 +1195,7 @@ video {
 }
 
 /* Medejer siden */
-  /* Tre medejerskaber */
+/* Tre medejerskaber */
 .kortejer {
   background-color: rgba(221, 184, 84, 1);
   margin: 2vw;
@@ -1200,31 +1203,39 @@ video {
   height: auto;
   text-align: center;
 }
-.kortejer h2{
+
+.kortejer h2 {
   font-size: 2vw;
   margin-top: 2vw;
 }
+
 .kortejer p {
   width: 20vw;
 }
-.kortejer img{
+
+.kortejer img {
   margin-top: -1vw;
   margin-bottom: 1vw;
 }
-.kortejer #mereInfo{
+
+.kortejer #mereInfo {
   text-align: left;
 }
+
 .kortejer:nth-child(2) {
   background: rgba(201, 198, 190, 1);
 }
+
 .kortejer:nth-child(3) {
   background: rgba(237, 171, 124, 1);
 }
-.kortejer .læsfordele{
+
+.kortejer .læsfordele {
   margin-bottom: 1vw;
 }
-  /* Checkbox */
-.trekort input{
+
+/* Checkbox */
+.trekort input {
   /*background-color: #8EA95D; Vil gerne have ændret farven på checkboxene samt stregen*/
   margin: 2vw;
   width: 2vw;
@@ -1239,7 +1250,8 @@ video {
   justify-content: space-between;
   align-items: center;
 }
-#tokort .kort{
+
+#tokort .kort {
   background-color: #EAD395;
 }
 
@@ -1528,7 +1540,7 @@ video {
 
 .image-3 {
   background-image: url('images/maj-goegeurt-1-2.avif');
- 
+
 
 }
 
@@ -1662,14 +1674,16 @@ video {
 .footer-3 .footer-details {
   text-align: left;
   font-family: inter;
-  margin: 1% 7% 1% 0;
+  margin: 5% 7% 2% 2%;
   font-size: 2vh;
   word-wrap: break-word;
+  text-align: right;
+  
 
 }
 
 .footer-2 .footer-details {
-  margin: 1% 5%;
+  margin: 10% 5%;
   font-family: inter;
 
   text-align: center;
@@ -1709,6 +1723,15 @@ video {
 
   .row {
     flex-direction: column;
+  }
+  
+
+  .flip-card-front img,
+  .flip-card-back {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
   }
 
 
@@ -1764,55 +1787,62 @@ video {
     margin: 0.5em 0;
     font-size: 14px;
   }
+
   #infoomos {
     flex-direction: column;
   }
- 
-  .headlogo{
+
+  .headlogo {
     display: none;
   }
-  h1{
+
+  h1 {
     font-size: 2em;
 
   }
 
-  h5{
+  h5 {
     font-size: 100%;
     /* margin: 0; */
     width: 90%;
 
   }
-  h2{
+
+  h2 {
     font-size: 2rem;
   }
-  .infoto, .infoet{
+
+  .infoto,
+  .infoet {
     flex-direction: column;
   }
-  .tekstto, .tekstet{
-  margin-left: 7%;
 
-  width: 85%;
-  margin-right: 7%;
+  .tekstto,
+  .tekstet {
+    margin-left: 7%;
+
+    width: 85%;
+    margin-right: 7%;
 
   }
-.describtion{
-font-size: 0.9rem;
-}
-.year{
-  width: 90%;
-  height: 100%;
-}
-.læsmere div{
 
-}
-#upper-nav, .navigation{
-  display: none;
-}
+  .describtion {
+    font-size: 0.9rem;
+  }
 
-.infotop h5{
+  .year {
+    width: 90%;
+    height: 100%;
+  }
 
+  .læsmere div {}
 
-}
+  #upper-nav,
+  .navigation {
+    display: none;
+  }
+
+  .infotop h5 {}
 
 
 
