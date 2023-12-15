@@ -1726,6 +1726,14 @@ video {
   .row {
     flex-direction: column;
   }
+
+  .shape{
+    display: none;
+  }
+  .background-shapes {
+    height: 40vh;
+  
+  }
   
 
   .flip-card-front img,
