@@ -849,7 +849,7 @@ hr {
   font-family: Arvo;
   font-size: 1vw;
   margin-bottom: 3%;
-  width: 50%;
+  width: auto;
   transition-duration: 350ms;
   cursor: pointer;
 }

@@ -125,7 +125,7 @@ function validateCheckboxes() {
     checkaf.textContent = 'Bekraftelse er moddtaget';
     // Additional logic or actions if at least one checkbox is checked
   }
-  
+
 }
 
 
