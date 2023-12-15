@@ -360,12 +360,14 @@ hr {
   justify-content: center;
 }
 
-.contact-left {}
+.contact-left {
+}
 
 .contact-left h3 {
   overflow-wrap: break-word;
+  font-family: Arvo;
   margin-bottom: 1em;
-  /* font-size: 2em; */
+  font-size: 2em;
 }
 
 .contact-left img {
@@ -373,6 +375,7 @@ hr {
   /* Adjust the size of the icon */
   display: block;
   margin-bottom: 5%;
+  padding-left: 2vw;
 }
 
 .contact-right {
@@ -384,6 +387,7 @@ hr {
 .contact-details p {
   overflow-wrap: break-word;
   margin-bottom: 1em;
+  font-size: 1.5em;
 }
 
 /* Tilbage knap på læs mere siderne */
