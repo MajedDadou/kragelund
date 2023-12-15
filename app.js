@@ -114,23 +114,43 @@ document.addEventListener('DOMContentLoaded', function() {
 });*/
 
 function validateCheckboxes() {
-  const checkbox1 = document.getElementById('checkbox1').checked;
-  const checkbox2 = document.getElementById('checkbox2').checked;
-  const checkbox3 = document.getElementById('checkbox3').checked;
-  const checkbox4 = document.getElementById('checkbox4').checked;
-  const checkbox5 = document.getElementById('checkbox5').checked;
-  const checkbox6 = document.getElementById('checkbox6').checked;
+  const checkboxes = [
+    document.getElementById('checkbox1').checked,
+    document.getElementById('checkbox2').checked,
+    document.getElementById('checkbox3').checked,
+    document.getElementById('checkbox4').checked,
+    document.getElementById('checkbox5').checked,
+    document.getElementById('checkbox6').checked
+  ];
 
   const checkaf = document.getElementById('checkaf');
+  const atLeastOneChecked = checkboxes.some(checkbox => checkbox);
 
-  if (!checkbox1 && !checkbox2 && !checkbox3 && !checkbox4 && !checkbox5 && !checkbox6) {
+  if (!atLeastOneChecked) {
     checkaf.textContent = 'Vælg mindst én mulighed.';
   } else {
-    checkaf.textContent = 'Bekraftelse er moddtaget';
-    // Additional logic or actions if at least one checkbox is checked
+    checkaf.textContent = 'Bekræftelse er modtaget';
+    document.getElementById('myModal').style.display = 'block';
   }
-
 }
+
+// Close the modal when the close button (×) is clicked
+document.addEventListener('click', function (event) {
+  if (event.target.classList.contains('close')) {
+    document.getElementById('myModal').style.display = 'none';
+  }
+});
+
+// Close the modal if the user clicks outside of it
+window.addEventListener('click', function (event) {
+  const modal = document.getElementById('myModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+
+
 
 
 // // Function to show sidebar
