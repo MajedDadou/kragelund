@@ -329,9 +329,9 @@ hr {
 /* Initially hide elements with the "fade-in" class */
 .fade-in {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(-50px);
   /* Initially move the elements down by a smaller distance */
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 /* class to fly in the elements when they come into view */
