@@ -250,7 +250,6 @@ hr {
 .image-section {
   max-width: 100%;
   margin: 0 auto;
-  /* padding: 20px; */
 }
 
 .row {
@@ -536,16 +535,19 @@ hr {
 
 /* Information med kort */
 .trekort {
+  flex-direction: row;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  /* align-items: center; */
+  width: 100%;
 }
 
 .kort {
+  justify-content: space-around;
   background-color: #8EA95D;
-  margin: 2vw;
-  width: 28vw;
-  height: 25vw;
+  width: 30%;
+  margin: ;
+  /* height: 25vw; */
   text-align: center;
 }
 
@@ -1843,9 +1845,6 @@ video {
   }
 
   .infotop h5 {}
-
-
-
 
 }
 
