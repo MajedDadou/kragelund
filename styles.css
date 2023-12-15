@@ -250,7 +250,6 @@ hr {
 .image-section {
   max-width: 100%;
   margin: 0 auto;
-  /* padding: 20px; */
 }
 
 .row {
@@ -1808,14 +1807,6 @@ font-size: 0.9rem;
 #upper-nav, .navigation{
   display: none;
 }
-
-.infotop h5{
-
-
-}
-
-
-
 
 }
 
