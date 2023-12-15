@@ -38,7 +38,7 @@ h5 {
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
-  line-height: 100%;
+  line-height: normal;
 }
 
 p {
@@ -544,7 +544,6 @@ hr {
   justify-content: space-around;
   background-color: #8EA95D;
   width: 30%;
-  margin: ;
   /* height: 25vw; */
   text-align: center;
 }
@@ -1126,9 +1125,10 @@ video {
   text-align: left;
   margin: 0;
 }
-.fordele li{
-    line-height: 3vw;
-    font-family: Inter;
+
+.fordele li {
+  line-height: 3vw;
+  font-family: Inter;
 }
 
 .læsfordele {
@@ -1177,24 +1177,18 @@ video {
 .videre {
   background-color: #8EA95D;
   border: solid white;
-  border-radius: 10px;
-  line-height: 5em;
-  padding: 1.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  border-radius: 10px; 
   text-transform: uppercase;
   color: black;
   font-family: Arvo;
-  font-size: 1vw;
   font-weight: bold;
   cursor: pointer;
-  width: 40vw;
+  width: 30vw;
   transition-duration: 350ms;
-  margin-bottom: 10vw;
 }
 
 /* Medejer siden */
-  /* Tre medejerskaber */
+/* Tre medejerskaber */
 .kortejer {
   background-color: rgba(221, 184, 84, 1);
   margin: 2vw;
@@ -1202,31 +1196,39 @@ video {
   height: auto;
   text-align: center;
 }
-.kortejer h2{
+
+.kortejer h2 {
   font-size: 2vw;
   margin-top: 2vw;
 }
+
 .kortejer p {
   width: 20vw;
 }
-.kortejer img{
+
+.kortejer img {
   margin-top: -1vw;
   margin-bottom: 1vw;
 }
-.kortejer #mereInfo{
+
+.kortejer #mereInfo {
   text-align: left;
 }
+
 .kortejer:nth-child(2) {
   background: rgba(201, 198, 190, 1);
 }
+
 .kortejer:nth-child(3) {
   background: rgba(237, 171, 124, 1);
 }
-.kortejer .læsfordele{
+
+.kortejer .læsfordele {
   margin-bottom: 1vw;
 }
-  /* Checkbox */
-.trekort input{
+
+/* Checkbox */
+.trekort input {
   /*background-color: #8EA95D; Vil gerne have ændret farven på checkboxene samt stregen*/
   margin: 2vw;
   width: 2vw;
@@ -1241,7 +1243,8 @@ video {
   justify-content: space-between;
   align-items: center;
 }
-#tokort .kort{
+
+#tokort .kort {
   background-color: #EAD395;
 }
 
@@ -1530,7 +1533,7 @@ video {
 
 .image-3 {
   background-image: url('images/maj-goegeurt-1-2.avif');
- 
+
 
 }
 
@@ -1766,57 +1769,108 @@ video {
     margin: 0.5em 0;
     font-size: 14px;
   }
+
   #infoomos {
     flex-direction: column;
   }
- 
-  .headlogo{
+
+  .headlogo {
     display: none;
   }
-  h1{
+
+  h1 {
     font-size: 2em;
 
   }
 
-  h5{
+  h5 {
     font-size: 100%;
     /* margin: 0; */
     width: 90%;
 
   }
-  h2{
+
+  h2 {
     font-size: 2rem;
   }
-  .infoto, .infoet{
+
+  .infoto,
+  .infoet {
     flex-direction: column;
   }
-  .tekstto, .tekstet{
-  margin-left: 7%;
 
-  width: 85%;
-  margin-right: 7%;
+  .tekstto,
+  .tekstet {
+    margin-left: 7%;
+
+    width: 85%;
+    margin-right: 7%;
 
   }
-.describtion{
-font-size: 0.9rem;
-}
-.year{
-  width: 90%;
-  height: 100%;
-}
-.læsmere div{
 
-}
-#upper-nav, .navigation{
-  display: none;
-}
-.trekort{
+  .describtion {
+    font-size: 0.9rem;
+  }
 
-  flex-direction: column;
-}
-.kort h2{
+  .year {
+    width: 90%;
+    height: 100%;
+  }
 
-}
+  .læsmere div {}
+
+  #upper-nav,
+  .navigation {
+    display: none;
+  }
+
+  .trekort {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .kort {
+    margin-top: 10%;
+    width: 80%;
+    border-radius: 2.5vw;
+
+  }
+
+  .kort h2 {}
+
+  .kort p {
+    width: 90%;
+  }
+
+  .medejerskab {
+    flex-direction: column;
+  }
+
+  .fordele li {
+    line-height: normal;
+    padding: 5px;
+  }
+  .fordele h4{
+    font-size: large;
+  }
+
+  .ikonpris h2{
+    padding-top: 10%;
+  }
+  .læsfordele{
+    font-size: x-small;
+    width: 60%;
+  }
+  .videre h4{
+    font-size: 1rem;
+  }
+  .videre{
+    line-height: normal;
+    padding: 0;
+    width: 70vw;
+
+  }
 
 }
 
