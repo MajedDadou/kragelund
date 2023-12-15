@@ -557,6 +557,9 @@ hr {
 .kort p {
   width: 20vw;
 }
+.kort h2{
+  font-size: 2em;
+}
 
 /*Lokal menu*/
 .lokalmenu {
@@ -1017,7 +1020,7 @@ video {
   margin-top: 10%;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  font-family: Arvo;
+  font-family: Inter;
   font-size: 90%;
   cursor: pointer;
   /* margin-bottom: 3%; */
@@ -1167,15 +1170,15 @@ video {
 
 /* Donation */
 #beloeb {
-  width: 50vw;
-  height: 20vw;
+  /* width: 50vw; */
+  height: 8vw;
   border: 1px solid #ccc;
   border-radius: 10px;
   margin: 3vw;
   margin-top: 0;
   background-color: #8ea95d93;
   font-family: Arvo;
-  font-size: 10rem;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -1191,6 +1194,9 @@ video {
   cursor: pointer;
   width: 30vw;
   transition-duration: 350ms;
+}
+.videre h4{
+  font-size: x-large;
 }
 
 /* Medejer siden */
@@ -1245,11 +1251,14 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.Respnosiv{
+  display: none !important;
+}
 
 #tokort {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 
 #tokort .kort {
@@ -1523,13 +1532,17 @@ video {
 .shape:hover .image {
   opacity: 1;
 }
-
-.image-1 {
-
+.image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7{
   background-position: center;
   /* background-attachment: fixed; */
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+
+.image-1 {
+
+
   background-image: url('images/IMG_2433.avif');
 
 }
@@ -1560,7 +1573,7 @@ video {
 }
 
 .image-7 {
-  background-image: url('images/IMG_2124.avif');
+  background-image: url('images/IMG_2097.avif');
 }
 
 
@@ -1899,6 +1912,24 @@ video {
 
   }
 
+.Respnosiv{
+  display: block !important;
+}
+
+  .not-Respnosiv{
+    display: none;
+  }
+
+  #tokort {
+    flex-direction: column;
+}
+.kort{
+  /* width: 100%; */
+  /* margin: 10px; */
+}
+.kortejer{
+
+}
 }
 
 

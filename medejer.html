@@ -73,6 +73,8 @@
                     </ul>
                     <button class="læsfordele" onclick="toggleInfo(this)">Læs om fordele her</button>
                 </div>
+                <input type="checkbox" id="checkbox4" class="custom-checkbox Respnosiv">
+
                 <div class="kortejer">
                     <h2>Pony medejerskab</h2>
                     <img src="images/hest.png">
@@ -88,6 +90,8 @@
                     </ul>
                     <button class="læsfordele" onclick="toggleInfo(this)">Læs om fordele her</button>
                 </div>
+                <input type="checkbox" id="checkbox5" class="custom-checkbox Respnosiv">
+
                 <div class="kortejer">
                     <h2>Uldgrise medejerskab</h2>
                     <img src="images/gris.png">
@@ -101,16 +105,20 @@
                     </ul>
                     <button class="læsfordele" onclick="toggleInfo(this)">Læs om fordele her</button>
                 </div>
+                <input type="checkbox" id="checkbox6" class="custom-checkbox Respnosiv">
+
+            </div>
+            <div class="trekort">
+                <input type="checkbox" id="checkbox1" class="custom-checkbox  not-Respnosiv">
+                <input type="checkbox" id="checkbox2" class="custom-checkbox  not-Respnosiv">
+                <input type="checkbox" id="checkbox3" class="custom-checkbox  not-Respnosiv">
+
             </div>
         </div>
-        <div class="trekort">
-            <input type="checkbox" id="checkbox1" class="custom-checkbox">
-            <input type="checkbox" id="checkbox2" class="custom-checkbox">
-            <input type="checkbox" id="checkbox3" class="custom-checkbox">
-        </div>
+
         <div class="infotop">
             <h5>Afkryds det medejerskab du ønsker og tag ansvar</h5>
-            <button onclick="validateCheckboxes()"  class="videre">
+            <button onclick="validateCheckboxes()" class="videre">
                 <h4>Bekræft medejerskab</h4>
             </button>
             <p id="checkaf">...</p>
