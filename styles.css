@@ -1191,6 +1191,9 @@ video {
   width: 30vw;
   transition-duration: 350ms;
 }
+.videre h4{
+  font-size: x-large;
+}
 
 /* Medejer siden */
 /* Tre medejerskaber */
@@ -1244,11 +1247,14 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.Respnosiv{
+  display: none !important;
+}
 
 #tokort {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 
 #tokort .kort {
@@ -1902,6 +1908,24 @@ video {
 
   }
 
+.Respnosiv{
+  display: block !important;
+}
+
+  .not-Respnosiv{
+    display: none;
+  }
+
+  #tokort {
+    flex-direction: column;
+}
+.kort{
+  /* width: 100%; */
+  /* margin: 10px; */
+}
+.kortejer{
+
+}
 }
 
 

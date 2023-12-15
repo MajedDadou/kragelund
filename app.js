@@ -117,9 +117,13 @@ function validateCheckboxes() {
   const checkbox1 = document.getElementById('checkbox1').checked;
   const checkbox2 = document.getElementById('checkbox2').checked;
   const checkbox3 = document.getElementById('checkbox3').checked;
+  const checkbox4 = document.getElementById('checkbox4').checked;
+  const checkbox5 = document.getElementById('checkbox5').checked;
+  const checkbox6 = document.getElementById('checkbox6').checked;
+
   const checkaf = document.getElementById('checkaf');
 
-  if (!checkbox1 && !checkbox2 && !checkbox3) {
+  if (!checkbox1 && !checkbox2 && !checkbox3 && !checkbox4 && !checkbox5 && !checkbox6) {
     checkaf.textContent = 'Vælg mindst én mulighed.';
   } else {
     checkaf.textContent = 'Bekraftelse er moddtaget';
