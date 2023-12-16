@@ -18,7 +18,7 @@ document.addEventListener('scroll', function () {
       if (rect.top <= window.innerHeight && rect.bottom >= window.innerHeight) {
         visibleSection = section;
 
-        // Reset the color of all watch elements
+        // Reset the color of all pic elements
         for (var j = 1; j <= 10; j++) {
           var allpicElements = document.querySelectorAll('#pic' + j);
           allpicElements.forEach(function (picElement) {
@@ -26,7 +26,7 @@ document.addEventListener('scroll', function () {
           });
         }
 
-        // Set the color of current section's watch elements
+        // Set the color of current section's pic elements
         var picElements = document.querySelectorAll('#pic' + i);
         picElements.forEach(function (picElement) {
           picElement.style.color = '#D49824';
