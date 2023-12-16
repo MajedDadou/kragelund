@@ -56,7 +56,7 @@ a {
 
 .vertikalbilleder {
   width: 70% !important;
-  
+
 }
 
 .billboard {
@@ -965,8 +965,8 @@ hr {
 }
 
 video {
-  /* width: 100%; */
-  /* height: 80%; */
+  width: 100%;
+  height: 100%;
   margin: 0;
   object-fit: cover;
 }
@@ -1518,17 +1518,12 @@ video {
 .shape:hover {
   width: calc(200% + 8px);
   /* Expand the width of the hovered shape */
-  /* border-right: 2px solid transparent; */
-  /* Hide the border on the expanded shape */
-  /* z-index: 1; */
-  /* Ensure the hovered shape is on top */
 }
 
 .shape:not(:hover) {
   width: calc(60% - 8px);
   /* Collapse the width of other shapes */
-  /* border-right: 2px solid #7ECC4D; */
-  /* Restore border color for other shapes */
+
 }
 
 .shape:hover .circle-logo {
@@ -1540,16 +1535,9 @@ video {
 }
 
 
-.shape-3 {
-  /* border-right: 2px solid #7ECC4D; */
-
-}
 
 
 
-.shape-6 {
-  border-right: none;
-}
 
 .shape:hover::before {
   content: '';
@@ -1658,33 +1646,6 @@ video {
 .image-7 {
   background-image: url('images/IMG_2097.avif');
 }
-
-
-
-
-
-/* Define styles for the shapes' background images */
-.shape-1::after {
-  /* Specify the image URL */
-  position: absolute;
-
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.shape-1::before {
-  opacity: 0;
-  content: url('images/IMG_2089.avif');
-
-}
-
-
-
-/* Define similar styles for other shapes (.shape-2, .shape-3, etc.) */
-/* ... */
 
 
 
@@ -1941,7 +1902,6 @@ video {
     height: 100%;
   }
 
-  .læsmere div {}
 
   #upper-nav,
   .navigation {
@@ -2048,33 +2008,34 @@ video {
   }
 
   #lokalmenuplanter h4 {
-
-    font-size: x-small;
+    display: none;
   }
 
   .lokalmenu h4 {
-    font-size: medium;
+    display: none;
+    /* font-size: medium; */
+
   }
 
   .læsom {
     font-size: medium;
     padding: 0;
   }
-
 }
 
 
-@media screen and (max-width: 768px) {
-  .image-card {
-    width: calc(100%);
-    /* Adjust the width of each image card for smaller screens */
+
+  @media screen and (max-width: 768px) {
+    .image-card {
+      width: calc(100%);
+      /* Adjust the width of each image card for smaller screens */
+    }
   }
-}
 
-/* Media query for even smaller screens or mobile devices */
-@media screen and (max-width: 480px) {
-  .image-card {
-    width: calc(100%);
-    /* Adjust the width of each image card for mobile devices */
+  /* Media query for even smaller screens or mobile devices */
+  @media screen and (max-width: 480px) {
+    .image-card {
+      width: calc(100%);
+      /* Adjust the width of each image card for mobile devices */
+    }
   }
-}
