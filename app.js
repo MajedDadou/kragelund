@@ -88,30 +88,7 @@ function toggleInfo(button) {
   button.innerText = buttonText;
 }
 
-/* Funktion til at check af afkrydsning
-document.addEventListener('DOMContentLoaded', function() {
-  // Hent checkboxer og knap
-  var checkbox1 = document.getElementById('checkbox1');
-  var checkbox2 = document.getElementById('checkbox2');
-  var checkbox3 = document.getElementById('checkbox3');
-  var submitButton = document.getElementById('submitButton');
-  var resultBox = document.getElementById('resultBox');
 
-  // Tilføj en eventlistener til hver checkbox for at opdatere knappens tilstand
-  checkbox1.addEventListener('change', updateButtonState);
-  checkbox2.addEventListener('change', updateButtonState);
-  checkbox3.addEventListener('change', updateButtonState);
-
-  // Funktion til at opdatere knappens tilstand
-  function updateButtonState() {
-    submitButton.disabled = !(checkbox1.checked || checkbox2.checked || checkbox3.checked);
-  }
-
-  // Tilføj en eventlistener til knappen for at vise boksen
-  submitButton.addEventListener('click', function() {
-    resultBox.style.display = 'block'; // Vis boksen
-  });
-});*/
 
 function validateCheckboxes() {
   const checkboxes = [
@@ -182,40 +159,6 @@ window.addEventListener('click', function(event) {
   }
 });
 
-
-
-
-// // Function to show sidebar
-// function showSidebar() {
-//   const sidebar = document.getElementById('sidebar');
-//   sidebar.classList.remove('hidden-sidebar');
-// }
-
-// // Function to hide sidebar
-// function hideSidebar() {
-//   const sidebar = document.getElementById('sidebar');
-//   sidebar.classList.add('hidden-sidebar');
-// }
-
-// // Function to check scroll position and trigger the sidebar visibility
-// function checkScroll() {
-//   const specificPoint = 800; // Change this value to the scroll position where you want the sidebar to appear
-//   const sidebar = document.getElementById('sidebar');
-
-//   if (window.scrollY >= specificPoint) {
-//     showSidebar();
-//   } else {
-//     hideSidebar();
-//   }
-// }
-
-// // Event listener to check scroll position
-// window.addEventListener('scroll', checkScroll);
-
-// // Initially, check the scroll position on page load
-// document.addEventListener('DOMContentLoaded', function () {
-//   checkScroll();
-// });
 
 
 
