@@ -55,8 +55,8 @@ a {
 }
 
 .vertikalbilleder {
-  width: 70%;
-
+  width: 70% !important;
+  
 }
 
 .billboard {
@@ -360,8 +360,7 @@ hr {
   justify-content: center;
 }
 
-.contact-left {
-}
+.contact-left {}
 
 .contact-left h3 {
   overflow-wrap: break-word;
@@ -429,6 +428,62 @@ hr {
   margin-right: 7%;
 }
 
+/* Pop-up messages */
+/* Style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  /* Higher z-index to ensure it appears on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.425);
+  /* Semi-transparent black overlay */
+}
+
+/* Style the modal content */
+.modal-content {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-color: #303030e3;
+  margin: 15% auto;
+  /* padding: 1%; */
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* Style the close button */
+.close {
+  color: #ffffff;
+  /* float: right; */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content img {
+  width: 30%;
+}
+
+.modal-content h2 {
+  color: white;
+}
+
+.modal-content p {
+  color: white;
+}
+
+
 /* Info med tekst overskrift under eller over bredt billede */
 .infotop {
   display: flex;
@@ -476,19 +531,22 @@ hr {
 
 /* fun facts */
 .tekstet_ {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(234, 211, 149, 1);
-  width: 42%;
-  height: 25vw;
-  margin-left: 7vw;
-  margin-right: 2vw;
+  width: 50%;
+  height: 20%;
+  margin: 5%;
   text-align: left;
   border-radius: 10px;
-
 }
+
 
 .tekstet_ ul {
   line-height: 2em;
-  margin: 10%;
+  /* display: flex; */
+  /* margin: 10%; */
+
 
 }
 
@@ -557,17 +615,20 @@ hr {
 .kort p {
   width: 20vw;
 }
-.kort h2{
+
+.kort h2 {
   font-size: 2em;
 }
 
-#firenulfire .læsom{
+#firenulfire .læsom {
   width: 30vw;
 }
-#firenulfire .infoet{
+
+#firenulfire .infoet {
   margin-top: -4vw;
 }
-#firenulfire h2{
+
+#firenulfire h2 {
   margin-top: 3vw;
 }
 
@@ -575,7 +636,7 @@ hr {
 .lokalmenu {
   width: 100%;
   display: flex;
-  height: 9vw;
+  height: 100%;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(234, 211, 149, 1);
@@ -592,29 +653,34 @@ hr {
 
 .lokalmenu h4 {
   margin: -0.4em 0 0 0;
+  /* font-size: medium; */
 }
 
 .ikontekst {
-  display: block;
+  /* height: 100%; */
+  flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 .ikon {
-  margin-top: -1em;
+  /* margin-top: -1em; */
   width: 50%;
 }
+
 
 /* Kun på plantesiden, da den lokalemenu består af mange titler */
 #lokalmenuplanter {
   display: flex;
-  height: 9vw;
+  height: 100%;
+  /* padding-bottom: 1%; */
+  /* width: 100%; */
   justify-content: space-around;
   align-items: center;
   background-color: rgba(234, 211, 149, 1);
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 2%;
   position: sticky;
   top: 0;
   z-index: 4;
@@ -632,9 +698,10 @@ hr {
 }
 
 #lokalmenuplanter h4 {
+  /* display: flex; */
   margin: -0.3em 0 0 0;
   margin-bottom: -0.7em;
-  font-size: 1.2em;
+  font-size: x-large;
 }
 
 #lokalmenuplanter .ikon {
@@ -898,8 +965,8 @@ hr {
 }
 
 video {
-  width: 100%;
-  height: 80%;
+  /* width: 100%; */
+  /* height: 80%; */
   margin: 0;
   object-fit: cover;
 }
@@ -1191,7 +1258,7 @@ video {
 .videre {
   background-color: #8EA95D;
   border: solid white;
-  border-radius: 10px; 
+  border-radius: 10px;
   text-transform: uppercase;
   color: black;
   font-family: Arvo;
@@ -1200,7 +1267,8 @@ video {
   width: 30vw;
   transition-duration: 350ms;
 }
-.videre h4{
+
+.videre h4 {
   font-size: x-large;
 }
 
@@ -1215,7 +1283,7 @@ video {
 }
 
 
-.kortejer h2  {
+.kortejer h2 {
   font-size: 2vw;
   margin-top: 2vw;
 }
@@ -1256,11 +1324,13 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
-.Respnosiv{
+
+.Respnosiv {
   display: none !important;
 }
 
 #tokort {
+  margin-bottom: 5%;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -1268,6 +1338,7 @@ video {
 
 #tokort .kort {
   background-color: #EAD395;
+  border-radius: 10px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -1537,7 +1608,14 @@ video {
 .shape:hover .image {
   opacity: 1;
 }
-.image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7{
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6,
+.image-7 {
   background-position: center;
   /* background-attachment: fixed; */
   background-size: cover;
@@ -1697,7 +1775,7 @@ video {
   font-size: 2vh;
   word-wrap: break-word;
   text-align: right;
-  
+
 
 }
 
@@ -1744,14 +1822,15 @@ video {
     flex-direction: column;
   }
 
-  .shape{
+  .shape {
     display: none;
   }
+
   .background-shapes {
     height: 40vh;
-  
+
   }
-  
+
 
   .flip-card-front img,
   .flip-card-back {
@@ -1877,8 +1956,10 @@ video {
 
   .kort {
     margin-top: 10%;
-    width: 80%;
+    width: 100%;
     border-radius: 2.5vw;
+    flex-direction: column;
+    display: flex;
 
   }
 
@@ -1896,45 +1977,90 @@ video {
     line-height: normal;
     padding: 5px;
   }
-  .fordele h4{
+
+  .fordele h4 {
     font-size: large;
   }
 
-  .ikonpris h2{
+  .ikonpris h2 {
     padding-top: 10%;
   }
-  .læsfordele{
+
+  .læsfordele {
     font-size: x-small;
     width: 60%;
   }
-  .videre h4{
+
+  .videre h4 {
     font-size: 1rem;
   }
-  .videre{
+
+  .videre {
     line-height: normal;
     padding: 0;
     width: 70vw;
 
   }
 
-.Respnosiv{
-  display: block !important;
-}
+  .Respnosiv {
+    display: block !important;
+  }
 
-  .not-Respnosiv{
+  .not-Respnosiv {
     display: none;
   }
 
   #tokort {
     flex-direction: column;
-}
-.kort{
-  /* width: 100%; */
-  /* margin: 10px; */
-}
-.kortejer{
+  }
 
-}
+  .kortejer {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-style {
+    padding: 0;
+    font-size: larger;
+  }
+
+  #sidebar .toggle-btn {
+    right: 320px;
+  }
+
+  .tekstet_ {
+    width: 90%;
+    height: 100%;
+  }
+
+  .tekstet_ ul {
+    display: block;
+  }
+
+  #lokalmenuplanter h4 {
+
+    font-size: x-small;
+  }
+
+  .lokalmenu h4 {
+    font-size: medium;
+  }
+
+  .læsom {
+    font-size: medium;
+    padding: 0;
+  }
+
 }
 
 

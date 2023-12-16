@@ -18,7 +18,7 @@ document.addEventListener('scroll', function () {
       if (rect.top <= window.innerHeight && rect.bottom >= window.innerHeight) {
         visibleSection = section;
 
-        // Reset the color of all watch elements
+        // Reset the color of all pic elements
         for (var j = 1; j <= 10; j++) {
           var allpicElements = document.querySelectorAll('#pic' + j);
           allpicElements.forEach(function (picElement) {
@@ -26,7 +26,7 @@ document.addEventListener('scroll', function () {
           });
         }
 
-        // Set the color of current section's watch elements
+        // Set the color of current section's pic elements
         var picElements = document.querySelectorAll('#pic' + i);
         picElements.forEach(function (picElement) {
           picElement.style.color = '#D49824';
@@ -88,82 +88,77 @@ function toggleInfo(button) {
   button.innerText = buttonText;
 }
 
-/* Funktion til at check af afkrydsning
-document.addEventListener('DOMContentLoaded', function() {
-  // Hent checkboxer og knap
-  var checkbox1 = document.getElementById('checkbox1');
-  var checkbox2 = document.getElementById('checkbox2');
-  var checkbox3 = document.getElementById('checkbox3');
-  var submitButton = document.getElementById('submitButton');
-  var resultBox = document.getElementById('resultBox');
 
-  // Tilføj en eventlistener til hver checkbox for at opdatere knappens tilstand
-  checkbox1.addEventListener('change', updateButtonState);
-  checkbox2.addEventListener('change', updateButtonState);
-  checkbox3.addEventListener('change', updateButtonState);
-
-  // Funktion til at opdatere knappens tilstand
-  function updateButtonState() {
-    submitButton.disabled = !(checkbox1.checked || checkbox2.checked || checkbox3.checked);
-  }
-
-  // Tilføj en eventlistener til knappen for at vise boksen
-  submitButton.addEventListener('click', function() {
-    resultBox.style.display = 'block'; // Vis boksen
-  });
-});*/
 
 function validateCheckboxes() {
-  const checkbox1 = document.getElementById('checkbox1').checked;
-  const checkbox2 = document.getElementById('checkbox2').checked;
-  const checkbox3 = document.getElementById('checkbox3').checked;
-  const checkbox4 = document.getElementById('checkbox4').checked;
-  const checkbox5 = document.getElementById('checkbox5').checked;
-  const checkbox6 = document.getElementById('checkbox6').checked;
+  const checkboxes = [
+    document.getElementById('checkbox1').checked,
+    document.getElementById('checkbox2').checked,
+    document.getElementById('checkbox3').checked,
+    document.getElementById('checkbox4').checked,
+    document.getElementById('checkbox5').checked,
+    document.getElementById('checkbox6').checked
+  ];
 
   const checkaf = document.getElementById('checkaf');
+  const atLeastOneChecked = checkboxes.some(checkbox => checkbox);
 
-  if (!checkbox1 && !checkbox2 && !checkbox3 && !checkbox4 && !checkbox5 && !checkbox6) {
+  if (!atLeastOneChecked) {
     checkaf.textContent = 'Vælg mindst én mulighed.';
   } else {
-    checkaf.textContent = 'Bekraftelse er moddtaget';
-    // Additional logic or actions if at least one checkbox is checked
+    checkaf.textContent = 'Bekræftelse er modtaget';
+    document.getElementById('myModal').style.display = 'block';
   }
-
 }
 
+// Close the modal when the close button (×) is clicked
+document.addEventListener('click', function (event) {
+  if (event.target.classList.contains('close')) {
+    document.getElementById('myModal').style.display = 'none';
+  }
+});
 
-// // Function to show sidebar
-// function showSidebar() {
-//   const sidebar = document.getElementById('sidebar');
-//   sidebar.classList.remove('hidden-sidebar');
-// }
+// Close the modal if the user clicks outside of it
+window.addEventListener('click', function (event) {
+  const modal = document.getElementById('myModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
 
-// // Function to hide sidebar
-// function hideSidebar() {
-//   const sidebar = document.getElementById('sidebar');
-//   sidebar.classList.add('hidden-sidebar');
-// }
 
-// // Function to check scroll position and trigger the sidebar visibility
-// function checkScroll() {
-//   const specificPoint = 800; // Change this value to the scroll position where you want the sidebar to appear
-//   const sidebar = document.getElementById('sidebar');
 
-//   if (window.scrollY >= specificPoint) {
-//     showSidebar();
-//   } else {
-//     hideSidebar();
-//   }
-// }
 
-// // Event listener to check scroll position
-// window.addEventListener('scroll', checkScroll);
 
-// // Initially, check the scroll position on page load
-// document.addEventListener('DOMContentLoaded', function () {
-//   checkScroll();
-// });
+function validateDonation() {
+  const beloebInput = document.getElementById('beloeb');
+  const donationAmount = parseFloat(beloebInput.value.trim()); // Get the entered amount as a number
+  
+  if (!donationAmount || isNaN(donationAmount)) {
+    document.getElementById('amountValidationModal').style.display = 'block'; // Show the modal for invalid amount
+  } else if (donationAmount < 1) {
+    alert('The amount is too little.'); // Show an alert for amounts less than 1 (modify this to fit the desired message)
+  } else {
+    document.getElementById('myModal').style.display = 'block';
+   
+  }
+}
+
+// Close the amount validation modal when the close button (×) is clicked
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('close-amount-validation')) {
+    document.getElementById('amountValidationModal').style.display = 'none';
+  }
+});
+
+// Close the amount validation modal if the user clicks outside of it
+window.addEventListener('click', function(event) {
+  const modal = document.getElementById('amountValidationModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
 
 
 
