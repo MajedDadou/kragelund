@@ -913,18 +913,13 @@ video {
   background-repeat: no-repeat;
   background-size: auto;
 }
-
-
 #section1 {
   background-image: url('images/tinasbilledehest.avif');
   z-index: 0;
-
 }
-
 #section2 {
   background-image: url('images/billedetinageder.avif');
 }
-
 #section3 {
   background-image: url('images/IMG_2491.avif');
 }
