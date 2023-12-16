@@ -45,7 +45,6 @@ document.addEventListener('scroll', function () {
 });
 
 
-// Function to check if element is in the viewport
 const isElementInViewport = (el) => {
   const rect = el.getBoundingClientRect();
   return (
@@ -56,7 +55,6 @@ const isElementInViewport = (el) => {
   );
 };
 
-// Function to handle fade-in effect for image cards
 const handleFadeIn = () => {
   const fadeElements = document.querySelectorAll('.fade-in');
   fadeElements.forEach((element) => {
@@ -66,12 +64,20 @@ const handleFadeIn = () => {
   });
 };
 
-// Event listener for scroll event
-window.addEventListener('scroll', () => {
-  handleFadeIn();
-});
+let throttleTimeout;
 
-// Initially trigger fade-in for elements in view on page load
+const throttleScroll = () => {
+  if (!throttleTimeout) {
+    throttleTimeout = setTimeout(() => {
+      throttleTimeout = null;
+      handleFadeIn();
+    }, 20); // Adjust the delay as needed for performance
+  }
+};
+
+window.addEventListener('scroll', throttleScroll);
+window.addEventListener('touchmove', throttleScroll); // Listen to touch events for mobile
+
 document.addEventListener('DOMContentLoaded', () => {
   handleFadeIn();
 });
@@ -133,26 +139,26 @@ window.addEventListener('click', function (event) {
 function validateDonation() {
   const beloebInput = document.getElementById('beloeb');
   const donationAmount = parseFloat(beloebInput.value.trim()); // Get the entered amount as a number
-  
+
   if (!donationAmount || isNaN(donationAmount)) {
     document.getElementById('amountValidationModal').style.display = 'block'; // Show the modal for invalid amount
   } else if (donationAmount < 1) {
     alert('The amount is too little.'); // Show an alert for amounts less than 1 (modify this to fit the desired message)
   } else {
     document.getElementById('myModal').style.display = 'block';
-   
+
   }
 }
 
 // Close the amount validation modal when the close button (×) is clicked
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
   if (event.target.classList.contains('close-amount-validation')) {
     document.getElementById('amountValidationModal').style.display = 'none';
   }
 });
 
 // Close the amount validation modal if the user clicks outside of it
-window.addEventListener('click', function(event) {
+window.addEventListener('click', function (event) {
   const modal = document.getElementById('amountValidationModal');
   if (event.target === modal) {
     modal.style.display = 'none';
