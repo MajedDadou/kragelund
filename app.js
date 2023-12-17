@@ -56,32 +56,28 @@ const isElementInViewport = (el) => {
 };
 
 const handleFadeIn = () => {
+  const isMobile = window.innerWidth <= 768; // Adjust the width as needed for your definition of mobile devices
   const fadeElements = document.querySelectorAll('.fade-in');
+  
   fadeElements.forEach((element) => {
-    if (isElementInViewport(element)) {
-      element.classList.add('active');
+    if (!isMobile) {
+      if (isElementInViewport(element)) {
+        element.classList.add('active');
+      }
+    } else {
+      element.classList.add('active'); // Show elements instantly on mobile
     }
   });
 };
 
-let throttleTimeout;
-
-const throttleScroll = () => {
-  if (!throttleTimeout) {
-    throttleTimeout = setTimeout(() => {
-      throttleTimeout = null;
-      handleFadeIn();
-    }, 200); // Adjust the delay as needed for performance
-  }
-};
-
-window.addEventListener('scroll', throttleScroll);
-window.addEventListener('touchmove', throttleScroll); // Listen to touch events for mobile
-window.addEventListener('resize', throttleScroll); // Listen to resize events
-
 document.addEventListener('DOMContentLoaded', () => {
   handleFadeIn();
 });
+
+window.addEventListener('scroll', () => {
+  handleFadeIn();
+});
+
 
 
 
