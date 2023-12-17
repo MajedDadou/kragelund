@@ -218,8 +218,7 @@ hr {
 .welcome-text {
   overflow-wrap: break-word;
   font-family: 'Arvo', serif;
-  /* font-size: 3vw; */
-  /* font-size: 4rem; */
+
   font-weight: normal;
   text-align: center;
   margin: 0;
@@ -229,8 +228,7 @@ hr {
   text-align: center;
   font-family: 'Arvo', serif;
   font-weight: bold;
-  /* font-size: 96px; */
-  /* font-size: 12vh; */
+
   text-align: center;
   margin-bottom: 1.2em;
 }
@@ -544,8 +542,7 @@ hr {
 
 .tekstet_ ul {
   line-height: 2em;
-  /* display: flex; */
-  /* margin: 10%; */
+
 
 
 }
@@ -784,33 +781,7 @@ hr {
   z-index: 3;
 }
 
-#et {
-  top: -640vw;
-}
 
-#to {
-  top: -650vw;
-}
-
-#tre {
-  top: -710vw;
-}
-
-#fire {
-  top: -850vw;
-}
-
-#fem {
-  top: -930vw;
-}
-
-#seks {
-  top: -1080vw;
-}
-
-#syv {
-  top: -1090vw;
-}
 
 /* sectioner i tidslinje */
 .box-styling {
@@ -824,90 +795,7 @@ hr {
   z-index: 1;
 }
 
-#forste {
-  top: 15vw;
-  left: 3vw;
-}
 
-#anden {
-  top: -640vw;
-  left: 56vw;
-}
-
-#tredje {
-  top: -675vw;
-  left: 3vw;
-}
-
-#fjerde {
-  top: -700vw;
-  left: 56vw;
-}
-
-#femte {
-  top: -750vw;
-  left: 3vw;
-}
-
-#sjette {
-  top: -780vw;
-  left: 56vw;
-}
-
-#syvende {
-  top: -800vw;
-  left: 3vw;
-}
-
-#ottende {
-  top: -840vw;
-  left: 56vw;
-}
-
-#niende {
-  top: -870vw;
-  left: 3vw;
-}
-
-#tiende {
-  top: -910vw;
-  left: 56vw;
-}
-
-#elte {
-  top: -915vw;
-  left: 56vw;
-}
-
-#tolvte {
-  top: -980vw;
-  left: 3vw;
-}
-
-#trettende {
-  top: -955vw;
-  left: 56vw;
-}
-
-#fjordende {
-  top: -1045vw;
-  left: 3vw;
-}
-
-#femtende {
-  top: -1020vw;
-  left: 56vw;
-}
-
-#sekstende {
-  top: -1115vw;
-  left: 3vw;
-}
-
-#syttende {
-  top: -1100vw;
-  left: 3vw;
-}
 
 
 /* tekst til kort */
@@ -1750,12 +1638,6 @@ video {
 }
 
 
-.footer-sponsor {
-  /* margin-top: 5em; */
-  /* margin: 2em; */
-  /* width: 100%; */
-  /* height: 100%; */
-}
 
 .footer-sponsor img {
   margin: 1em;
@@ -1923,7 +1805,7 @@ video {
 
   }
 
-  .kort h2 {}
+
 
   .kort p {
     width: 90%;
