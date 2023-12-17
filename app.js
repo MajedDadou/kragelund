@@ -71,16 +71,20 @@ const throttleScroll = () => {
     throttleTimeout = setTimeout(() => {
       throttleTimeout = null;
       handleFadeIn();
-    }, 20); // Adjust the delay as needed for performance
+    }, 200); // Adjust the delay as needed for performance
   }
 };
 
 window.addEventListener('scroll', throttleScroll);
 window.addEventListener('touchmove', throttleScroll); // Listen to touch events for mobile
+window.addEventListener('resize', throttleScroll); // Listen to resize events
 
 document.addEventListener('DOMContentLoaded', () => {
   handleFadeIn();
 });
+
+
+
 
 // Funktion til at folde fordele ud med mere information
 function toggleInfo(button) {
@@ -93,6 +97,9 @@ function toggleInfo(button) {
   var buttonText = mereInfo.classList.contains("hidden") ? "Læs om fordele" : "Skjul fordele";
   button.innerText = buttonText;
 }
+
+
+
 
 
 
