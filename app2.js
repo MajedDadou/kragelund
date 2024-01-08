@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalImage = document.getElementById('modalImage');
 
   images.forEach((image) => {
-    const size = Math.floor(Math.random() * 500) + 50; // Random size between 50px and 500px
+    const size = Math.floor(Math.random() * 500) + 100; // Random size between 50px and 500px
 
     const x = Math.random() * (parallax.offsetWidth - size); // Limit within parallax width
     const y = Math.random() * (parallax.offsetHeight - size); // Limit within parallax height
