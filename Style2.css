@@ -6,13 +6,13 @@ body {
 
 .parallax {
   overflow: hidden;
-  height: 200vh;
+  height: 150vh;
 }
 
 .images {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minimum width */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust the minimum width */
   grid-gap: 20px; /* Adjust the gap between images */
 }
 
