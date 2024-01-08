@@ -45,11 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    images.forEach((image) => {
-      const speed = parseFloat(image.style.transform.split(' ')[1].slice(0, -3)) || 1;
-      image.style.transform = `translateY(${speed * scrollY * -0.3}px)`;
-    });
-  });
 });
