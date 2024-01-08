@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('.image-para');
+  const parallax = document.querySelector('.parallax');
   const modal = document.getElementById('modal');
   const modalImage = document.getElementById('modalImage');
 
   images.forEach((image) => {
     const size = Math.floor(Math.random() * 500) + 50; // Random size between 50px and 500px
 
-    const x = Math.random() * (window.innerWidth - size); // Limit within window width
-    const y = Math.random() * (window.innerHeight - size); // Limit within window height
+    const x = Math.random() * (parallax.clientWidth - size); // Limit within parallax width
+    const y = Math.random() * (parallax.clientHeight - size); // Limit within parallax height
 
     image.style.left = `${x}px`;
     image.style.top = `${y}px`;
