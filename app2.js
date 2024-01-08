@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalImage = document.getElementById('modalImage');
 
   images.forEach((image) => {
-    const size = Math.floor(Math.random() * 500) + 50; // Random size between 50px and 500px
+    const size = Math.floor(Math.random() * 500) + 100; // Random size between 50px and 500px
 
     const x = Math.random() * (parallax.offsetWidth - size); // Limit within parallax width
     const y = Math.random() * (parallax.offsetHeight - size); // Limit within parallax height
@@ -45,11 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    images.forEach((image) => {
-      const speed = parseFloat(image.style.transform.split(' ')[1].slice(0, -3)) || 1;
-      image.style.transform = `translateY(${speed * scrollY * -0.3}px)`;
-    });
-  });
 });
