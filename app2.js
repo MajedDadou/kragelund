@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   images.forEach((image) => {
     const size = Math.floor(Math.random() * 500) + 50; // Random size between 50px and 500px
 
-    const x = Math.random() * (parallax.clientWidth - size); // Limit within parallax width
-    const y = Math.random() * (parallax.clientHeight - size); // Limit within parallax height
+    const x = Math.random() * (parallax.offsetWidth - size); // Limit within parallax width
+    const y = Math.random() * (parallax.offsetHeight - size); // Limit within parallax height
 
     image.style.left = `${x}px`;
     image.style.top = `${y}px`;
@@ -21,6 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Parallax scrolling effect
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    images.forEach((image) => {
+      const speed = parseFloat(image.dataset.speed) || 1; // Adjust the speed as needed
+
+      const yPos = -(scrollY * speed);
+      image.style.transform = `translateY(${yPos}px)`;
+    });
+  });
 
   // Close the modal when clicking on the close button (×) or outside the modal content
   const closeModal = () => {
