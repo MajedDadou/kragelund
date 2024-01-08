@@ -72,3 +72,22 @@ body {
 
 
 }
+
+/* Læs mere audio  */
+.audio-container{
+  margin-top: 2vw;
+  text-align: left;
+}
+.audio-container h4{
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 2vw;
+}
+.audio-container p{
+  font-family: Arvo;
+  font-size: 0.7rem;
+  margin-top: -2vw;
+}
+audio{
+  margin: -1rem;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Læs mere om ponyer</title>
+    <script src="app.js"></script>
+    <script src="app2.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font Arvo regular, bold, italic -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <!-- font Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500&family=Kanit&family=Oxygen:wght@300;400;700&family=Poller+One&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="color-frontpage">
+            <div id="sidebar">
+                <div class="toggle-btn" onclick="show()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="logo-image">
+                    <ul>
+                        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                        <li><a class="link-style" href="index.html">Home</a></li>
+                        <li><a class="link-style" href="omprojektet.html">Om projektet</a></li>
+                        <li><a class="link-style" href="dyr.html">Dyr</a></li>
+                        <li><a class="link-style" href="insekt.html">Insekter</a></li>
+                        <li><a class="link-style" href="planter.html">Planter</a></li>
+                        <li><a class="link-style" href="sponsor.html">Sponser</a></li>
+                        <li><a class="link-style" href="404.html">Galleri</a></li>
+                        <li><a class="link-style" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- div for the rest of nav content -->
+            <div id="nav-content">
+                <div id="empty-box"></div>
+                <!-- image -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="tilbage">
+            <a href="dyr.html">
+                <!-- Pil taget fra:https://da.piliapp.com/symbol/arrow/ -->
+                <h4>← Tilbage</h4>
+            </a>
+        </div>
+        <!-- Informations section m. bred img -->
+        <div class="infotop">
+            <h1>Ponyer</h1>
+            <div class="placeholder"><img class="billboard" src="images/topheste.avif" alt="billeder af ponyer"></div>
+            <!-- Smiley taget fra: https://da.piliapp.com/facebook-symbols/ -->
+            <h5>Vi er vilde med vores ponyer. De klæder landskabet og landskabet klæder dem. Bedøm selv 🐴 </h5>
+            <section class="audio-container">
+                <h4>Klik her for at høre hestene løbe</h4>
+                <audio controls>
+                    <source src="audio/hesteloeber.mp3" type="audio/mp3">
+                    Din browser understøtter ikke lydafspilleren.
+                </audio>
+            </section>
+        </div>
+        <!-- informations section "to" -->
+        <div class="infoto">
+            <!-- billede section -->
+            <div class="billedeto">
+                <img class="infobilledeto vertikalbilleder" src="images/hestebillede1.avif" alt="heste der løber">
+            </div>
+            <!-- tekst section -->
+            <section class="tekstto">
+                <h4>Exmoor</h4>
+                <p>Vi har pt. Exmoor ponyer på arealet. Først fik vi fire vallakker i 2020, i 2021 kom fire hopper til.
+                    Den ene viste sig at være ifolet og i foråret 2022 blev det første føl født i Kragelund – en lysåben
+                    mose. Sommeren 2022 tog vi springet og fik en hingst. Det er gået over al forventning. Flokken går
+                    stadig samlet, men vallakkerne har forstået, hvem der er chef i firmaet.</p>
+                <section class="audio-container">
+                    <h4>Klik her for at høre hestene</h4>
+                    <audio controls>
+                        <source src="audio/hestelyde.mp3" type="audio/mp3">
+                        Din browser understøtter ikke lydafspilleren.
+                     </audio>
+                </section>
+            </section>
+        </div>
+        <!-- informations section "et" -->
+        <div class="infoet">
+            <!-- tekst section -->
+            <section class="tekstet">
+                <h4>Konik</h4>
+                <p>Vores Konik ponyer lever i harmoni med naturen omkring dem. Konik racen er kedt for at være
+                    semi-vilde. Kragelund Moses konik ponyer kan leve vildt i store naturområdet. Det giver dem frie
+                    rammer til at bevare deres naturlige instinkter og adfærdsmønstre. Konik racen er kendt for deres
+                    rolle indn for naturbevaring. Vores ponyer bidrager til at bevare økosystemer, hvor balancen i
+                    miljøet ved afgræsning og fjerne uønsket vegetation. De bidrager til forøgelsen af biodiversiteten.
+                </p>
+            </section>
+            <!-- billede section -->
+            <div class="billedeet">
+                <img class="infobilledeet" src="images/heste2.avif" alt="heste der hopper">
+            </div>
+        </div>
+        <!-- informations section "et" -->
+        <div class="infoet">
+            <!-- tekst section -->
+            <section class="tekstet">
+                <h4>Føde</h4>
+                <p>Heste/ponyer er helt uomgængelige i ansvarlig arealforvaltning med fokus på biodiversitet. De har en
+                    glubende appetit og er bestemt ikke kostforagtere. Gammel tørt græs (standing hay), kviste, blade,
+                    knopper, nål, bark, dunhamre og tagrør – de kan det hele og med tænder i både over- og undermund,
+                    kan de bide helt i bund. <br><br> Hestene ikke så meget som værdigede foderringen et blik. De kunne
+                    selv og ville selv og klarede sig på bedste vis gennem vinteren i god huld.</p>
+                <section class="audio-container">
+                    <h4>Klik her for at høre hestene spise</h4>
+                    <audio controls>
+                        <source src="audio/hestegraesser.mp3" type="audio/mp3">
+                        Din browser understøtter ikke lydafspilleren.
+                    </audio>
+                </section>
+            </section>
+            <!-- billede section -->
+            <div class="billedeet">
+                <img class="infobilledeet vertikalbilleder" src="images/heste 3.avif" alt="heste der hygger">
+            </div>
+        </div>
+        <!-- Informations section m. bred img -->
+        <div class="infotop">
+            <h1>Pony Wellness</h1>
+            <div class="placeholder"><img class="billboard" src="images/hestebund.avif" alt="pony der ruller"></div>
+            <div class="holdertilp">
+                <p>Vores ponyer er glade for vand – det tror jeg faktisk alle heste er såfremt de har muligheden. Under
+                    nogle af ponyernes mange svømmeture i sommer, slog det mig, om det egentlig er dyremishandling, at
+                    holde heste uden, at de har adgang til at tage sig en ordentlig svømmetur? De ser nærmest saglige ud
+                    og den efterfølgende rulletur i sandet er en hel integreret del af deres naturlige heste-wellness.
+                    De får dog ingen badekåber eller net til at beskytte sig mod solens stærke stråler eller insekternes
+                    irriterende bid, men de har til gengæld en grantykning og andre bevoksninger, som de kan søge skygge
+                    og ly i, når de selv gerne vil.</p>
+            </div>
+        </div>
+    </main>
+
+    <Footer>
+        <div><img class="footerdeko" src="images/footerdeko.png" alt="Deko på footer"></div>
+        <section class="footer-holder">
+            <div class="footer-1">
+                <div class="footer-menu">
+                    <a href="omprojektet.html">Om Projektet</a>
+                    <a href="dyr.html">Dyr</a>
+                    <a href="insekt.html">Insekter</a>
+                    <a href="planter.html">Planter</a>
+                    <a href="sponsor.html">Sponsor</a>
+                    <a href="404.html">Galleri</a>
+                    <a href="sponsor.html">Sponsor</a>
+
+                </div>
+                <div class="footer-social">
+
+                    <a href="https://www.facebook.com/groups/1273514586373222"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/kragelundmose/?hl=en"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-2">
+                <div class="footer-info">
+                    <div class="footer-title">Kragelund Mose</div>
+                    <div class="footer-details">Kragelund Mose er et naturskønt område kendt for sin rige
+                        biodiversitet.
+                    </div>
+                </div>
+                <div class="footer-sponsor">
+                    <img src="images/DenDanskeNaturfond.png" alt="den Danske Naturfond">
+                    <img src="images/VejenKommune.png" alt="Vejen Kommune">
+                </div>
+            </div>
+
+            <hr>
+            <div class="footer-3">
+                <div class="footer-kontakt">
+                    <div class="footer-title">Kontakt</div>
+                    <div class="footer-details">Tlf nr:</div>
+                    <div class="footer-details">+ 45 22 38 92 98</div>
+                    <div class="footer-details">E-mail:</div>
+                    <div class="footer-details">Martinsandager@icloud.com</div>
+                </div>
+                <div class="footer-oplysninger">
+
+                </div>
+            </div>
+
+        </section>
+    </Footer>
+</body>
+
+</html>
