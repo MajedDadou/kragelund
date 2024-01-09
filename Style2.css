@@ -30,7 +30,7 @@ body {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
@@ -44,6 +44,10 @@ body {
   margin: auto;
   max-width: 90%;
   max-height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .close {
@@ -57,6 +61,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+  }
   .images {
     display: flex;
     flex-wrap: wrap;
