@@ -17,6 +17,7 @@ body {
 }
 
 .image-para {
+  cursor: pointer;
   position: absolute;
   max-width: 400px; /* Maximum width */
   transition: transform 0.3s, filter 0.3s;

@@ -169,27 +169,6 @@ window.addEventListener('click', function (event) {
 });
 
 
-
-
-// Galleri
-// Randomly position images within the viewport
-const images = document.querySelectorAll('.image-para');
-images.forEach((image) => {
-  const x = Math.random() * window.innerWidth;
-  const y = Math.random() * window.innerHeight;
-  image.style.left = `${x}px`;
-  image.style.top = `${y}px`;
-});
-
-// Parallax effect on scroll
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  images.forEach((image) => {
-    const speed = parseFloat(image.style.transform.split(' ')[1].slice(0, -3));
-    image.style.transform = `translate(${speed * scrollY * -0.3}px, ${speed * scrollY * -0.2}px)`;
-  });
-});
-
 //Læs mere audio
 
 
