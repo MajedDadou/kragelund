@@ -6,7 +6,7 @@ body {
 
 .parallax {
   overflow: hidden;
-  height: 400vh;
+  height: 1200vh;
 }
 
 .images {
@@ -43,6 +43,7 @@ body {
 .modal-content {
   display: block;
   margin: auto;
+  width: auto;
   max-width: 90%;
   max-height: 90%;
   position: absolute;
